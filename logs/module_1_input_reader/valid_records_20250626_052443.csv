@@ -1,0 +1,100 @@
+doc_id,patient,received_on,status,Unnamed: 0,physician,doc_type,facility,facility_type,row_number
+9321157,"Lee, Gerald B.",05/30/2025,New,9321157,"Dr. Spirito, Joseph A.",Order,Brigham Home Care Services.Inc,Homecare,1
+9321145,"Thompson, Christine M.",05/30/2025,New,9321145,"Dr. Thorpe, Bianca",Order,Brockton Home Health Care,Homecare,2
+9320798,"Souza, Joann",05/30/2025,New,9320798,"Dr. Sorial, Ehab N.",Other,Nightingale Visiting Nurses-Taunton,Homecare,3
+9320796,"Souza, Joann",05/30/2025,New,9320796,"Dr. Sorial, Ehab N.",Other,Nightingale Visiting Nurses-Taunton,Homecare,4
+9320794,"Rodrigues, Doris",05/30/2025,New,9320794,"Dr. Sorial, Ehab N.",Other,Nightingale Visiting Nurses-Taunton,Homecare,5
+9320792,"Barreira, Ilda",05/30/2025,New,9320792,"Dr. Sorial, Ehab N.",Other,Nightingale Visiting Nurses-Taunton,Homecare,6
+9320789,"Aguiar, Jose",05/30/2025,New,9320789,"Dr. Sorial, Ehab N.",Other,Nightingale Visiting Nurses-Taunton,Homecare,7
+9320785,"Santos, Eduardo P.",05/30/2025,New,9320785,"Dr. Singla, Raju",Other,Nightingale Visiting Nurses-Taunton,Homecare,8
+9320784,"Santos, Eduardo P.",05/30/2025,New,9320784,"Dr. Singla, Raju",Other,Nightingale Visiting Nurses-Taunton,Homecare,9
+9320782,"Rego, William",05/30/2025,New,9320782,"Dr. Singla, Raju",Other,Nightingale Visiting Nurses-Taunton,Homecare,10
+9320779,"Oliveira, Kathleen",05/30/2025,New,9320779,"Dr. Singla, Raju",Other,Nightingale Visiting Nurses-Taunton,Homecare,11
+9320776,"Lazaro, Marcelino",05/30/2025,New,9320776,"Dr. Singla, Raju",Other,Nightingale Visiting Nurses-Taunton,Homecare,12
+9320770,"Duff, Lawrence",05/30/2025,New,9320770,"Dr. Singla, Raju",Other,Nightingale Visiting Nurses-Taunton,Homecare,13
+9320768,"Duff, Lawrence",05/30/2025,New,9320768,"Dr. Singla, Raju",Other,Nightingale Visiting Nurses-Taunton,Homecare,14
+9320762,"Barlow, Maria",05/30/2025,New,9320762,"Dr. Singla, Raju",Other,Nightingale Visiting Nurses-Taunton,Homecare,15
+9320761,"Barlow, Maria",05/30/2025,New,9320761,"Dr. Singla, Raju",Other,Nightingale Visiting Nurses-Taunton,Homecare,16
+9320727,"Silva, Evelyn",05/30/2025,New,9320727,"Dr. Joncas, Christopher S.",Other,Brookdale Home Health Rhode Island(Nurse on call),Homecare,17
+9320662,"Cromwell, Hector",05/30/2025,New,9320662,"Dr. Hinedi, Tamim B.",485 Recert,Alphacare Home Health Agency,Homecare,18
+9320660,"Ferreira, Connie",05/30/2025,New,9320660,"Dr. Sherlock, Mary E.",Other,Nightingale Visiting Nurses-Taunton,Homecare,19
+9320619,"Oliveira, Beatrice P.",05/30/2025,New,9320619,"Dr. Mistikawy, Hany A.",Order,Kindred At Home-Fall River,Homecare,20
+9320618,"Oliveira, Beatrice P.",05/30/2025,New,9320618,"Dr. Mistikawy, Hany A.",Order,Kindred At Home-Fall River,Homecare,21
+9320606,"Finch, Darwin",05/30/2025,New,9320606,"Dr. Nakda, Joseph",Other,Nightingale Visiting Nurses-Taunton,Homecare,22
+9320605,"Finch, Darwin",05/30/2025,New,9320605,"Dr. Nakda, Joseph",Other,Nightingale Visiting Nurses-Taunton,Homecare,23
+9320603,"Finch, Darwin",05/30/2025,New,9320603,"Dr. Nakda, Joseph",Other,Nightingale Visiting Nurses-Taunton,Homecare,24
+9320600,"Finch, Darwin",05/30/2025,New,9320600,"Dr. Nakda, Joseph",Other,Nightingale Visiting Nurses-Taunton,Homecare,25
+9320588,"Freitas, Jacinto",05/30/2025,New,9320588,"Dr. Mistikawy, Hany A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,26
+9320585,"Desimas, Guilhermina",05/30/2025,New,9320585,"Dr. Mistikawy, Hany A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,27
+9320582,"Desimas, Guilhermina",05/30/2025,New,9320582,"Dr. Mistikawy, Hany A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,28
+9320580,"Blair, Edward",05/30/2025,New,9320580,"Dr. Mistikawy, Hany A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,29
+9320574,"Vieira, Maria",05/30/2025,New,9320574,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,30
+9320571,"Travassos, Virginia",05/30/2025,New,9320571,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,31
+9320568,"Travassos, Virginia",05/30/2025,New,9320568,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,32
+9320547,"Pellechio, Carl",05/30/2025,Prepared,9320547,"Dr. Singla, Raju",485 Cert,Visiting Nurse Home -Portsmouth,Homecare,33
+9320565,"Sousa, Joao",05/30/2025,New,9320565,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,34
+9320561,"Sousa, Joao",05/30/2025,New,9320561,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,35
+9320558,"Paiva, Maria N",05/30/2025,New,9320558,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,36
+9320553,"Medeiros, Olivia",05/30/2025,New,9320553,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,37
+9320527,"Simoes, Balbina A.",05/30/2025,New,9320527,"Dr. Mendes, Manuela M.",Other,Amedisys Home Health Care (4410) Fall River,Homecare,38
+9320509,"Muzaca, Louise",05/30/2025,Prepared,9320509,"Dr. Cummings, Charles H.",Order,Visiting Nurse Home -Portsmouth,Homecare,39
+9320502,"Muzaca, Louise",05/30/2025,Prepared,9320502,"Dr. Cummings, Charles H.",Order,Visiting Nurse Home -Portsmouth,Homecare,40
+9320457,"Muzaca, Louise",05/30/2025,Prepared,9320457,"Dr. Cummings, Charles H.",Other,Visiting Nurse Home -Portsmouth,Homecare,41
+9320485,"Medeiros, Olivia",05/30/2025,New,9320485,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,42
+9320479,"Medeiros, Olivia",05/30/2025,New,9320479,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,43
+9320476,"Desousa, Maria",05/30/2025,New,9320476,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,44
+9320472,"Barros, Candida",05/30/2025,New,9320472,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,45
+9320469,"Arruda, Lucia",05/30/2025,New,9320469,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,46
+9320465,"Arruda, Lucia",05/30/2025,New,9320465,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,47
+9320420,"Muzaca, Louise",05/30/2025,Prepared,9320420,"Dr. Cummings, Charles H.",Other,Visiting Nurse Home -Portsmouth,Homecare,48
+9320403,"Raposa, William",05/30/2025,New,9320403,"Dr. MAINALI, PRAJEENA",Other,Nightingale Visiting Nurses-Taunton,Homecare,49
+9320399,"Raposa, William",05/30/2025,New,9320399,"Dr. MAINALI, PRAJEENA",Other,Nightingale Visiting Nurses-Taunton,Homecare,50
+9320344,"Muzaca, Louise",05/30/2025,Prepared,9320344,"Dr. Cummings, Charles H.",485 Cert,Visiting Nurse Home -Portsmouth,Homecare,51
+9320363,"Kalif, David",05/30/2025,New,9320363,"Dr. Bassaly, Neveen N.",Order,Alphacare Home Health Agency,Homecare,52
+9320360,"Fernandes, Maria G.",05/30/2025,New,9320360,"Dr. Labib, Ossama W.",Other,Nightingale Visiting Nurses-Taunton,Homecare,53
+9320346,"Johnson, Carolyn",05/30/2025,New,9320346,"Dr. Mistikawy, Hany A.",Order,Alphacare Home Health Agency,Homecare,54
+9320302,"Botelho, Noemia",05/30/2025,New,9320302,"Dr. Butler, Stephen R.",Other,Nightingale Visiting Nurses-Taunton,Homecare,55
+9320300,"Botelho, Noemia",05/30/2025,New,9320300,"Dr. Butler, Stephen R.",Other,Nightingale Visiting Nurses-Taunton,Homecare,56
+9320264,"Grasso, Thomas A.",05/30/2025,New,9320264,"Dr. Mistikawy, Hany A.",Order,Alphacare Home Health Agency,Homecare,57
+9320258,"Raposo, Paulo",05/30/2025,New,9320258,"Dr. Campbell, Michael A.",Order,Alphacare Home Health Agency,Homecare,58
+9320223,"Vieira, Maria N.",05/30/2025,New,9320223,"Dr. Mendes, Manuela M.",485 Recert,Alphacare Home Health Agency,Homecare,59
+9320210,"Masciarelli, Alfred",05/30/2025,Prepared,9320210,"Dr. Joncas, Christopher S.",Order,Visiting Nurse Hospice-Portsmouth,Hospice,60
+9320200,"Alves, Wendy",05/30/2025,New,9320200,"Dr. Sherlock, Mary E.",485 Recert,Alphacare Home Health Agency,Homecare,61
+9320169,"Raposo, Paulo",05/30/2025,New,9320169,"Dr. Campbell, Michael A.",Order,Alphacare Home Health Agency,Homecare,62
+9320163,"Souza, William",05/30/2025,New,9320163,"Dr. Mistikawy, Hany A.",PT,Alphacare Home Health Agency,Homecare,63
+9320158,"Grasso, Thomas A.",05/30/2025,New,9320158,"Dr. Mistikawy, Hany A.",PT,Alphacare Home Health Agency,Homecare,64
+9320154,"Moore, Helen",05/30/2025,New,9320154,"Dr. Kabak, Jennifer A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,65
+9320153,"Johnson, Carolyn",05/30/2025,New,9320153,"Dr. Mistikawy, Hany A.",PT,Alphacare Home Health Agency,Homecare,66
+9320141,"Medeiros, Rita",05/30/2025,New,9320141,"Dr. Joncas, Christopher S.",Other,Nightingale Visiting Nurses-Taunton,Homecare,67
+9320130,"Medeiros, Maria L.",05/30/2025,New,9320130,"Dr. Joncas, Christopher S.",Other,Nightingale Visiting Nurses-Taunton,Homecare,68
+9320127,"Hamilton, Doris",05/30/2025,New,9320127,"Dr. Tweedie, Patricia A.",Order,Alphacare Home Health Agency,Homecare,69
+9320119,"Hamilton, Doris",05/30/2025,New,9320119,"Dr. Tweedie, Patricia A.",Order,Alphacare Home Health Agency,Homecare,70
+9320104,"Diniz, Patricia",05/30/2025,New,9320104,"Dr. Joncas, Christopher S.",Other,Nightingale Visiting Nurses-Taunton,Homecare,71
+9320064,"Almas, Maria",05/30/2025,New,9320064,"Dr. Joncas, Christopher S.",Other,Nightingale Visiting Nurses-Taunton,Homecare,72
+9320062,"Almas, Maria",05/30/2025,New,9320062,"Dr. Joncas, Christopher S.",Other,Nightingale Visiting Nurses-Taunton,Homecare,73
+9320053,"Valerio, Ana",05/30/2025,New,9320053,"Dr. Joncas, Christopher S.",Other,Nightingale Visiting Nurses-Taunton,Homecare,74
+9320052,"Valerio, Ana",05/30/2025,New,9320052,"Dr. Joncas, Christopher S.",Other,Nightingale Visiting Nurses-Taunton,Homecare,75
+9320050,"Ossick, Dale",05/30/2025,New,9320050,"Dr. Joncas, Christopher S.",Other,Nightingale Visiting Nurses-Taunton,Homecare,76
+9320049,"Ossick, Dale",05/30/2025,New,9320049,"Dr. Joncas, Christopher S.",Other,Nightingale Visiting Nurses-Taunton,Homecare,77
+9320028,"Oliveira, Eduarda",05/30/2025,New,9320028,"Dr. Campbell, Michael A.",Other,AccentCare Fall River,Homecare,78
+9319875,"Warren, Carol",05/30/2025,New,9319875,"Dr. Campbell, Michael A.",CTI Cert,"Beacon Hospice Care, an Amedisys Company (4420) Fall River",Hospice,79
+9319865,"Warren, Carol",05/30/2025,New,9319865,"Dr. Campbell, Michael A.",POT Cert,"Beacon Hospice Care, an Amedisys Company (4420) Fall River",Hospice,80
+9319713,"Boutros, Chamoun",05/30/2025,New,9319713,"Dr. Hinedi, Tamim B.",Other,Nightingale Visiting Nurses-Taunton,Homecare,81
+9319684,"Ferris, Debra",05/30/2025,New,9319684,"Dr. Hinedi, Tamim B.",Other,Nightingale Visiting Nurses-Taunton,Homecare,82
+9319675,"Carvalho, Anthony",05/30/2025,New,9319675,"Dr. Mistikawy, Hany A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,83
+9319588,"Spevock, James",05/30/2025,New,9319588,"Dr. Tweedie, Patricia A.",Order,Southcoast VNA â Community Office (Fairhaven),Homecare,84
+9319580,"Gancarski, Peter",05/30/2025,New,9319580,"Dr. Joncas, Christopher S.",Other,AccentCare Fall River,Homecare,85
+9319532,"Pimentel, Joao",05/30/2025,New,9319532,"Dr. Singla, Raju",Other,AccentCare Fall River,Homecare,86
+9319523,"Bishop, David J.",05/30/2025,New,9319523,"Dr. Butler, Stephen R.",Order,Southcoast VNA â Community Office (Fairhaven),Homecare,87
+9319467,"Lowe, Dorothy",05/30/2025,New,9319467,"Dr. Tweedie, Patricia A.",Order,Guardian Home Health Care LLC - West Bridgewater,Homecare,88
+9319439,"Valley, Linda M.",05/30/2025,New,9319439,"Dr. Harrison, Joan T.",Order,Dartmouth HH,Homecare,89
+9319431,"Duvarney, Theodore",05/30/2025,New,9319431,"Dr. FARHAT, ZEIN A.",Order,Dartmouth HH,Homecare,90
+9319430,"Veeder, Frances E.",05/30/2025,Reviewing,9319430,"Dr. Butler, Stephen R.",Order,Dartmouth HH,Homecare,91
+9319426,"Domonte, Tony",05/30/2025,Reviewing,9319426,"Dr. Bassaly, Neveen N.",Order,Dartmouth HH,Homecare,92
+9319205,"Levasseur, Margaret",05/30/2025,New,9319205,"Dr. Singla, Raju",Other,AccentCare Fall River,Homecare,93
+9319198,"Burhoe, Alden R.",05/30/2025,New,9319198,"Dr. Singla, Raju",Other,AccentCare Fall River,Homecare,94
+9319132,"Benedict, Ruth",05/30/2025,New,9319132,"Dr. Joncas, Christopher S.",Other,Brookdale Home Health Rhode Island(Nurse on call),Homecare,95
+9319129,"Dufour, Pauline",05/30/2025,New,9319129,"Dr. Joncas, Christopher S.",Other,Brookdale Home Health Rhode Island(Nurse on call),Homecare,96
+9319128,"Andersen, Lydia",05/30/2025,New,9319128,"Dr. Joncas, Christopher S.",Other,Brookdale Home Health Rhode Island(Nurse on call),Homecare,97
+9319123,"Augusto, Elizabeth",05/30/2025,New,9319123,"Dr. Joncas, Christopher S.",Other,Brookdale Home Health Rhode Island(Nurse on call),Homecare,98
+9319121,"Griffiths, Thomas",05/30/2025,New,9319121,"Dr. Joncas, Christopher S.",Other,Brookdale Home Health Rhode Island(Nurse on call),Homecare,99

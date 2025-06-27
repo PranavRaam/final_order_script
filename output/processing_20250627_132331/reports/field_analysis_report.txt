@@ -1,0 +1,300 @@
+
+Field Extraction Analysis Report
+Generated: 2025-06-27 13:29:10
+
+DETAILED FIELD ANALYSIS
+=======================
+
+This report provides detailed statistics for each field extracted from 94 successfully parsed documents.
+
+PATIENT FIELD ANALYSIS
+======================
+
+ACCOUNT_NUMBER:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+ADDRESS:
+  Extraction Rate: 91.5% (86/94)
+  Sample Values: 125 County ST, 1906 FALL RIVER MA 02721, 2265 FALL RIVER MA 02721
+  Status: ✅ Good
+
+CITY:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+DOB:
+  Extraction Rate: 93.6% (88/94)
+  Sample Values: 04/06/1945, 01/21/1942, 08/05/1957
+  Status: ✅ Good
+
+EMAIL:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+EMERGENCY_CONTACT_NAME:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+EMERGENCY_CONTACT_PHONE:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+EMERGENCY_CONTACT_RELATIONSHIP:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+GROUP_NUMBER:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+MARITAL_STATUS:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+MEDICAL_RECORD_NO:
+  Extraction Rate: 85.1% (80/94)
+  Sample Values: 100991041, MA210304014206, 100996456
+  Status: ✅ Good
+
+PATIENT_FNAME:
+  Extraction Rate: 93.6% (88/94)
+  Sample Values: Kathleen, Darwin, Edward
+  Status: ✅ Good
+
+PATIENT_LNAME:
+  Extraction Rate: 93.6% (88/94)
+  Sample Values: Oliveira, Finch, Blair
+  Status: ✅ Good
+
+PATIENT_MNAME:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+PATIENT_SEX:
+  Extraction Rate: 93.6% (88/94)
+  Sample Values: FEMALE, MALE, MALE
+  Status: ✅ Good
+
+PHONE_NUMBER:
+  Extraction Rate: 90.4% (85/94)
+  Sample Values: (508) 967-0761, (508) 967-0761, (508) 967-0761
+  Status: ✅ Good
+
+POLICY_NUMBER:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+PREFERRED_LANGUAGE:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+PRIMARY_INSURANCE:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+PROVIDER_NAME:
+  Extraction Rate: 1.1% (1/94)
+  Sample Values: BEATRICE P OLIVEIRA
+  Status: ❌ Poor
+
+PROVIDER_NPI:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+REFERRING_PHYSICIAN:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+SECONDARY_INSURANCE:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+SSN:
+  Extraction Rate: 41.5% (39/94)
+  Sample Values: 100-99-1041, 100-99-6456, 000-00-0200
+  Status: ⚠️ Fair
+
+STATE:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+SUBSCRIBER_ID:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+ZIP_CODE:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+
+ORDER FIELD ANALYSIS
+====================
+
+AUTHORIZATION_NUMBER:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+BILLING_CODE:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+CAREGIVER_INSTRUCTIONS:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+CLINICAL_NOTES:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+DISCHARGE_NOTES:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+DURATION:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+EPISODE_DIAGNOSES:
+  Extraction Rate: 55.3% (52/94)
+  Sample Values: PT Diagnosis, Acute cystitis without hematuria N, Hyp hrt
+  Status: ⚠️ Fair
+
+EPISODE_END_DATE:
+  Extraction Rate: 9.6% (9/94)
+  Sample Values: 06/08/2025, 05/22/2025, 07/08/2025
+  Status: ❌ Poor
+
+EPISODE_START_DATE:
+  Extraction Rate: 9.6% (9/94)
+  Sample Values: 04/10/2025, 03/24/2025, 04/10/2025
+  Status: ❌ Poor
+
+EQUIPMENT_NEEDED:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+FOLLOW_UP_INSTRUCTIONS:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+FREQUENCY:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+FUNCTIONAL_LIMITATIONS:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+GOALS_OF_CARE:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+INSURANCE_PAYER:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+MEDICATION_RECONCILIATION:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+ORDER_DATE:
+  Extraction Rate: 17.0% (16/94)
+  Sample Values: 05/21/2025, 05/21/2025, order date as MM/DD/YYYY
+  Status: ❌ Poor
+
+ORDER_NO:
+  Extraction Rate: 40.4% (38/94)
+  Sample Values: 1288833069, 1287453267, 1289315887
+  Status: ⚠️ Fair
+
+ORDERING_FACILITY:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+PHYSICIAN_NAME:
+  Extraction Rate: 95.7% (90/94)
+  Sample Values: Singla, Raju Clinician, Nakda, Joseph Clinician, Mistikawy, Hany A. Clinician
+  Status: ✅ Good
+
+PHYSICIAN_NPI:
+  Extraction Rate: 87.2% (82/94)
+  Sample Values: 1275520097, 1891081725, 1851399034
+  Status: ✅ Good
+
+PHYSICIAN_PHONE:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+PLACE_OF_SERVICE:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+PRIMARY_DIAGNOSIS:
+  Extraction Rate: 57.4% (54/94)
+  Sample Values: PT Diagnosis, Acute cystitis without hematuria N, Hyp hrt
+  Status: ⚠️ Fair
+
+SAFETY_MEASURES:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+SECONDARY_DIAGNOSIS:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+SERVICE_TYPE:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+SIGNED_BY_PHYSICIAN_DATE:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+SPECIAL_INSTRUCTIONS:
+  Extraction Rate: 0.0% (0/94)
+  Sample Values: None
+  Status: ❌ Poor
+
+START_OF_CARE:
+  Extraction Rate: 4.3% (4/94)
+  Sample Values: 05/11/2025, 05/21/2025, 05/04/2025
+  Status: ❌ Poor

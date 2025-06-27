@@ -1,0 +1,27 @@
+Healthcare Document Processing Summary
+Processing Date: 2025-06-26 06:13:30
+Input File: data/input.csv
+
+MODULE 1 - INPUT READER:
+Total Rows: 99
+Valid Rows: 99
+Invalid Rows: 0
+Success Rate: 100.0%
+
+MODULE 2 - DOCUMENT FETCHER:
+Total Documents: 99
+Successfully Fetched: 97
+Failed to Fetch: 2
+Success Rate: 97.98%
+
+MODULE 3 - TEXT EXTRACTOR:
+Total Documents: 97
+Successfully Extracted: 97
+Failed Extractions: 0
+Success Rate: 100.0%
+Total Extracted Text: 798,917 characters
+Average Text Length: 8236 characters
+Digital PDFs: 85
+OCR (Scanned): 12
+
+Total PDF Size: 15.34 MB

@@ -1,0 +1,69 @@
+Module 3 - Text Extractor Summary Report
+==================================================
+Processing Date: 2025-06-26 06:06:25
+Total Documents: 97
+Successfully Extracted: 85
+Failed Extractions: 12
+Success Rate: 87.6%
+
+Extraction Methods:
+------------------------------
+Digital PDFs: 85
+OCR (Scanned): 0
+
+Quality Statistics:
+------------------------------
+Average Quality Score: 0.974
+Average Text Length: 8675 characters
+Total Extracted Text: 737,334 characters
+
+Failed Extractions:
+------------------------------
+Doc ID: 9320547
+Error: Poor text quality (score: 0.00) or insufficient content
+Quality Score: 0.000
+------------------------------
+Doc ID: 9320509
+Error: Poor text quality (score: 0.00) or insufficient content
+Quality Score: 0.000
+------------------------------
+Doc ID: 9320502
+Error: Poor text quality (score: 0.00) or insufficient content
+Quality Score: 0.000
+------------------------------
+Doc ID: 9320457
+Error: Poor text quality (score: 0.00) or insufficient content
+Quality Score: 0.000
+------------------------------
+Doc ID: 9320420
+Error: Poor text quality (score: 0.00) or insufficient content
+Quality Score: 0.000
+------------------------------
+Doc ID: 9320344
+Error: Poor text quality (score: 0.00) or insufficient content
+Quality Score: 0.000
+------------------------------
+Doc ID: 9320210
+Error: Poor text quality (score: 0.00) or insufficient content
+Quality Score: 0.000
+------------------------------
+Doc ID: 9320028
+Error: Poor text quality (score: 0.00) or insufficient content
+Quality Score: 0.000
+------------------------------
+Doc ID: 9319580
+Error: Poor text quality (score: 0.00) or insufficient content
+Quality Score: 0.000
+------------------------------
+Doc ID: 9319532
+Error: Poor text quality (score: 0.00) or insufficient content
+Quality Score: 0.000
+------------------------------
+Doc ID: 9319205
+Error: Poor text quality (score: 0.00) or insufficient content
+Quality Score: 0.000
+------------------------------
+Doc ID: 9319198
+Error: Poor text quality (score: 0.00) or insufficient content
+Quality Score: 0.000
+------------------------------

@@ -1,0 +1,22 @@
+{
+  "field_patterns": {},
+  "common_errors": {},
+  "quality_metrics": {
+    "avg_confidence": 0.18903111111111112,
+    "avg_completeness": 0.16248888888888888
+  },
+  "processing_performance": {
+    "enhanced_structured": {
+      "avg_time": 0.5845298714107937,
+      "min_time": 0.05385565757751465,
+      "max_time": 1.7934129238128662,
+      "count": 45
+    },
+    "enhanced_llm": {
+      "avg_time": 7.079630613327026,
+      "min_time": 6.5544562339782715,
+      "max_time": 7.900982618331909,
+      "count": 5
+    }
+  }
+}

@@ -1,0 +1,25 @@
+Module 2 - Document Fetcher Summary Report
+==================================================
+Processing Date: 2025-06-26 05:29:19
+Total Documents: 99
+Successfully Fetched: 97
+Failed to Fetch: 2
+Success Rate: 97.98%
+
+Failed Documents:
+------------------------------
+Doc ID: 9319875
+Error: No PDF data found in response. Available fields: ['isSuccess', 'errorCode', 'errorMessage']
+Status Code: 200
+Patient: Warren, Carol
+------------------------------
+Doc ID: 9319865
+Error: No PDF data found in response. Available fields: ['isSuccess', 'errorCode', 'errorMessage']
+Status Code: 200
+Patient: Warren, Carol
+------------------------------
+
+Successful Documents Summary:
+------------------------------
+Total PDF Size: 15.34 MB
+Average PDF Size: 161.93 KB

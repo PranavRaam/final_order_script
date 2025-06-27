@@ -1,0 +1,300 @@
+
+Field Extraction Analysis Report
+Generated: 2025-06-27 10:14:26
+
+DETAILED FIELD ANALYSIS
+=======================
+
+This report provides detailed statistics for each field extracted from 50 successfully parsed documents.
+
+PATIENT FIELD ANALYSIS
+======================
+
+ACCOUNT_NUMBER:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+ADDRESS:
+  Extraction Rate: 90.0% (45/50)
+  Sample Values: 125 County ST, 125 County ST, 2265 FALL RIVER MA 02721
+  Status: ✅ Good
+
+CITY:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+DOB:
+  Extraction Rate: 72.0% (36/50)
+  Sample Values: 04/06/1945, 01/21/1942, 01/15/1950
+  Status: ✅ Good
+
+EMAIL:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+EMERGENCY_CONTACT_NAME:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+EMERGENCY_CONTACT_PHONE:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+EMERGENCY_CONTACT_RELATIONSHIP:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+GROUP_NUMBER:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+MARITAL_STATUS:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+MEDICAL_RECORD_NO:
+  Extraction Rate: 54.0% (27/50)
+  Sample Values: MA210304014206, MA240924075701, MA210304014206
+  Status: ⚠️ Fair
+
+PATIENT_FNAME:
+  Extraction Rate: 94.0% (47/50)
+  Sample Values: Kathleen, Darwin, OLIVEIRA.
+  Status: ✅ Good
+
+PATIENT_LNAME:
+  Extraction Rate: 94.0% (47/50)
+  Sample Values: Oliveira, Finch, C
+  Status: ✅ Good
+
+PATIENT_MNAME:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+PATIENT_SEX:
+  Extraction Rate: 94.0% (47/50)
+  Sample Values: FEMALE, MALE, MALE
+  Status: ✅ Good
+
+PHONE_NUMBER:
+  Extraction Rate: 90.0% (45/50)
+  Sample Values: (508) 967-0761, (508) 967-0761, (508) 235-6312
+  Status: ✅ Good
+
+POLICY_NUMBER:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+PREFERRED_LANGUAGE:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+PRIMARY_INSURANCE:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+PROVIDER_NAME:
+  Extraction Rate: 2.0% (1/50)
+  Sample Values: ACCENTCARE OF MASS, INC. DBA AC HH OF MASS
+  Status: ❌ Poor
+
+PROVIDER_NPI:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+REFERRING_PHYSICIAN:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+SECONDARY_INSURANCE:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+SSN:
+  Extraction Rate: 44.0% (22/50)
+  Sample Values: 100991041, 02723-1519, 100996456
+  Status: ⚠️ Fair
+
+STATE:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+SUBSCRIBER_ID:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+ZIP_CODE:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+
+ORDER FIELD ANALYSIS
+====================
+
+AUTHORIZATION_NUMBER:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+BILLING_CODE:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+CAREGIVER_INSTRUCTIONS:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+CLINICAL_NOTES:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+DISCHARGE_NOTES:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+DURATION:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+EPISODE_DIAGNOSES:
+  Extraction Rate: 48.0% (24/50)
+  Sample Values: PT Diagnosis, Hyp hrt, Essential
+  Status: ⚠️ Fair
+
+EPISODE_END_DATE:
+  Extraction Rate: 10.0% (5/50)
+  Sample Values: 07/10/2025, 06/08/2025, 05/22/2025
+  Status: ❌ Poor
+
+EPISODE_START_DATE:
+  Extraction Rate: 10.0% (5/50)
+  Sample Values: 05/12/2025, 04/10/2025, 03/24/2025
+  Status: ❌ Poor
+
+EQUIPMENT_NEEDED:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+FOLLOW_UP_INSTRUCTIONS:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+FREQUENCY:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+FUNCTIONAL_LIMITATIONS:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+GOALS_OF_CARE:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+INSURANCE_PAYER:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+MEDICATION_RECONCILIATION:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+ORDER_DATE:
+  Extraction Rate: 18.0% (9/50)
+  Sample Values: 05/29/2025, 05/21/2025, order date as MM/DD/YYYY
+  Status: ❌ Poor
+
+ORDER_NO:
+  Extraction Rate: 16.0% (8/50)
+  Sample Values: 12275092, 1288141878, 328600
+  Status: ❌ Poor
+
+ORDERING_FACILITY:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+PHYSICIAN_NAME:
+  Extraction Rate: 98.0% (49/50)
+  Sample Values: Singla, Raju Clinician, Nakda, Joseph Clinician, CLIENT
+  Status: ✅ Good
+
+PHYSICIAN_NPI:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+PHYSICIAN_PHONE:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+PLACE_OF_SERVICE:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+PRIMARY_DIAGNOSIS:
+  Extraction Rate: 52.0% (26/50)
+  Sample Values: PT Diagnosis, Hyp hrt   chr kdny dis w hrt fail and stg, Essential
+  Status: ⚠️ Fair
+
+SAFETY_MEASURES:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+SECONDARY_DIAGNOSIS:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+SERVICE_TYPE:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+SIGNED_BY_PHYSICIAN_DATE:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+SPECIAL_INSTRUCTIONS:
+  Extraction Rate: 0.0% (0/50)
+  Sample Values: None
+  Status: ❌ Poor
+
+START_OF_CARE:
+  Extraction Rate: 4.0% (2/50)
+  Sample Values: 05/11/2025, 05/21/2025
+  Status: ❌ Poor

@@ -1,0 +1,26 @@
+{
+  "processing_summary": {
+    "total_documents": 50,
+    "successful_parses": 50,
+    "success_rate": 100.0,
+    "failed_parses": 0
+  },
+  "extraction_methods": {
+    "enhanced_structured": 45,
+    "enhanced_llm": 5
+  },
+  "confidence_distribution": {
+    "high_confidence": 0,
+    "medium_confidence": 0,
+    "low_confidence": 50
+  },
+  "field_completion_rates": {
+    "patient_name": 92.0,
+    "patient_mrn": 54.0,
+    "patient_dob": 68.0,
+    "patient_gender": 52.0,
+    "order_number": 16.0,
+    "physician_name": 94.0,
+    "soc_date": 4.0
+  }
+}

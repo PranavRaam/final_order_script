@@ -1,0 +1,12 @@
+{
+  "total_documents": 50,
+  "successful_fetches": 50,
+  "successful_extractions": 50,
+  "successful_parses": 50,
+  "overall_success_rate": 100.0,
+  "processing_time": 59.846299171447754,
+  "extraction_methods": {
+    "digital": 0,
+    "ocr": 0
+  }
+}

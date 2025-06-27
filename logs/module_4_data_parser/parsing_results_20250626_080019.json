@@ -1,0 +1,2767 @@
+[
+  {
+    "doc_id": "9321157",
+    "patient_data": {
+      "first_name": "",
+      "last_name": "Smith",
+      "date_of_birth": "1980-05-15",
+      "sex": "M",
+      "mrn": ""
+    },
+    "order_data": {
+      "order_date": "2025-04-03",
+      "certification_date": "2025-04-02",
+      "diagnosis_codes": [
+        ""
+      ],
+      "physician_name": "Joseph A Spirito",
+      "order_type": ""
+    },
+    "source": "llm",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8
+  },
+  {
+    "doc_id": "9321145",
+    "patient_data": {
+      "first_name": "",
+      "last_name": "Smith",
+      "date_of_birth": "",
+      "sex": "M",
+      "mrn": ""
+    },
+    "order_data": {
+      "order_date": "2025-04-03",
+      "certification_date": "",
+      "diagnosis_codes": [],
+      "physician_name": "Dr Thorpe",
+      "order_type": ""
+    },
+    "source": "llm",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.4
+  },
+  {
+    "doc_id": "9320798",
+    "patient_data": {
+      "first_name": "Physician",
+      "last_name": "Order",
+      "date_of_birth": "2025-05-20",
+      "sex": "",
+      "mrn": "1288801000"
+    },
+    "order_data": {
+      "order_date": "2025-06-06",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "PHYSICIAN",
+        "R11.10",
+        "GASTROENTERITIS",
+        "AND",
+        "VOMITING",
+        "K52.9",
+        "NAUSEA",
+        "NONINFECTIVE",
+        "COLITIS",
+        "R11.0",
+        "UNSPECIFIED"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320796",
+    "patient_data": {
+      "first_name": "Physician",
+      "last_name": "Order",
+      "date_of_birth": "2025-05-13",
+      "sex": "",
+      "mrn": "1285857354"
+    },
+    "order_data": {
+      "order_date": "2025-06-06",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "PHYSICIAN",
+        "R11.10",
+        "GASTROENTERITIS",
+        "AND",
+        "VOMITING",
+        "K52.9",
+        "NAUSEA",
+        "NONINFECTIVE",
+        "COLITIS",
+        "R11.0",
+        "UNSPECIFIED"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320794",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1933-11-14",
+      "sex": "",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-04-24",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "DIAGNOSIS"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320792",
+    "patient_data": {
+      "first_name": "Frequency",
+      "last_name": "Order",
+      "date_of_birth": "2025-05-17",
+      "sex": "",
+      "mrn": "1286823018"
+    },
+    "order_data": {
+      "order_date": "2025-05-17",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "DISORDER",
+        "COLLAPSE",
+        "CHRONIC",
+        "ANXIETY",
+        "PHYSICIAN",
+        "DISEASE",
+        "R55.",
+        "AND",
+        "F41.1",
+        "GENERALIZED",
+        "N18.31",
+        "SYNCOPE",
+        "KIDNEY",
+        "STAGE"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320789",
+    "patient_data": {
+      "first_name": "Information",
+      "last_name": "Patient",
+      "date_of_birth": "2023-07-18",
+      "sex": "",
+      "mrn": "1283255839"
+    },
+    "order_data": {
+      "order_date": "2025-06-06",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "N40.0",
+        "PAROXYSMAL",
+        "D50.9",
+        "K86.1",
+        "F41.9",
+        "Z79.01",
+        "ATRIAL",
+        "E78.5",
+        "I10.",
+        "E11.65",
+        "F10.239",
+        "K21.9",
+        "F32.9",
+        "FIBRILLATION",
+        "I69.359",
+        "M48.061",
+        "Z91.81",
+        "M51.16",
+        "D47.3",
+        "G47.00",
+        "F11.20",
+        "CODE",
+        "M50.90",
+        "Z98.41",
+        "F17.211",
+        "I25.2",
+        "DESCRIPTION",
+        "DATE",
+        "ESSENTIAL",
+        "S82.002",
+        "I48.0"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320785",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1952-07-26",
+      "sex": "",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-21",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "LUMBOSACRAL",
+        "WEAKNESS",
+        "DISEASE",
+        "MUSCLE",
+        "EXACERBATION",
+        "DISC"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320784",
+    "patient_data": {
+      "first_name": "Information",
+      "last_name": "Hospital Stay From",
+      "date_of_birth": "1952-07-26",
+      "sex": "",
+      "mrn": "ENTIFIED"
+    },
+    "order_data": {
+      "order_date": "2025-05-11",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "J189",
+        "WITH",
+        "CHR",
+        "DISEASE",
+        "OBSTRUCTIVE",
+        "J440",
+        "ORGANISM",
+        "PULMON",
+        "PNEUMONIA",
+        "UNSPECIFIED"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320782",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1957-11-18",
+      "sex": "",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-12",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "DIAGNOSIS",
+        "CHF"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320779",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1945-04-06",
+      "sex": "",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-04-24",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "DIAGNOSIS",
+        "I11.0",
+        "R26.2"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320776",
+    "patient_data": {
+      "first_name": "Information",
+      "last_name": "Patient",
+      "date_of_birth": "2024-07-22",
+      "sex": "",
+      "mrn": "1286413795"
+    },
+    "order_data": {
+      "order_date": "2025-06-01",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "PREVIOUS",
+        "ORIENTED",
+        "WHAT",
+        "MANAGE",
+        "MAKE",
+        "APPROPRIATE",
+        "COMPLIANCE.",
+        "HYPOGLYCEMICS",
+        "Z79.82",
+        "STARTED",
+        "OBSTRUCTIVE",
+        "HEAD",
+        "PRECAUTIONS",
+        "Z87.891",
+        "ORDERED",
+        "SIDE",
+        "TIME.",
+        "NOTED",
+        "MEDS",
+        "K21.9",
+        "BUT",
+        "PNEUMONIA.",
+        "DIM",
+        "DENIES",
+        "UNABLE",
+        "THEY",
+        "HIS",
+        "DOES",
+        "MAY",
+        "SATURATION",
+        "M51.379",
+        "Z91.81",
+        "INDETERMINATE.",
+        "USES",
+        "PRESENT",
+        "SHOW",
+        "D63.1",
+        "THIS",
+        "I13.0",
+        "PATIENT",
+        "OWN",
+        "NON",
+        "ONE",
+        "WITH",
+        "ADMINISTERS",
+        "WAS",
+        "DAYS.",
+        "CHEST",
+        "DATE",
+        "LEVELS",
+        "CLOSER",
+        "LEAD",
+        "WILLING",
+        "J44.0",
+        "ONGOING",
+        "VISIT",
+        "OXYGEN",
+        "REPORTS",
+        "THERE",
+        "DIFF",
+        "LARGEST",
+        "AND",
+        "RECOMMEND",
+        "EDEMA.",
+        "ASSESSMENT.",
+        "PREFILLING",
+        "EFFECTS.",
+        "THAT",
+        "ANTICOAGULANTS",
+        "M19.90",
+        "VISIT.",
+        "MEDICATIONS",
+        "FORGETFUL",
+        "PULMON",
+        "EXAM.",
+        "VERBAL",
+        "DISEASE",
+        "ORDERED.",
+        "Z79.4",
+        "MONTHS.",
+        "THEREFORE",
+        "NEEDED",
+        "Z68.27",
+        "FOR",
+        "TIMES.",
+        "MANAGEMENT",
+        "ALL",
+        "E11.22",
+        "EVERY",
+        "THE",
+        "ANY",
+        "F41.1",
+        "ADHERENCE",
+        "MONITORING",
+        "HIGH",
+        "RISK",
+        "PREVENTION.",
+        "MISMANAGEMENT",
+        "HAVE",
+        "CAREGIVER",
+        "N40.0",
+        "MED",
+        "ABDOMEN",
+        "ASSESS",
+        "HOSPITALIZATIONS.",
+        "INJURY",
+        "SINCE",
+        "CAN",
+        "REMAIN",
+        "PLEASANT",
+        "RESPIRATORY",
+        "LEFT",
+        "INSULIN",
+        "PLANNER",
+        "E66.3",
+        "IMPROVED",
+        "G47.33",
+        "CBG",
+        "AFEBRILE",
+        "REVIEWED",
+        "ARE",
+        "SUCH",
+        "N18.30",
+        "SEVERAL",
+        "KNOW",
+        "CODE",
+        "I50.32",
+        "HYP",
+        "ETIOLOGY",
+        "NOT",
+        "EDUCATION",
+        "FREQUENT",
+        "DID",
+        "COMPLIANCE",
+        "VFO",
+        "MEASURES",
+        "NURSING",
+        "E11.40",
+        "HOME",
+        "DUE",
+        "LACTOBACILLUS",
+        "ABLE",
+        "INSULIN.",
+        "I25.10",
+        "DISCHARGED",
+        "ALERT",
+        "WITHIN",
+        "MALIGNANCY",
+        "ALSO",
+        "CONFUSION",
+        "RETROPERITONEUM",
+        "KNOWN",
+        "STATUS",
+        "ENSURE",
+        "ANTIBIOTIC",
+        "INTRACRANIAL",
+        "ABNORMAL",
+        "PNEUMONIA",
+        "MONITOR",
+        "HRT",
+        "FOLLOW",
+        "CHR",
+        "NEEDS",
+        "SELF",
+        "REQUIRED",
+        "MODULES",
+        "PAIN",
+        "COULD",
+        "COOPERATIVE",
+        "ACTIVITY",
+        "DESCRIPTION",
+        "SKILLED",
+        "AUGMENTIN",
+        "HEMORRHAGE.",
+        "INSTRUCT",
+        "ANGIOGRAM",
+        "CAPABLE",
+        "VSS"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320770",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1946-08-11",
+      "sex": "",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-22",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "R53.1",
+        "DIAGNOSIS",
+        "Z47"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320768",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1946-08-11",
+      "sex": "",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-20",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "DIAGNOSIS"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320762",
+    "patient_data": {
+      "first_name": "Frequency",
+      "last_name": "Order",
+      "date_of_birth": "2025-05-15",
+      "sex": "",
+      "mrn": "1286177786"
+    },
+    "order_data": {
+      "order_date": "2025-05-15",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "PHYSICIAN",
+        "HEREDITARY",
+        "R27.0",
+        "R13.10",
+        "DYSPHAGIA",
+        "UNSPECIFIED",
+        "SPASTIC",
+        "ATAXIA",
+        "G11.4",
+        "PARAPLEGIA"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320761",
+    "patient_data": {
+      "first_name": "Frequency",
+      "last_name": "Order",
+      "date_of_birth": "2025-05-12",
+      "sex": "",
+      "mrn": "1286963485"
+    },
+    "order_data": {
+      "order_date": "2025-05-12",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "PHYSICIAN",
+        "HEREDITARY",
+        "R27.0",
+        "R13.10",
+        "DYSPHAGIA",
+        "UNSPECIFIED",
+        "SPASTIC",
+        "ATAXIA",
+        "G11.4",
+        "PARAPLEGIA"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320727",
+    "patient_data": {
+      "first_name": "",
+      "last_name": "Christopher",
+      "date_of_birth": "2025-05-30",
+      "sex": "M",
+      "mrn": ""
+    },
+    "order_data": {
+      "order_date": "2025-06-12",
+      "certification_date": "2025-05-30",
+      "diagnosis_codes": [
+        ""
+      ],
+      "physician_name": "Dr Joncas Christopher",
+      "order_type": ""
+    },
+    "source": "llm",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8
+  },
+  {
+    "doc_id": "9320662",
+    "patient_data": {
+      "first_name": "And",
+      "last_name": "Address Provider",
+      "date_of_birth": "1970-02-09",
+      "sex": "M",
+      "mrn": "000000316"
+    },
+    "order_data": {
+      "order_date": "2025-05-10",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "E11.9",
+        "F33.9",
+        "F12.20",
+        "DISORDER",
+        "I72.4",
+        "N18.9",
+        "I21.4",
+        "Z79.4",
+        "Z95.5",
+        "J44.9",
+        "K57.32",
+        "Z91.198",
+        "EFFECTIVE",
+        "START",
+        "M10.9",
+        "DEPRESSIVE",
+        "DATE",
+        "PRIMARY",
+        "MAJOR",
+        "RECURRENT",
+        "UNSPECIFIED"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320660",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1959-05-16",
+      "sex": "",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-04-22",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "Z47.1",
+        "DIAGNOSIS",
+        "R26.2"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320619",
+    "patient_data": {
+      "first_name": "And",
+      "last_name": "Address",
+      "date_of_birth": "1947-08-23",
+      "sex": "F",
+      "mrn": "13753435"
+    },
+    "order_data": {
+      "order_date": "2025-03-24",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "CLINICAL",
+        "PERTINENT",
+        "B96.89",
+        "Z79.82",
+        "I48.91",
+        "E78.5",
+        "F03.90",
+        "Z55.6",
+        "SERVICES",
+        "OTHER",
+        "DISCIPLINES",
+        "PROVIDED",
+        "DIAGNOSES",
+        "INFORMATION",
+        "R33.9",
+        "N30.01",
+        "UTILIZATION",
+        "SKILLED",
+        "Z79.52",
+        "J10.00"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320618",
+    "patient_data": {
+      "first_name": "Facility",
+      "last_name": "Admit Date Discharge Date Reason For Admission St Annes Hospital",
+      "date_of_birth": "1947-08-23",
+      "sex": "",
+      "mrn": "14058451"
+    },
+    "order_data": {
+      "order_date": "2025-05-05",
+      "certification_date": "2025-03-24",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8500000000000001
+  },
+  {
+    "doc_id": "9320606",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1942-01-21",
+      "sex": "M",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-21",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "ALZHEIMERS",
+        "DIAGNOSIS",
+        "DISEASE"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320605",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1942-01-21",
+      "sex": "M",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-04-16",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "ALZHEIMERS",
+        "DIAGNOSIS",
+        "DISEASE"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320603",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1942-01-21",
+      "sex": "F",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-04-19",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "DIAGNOSIS"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320600",
+    "patient_data": {
+      "first_name": "Frequency",
+      "last_name": "Order",
+      "date_of_birth": "2025-05-21",
+      "sex": "M",
+      "mrn": "1288833069"
+    },
+    "order_data": {
+      "order_date": "2025-05-21",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "B95.2",
+        "PHYSICIAN",
+        "N30.00",
+        "PYONEPHROSIS",
+        "CAUSE",
+        "HEMATURIA",
+        "THE",
+        "ACUTE",
+        "CLASSIFIED",
+        "ELSEWHERE",
+        "N13.6",
+        "DISEASES",
+        "ENTEROCOCCUS",
+        "CYSTITIS",
+        "WITHOUT"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320588",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1941-05-14",
+      "sex": "F",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-23",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "N40.0",
+        "I25.10",
+        "R26.2",
+        "I50.22",
+        "Z95.820",
+        "E11.51",
+        "I48.91",
+        "E78.5",
+        "DIAGNOSIS",
+        "Z90.49",
+        "Z85.51",
+        "Z72.0",
+        "J44.9",
+        "I70.221",
+        "I27.0",
+        "K80.33",
+        "Z96.641",
+        "M62.81",
+        "I73.9"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320585",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1938-06-04",
+      "sex": "",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-20",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "M17.0",
+        "DIAGNOSIS",
+        "R26.2"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320582",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1938-06-04",
+      "sex": "",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-16",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "DIAGNOSIS"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320580",
+    "patient_data": {
+      "first_name": "Physician",
+      "last_name": "Order",
+      "date_of_birth": "2025-05-20",
+      "sex": "",
+      "mrn": "100996456"
+    },
+    "order_data": {
+      "order_date": "2025-05-25",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "E11.22",
+        "HYP",
+        "I13.0",
+        "I50.42",
+        "HRT"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320574",
+    "patient_data": {
+      "first_name": "Physician",
+      "last_name": "Order",
+      "date_of_birth": "2025-05-23",
+      "sex": "M",
+      "mrn": "1289105457"
+    },
+    "order_data": {
+      "order_date": "2025-06-05",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "HYPERKALEMIA",
+        "E87.5",
+        "ESSENTIAL",
+        "I10."
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320571",
+    "patient_data": {
+      "first_name": "Physician",
+      "last_name": "Order",
+      "date_of_birth": "2025-05-06",
+      "sex": "M",
+      "mrn": "1289313303"
+    },
+    "order_data": {
+      "order_date": "2025-06-05",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "I10.",
+        "ESSENTIAL",
+        "F33.1",
+        "E11.9"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320568",
+    "patient_data": {
+      "first_name": "Physician",
+      "last_name": "Order",
+      "date_of_birth": "2025-04-25",
+      "sex": "M",
+      "mrn": "1289274844"
+    },
+    "order_data": {
+      "order_date": "2025-06-05",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "I10.",
+        "ESSENTIAL",
+        "F33.1",
+        "E11.9"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320547",
+    "patient_data": {
+      "first_name": "And",
+      "last_name": "Address",
+      "date_of_birth": "2025-04-26",
+      "sex": "M",
+      "mrn": "41262025"
+    },
+    "order_data": {
+      "order_date": "",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "M51.379",
+        "G89.29"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.7500000000000001
+  },
+  {
+    "doc_id": "9320565",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1945-09-27",
+      "sex": "M",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-05",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "MEDICAL",
+        "RELEVANT",
+        "R53.1",
+        "PARKINSON",
+        "HISTORY"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320561",
+    "patient_data": {
+      "first_name": "Information",
+      "last_name": "Patient",
+      "date_of_birth": "2024-11-22",
+      "sex": "M",
+      "mrn": "1288141878"
+    },
+    "order_data": {
+      "order_date": "2025-06-05",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "F02.811",
+        "E83.52",
+        "Z79.82",
+        "Z85.46",
+        "DEM",
+        "UNSP",
+        "E78.5",
+        "Z87.891",
+        "OTHER",
+        "PENILE",
+        "CANCER.",
+        "ELSWHR",
+        "C79.51",
+        "PARKINSON",
+        "CLASSD",
+        "CODE",
+        "EDUCATION",
+        "G20.A1",
+        "AGITATION",
+        "WITH",
+        "SEVERT",
+        "DESCRIPTION",
+        "DATE",
+        "E87.5",
+        "DIS"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320558",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1947-12-14",
+      "sex": "M",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-20",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "DIAGNOSIS"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320553",
+    "patient_data": {
+      "first_name": "Physician",
+      "last_name": "Order",
+      "date_of_birth": "2025-05-20",
+      "sex": "M",
+      "mrn": "1287734927"
+    },
+    "order_data": {
+      "order_date": "2025-06-05",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "I10.",
+        "ESSENTIAL",
+        "E11.9",
+        "E78.2"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320527",
+    "patient_data": {
+      "first_name": "Facility",
+      "last_name": "Admit Date Discharge Date Reason For Admission Saint Anne",
+      "date_of_birth": "1946-12-31",
+      "sex": "M",
+      "mrn": "31867593"
+    },
+    "order_data": {
+      "order_date": "2025-05-30",
+      "certification_date": "2025-03-09",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9500000000000001
+  },
+  {
+    "doc_id": "9320509",
+    "patient_data": {
+      "first_name": "Facility",
+      "last_name": "Admit Date Discharge Date Reason For Admission Dawn Hill Home For Rehab",
+      "date_of_birth": "1935-07-31",
+      "sex": "M",
+      "mrn": "1750449638"
+    },
+    "order_data": {
+      "order_date": "2025-05-13",
+      "certification_date": "2025-04-10",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9500000000000001
+  },
+  {
+    "doc_id": "9320502",
+    "patient_data": {
+      "first_name": "Facility",
+      "last_name": "Admit Date Discharge Date Reason For Admission Dawn Hill Home For Rehab",
+      "date_of_birth": "1935-07-31",
+      "sex": "M",
+      "mrn": "611212025"
+    },
+    "order_data": {
+      "order_date": "",
+      "certification_date": "2025-04-10",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8
+  },
+  {
+    "doc_id": "9320457",
+    "patient_data": {
+      "first_name": "Facility",
+      "last_name": "Admit Date Discharge Date Reason For Admission Dawn Hill Home For Rehab",
+      "date_of_birth": "1935-07-31",
+      "sex": "M",
+      "mrn": "53012025"
+    },
+    "order_data": {
+      "order_date": "2025-04-15",
+      "certification_date": "2025-04-10",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9500000000000001
+  },
+  {
+    "doc_id": "9320485",
+    "patient_data": {
+      "first_name": "Physician",
+      "last_name": "Order",
+      "date_of_birth": "2025-05-20",
+      "sex": "M",
+      "mrn": "1287734927"
+    },
+    "order_data": {
+      "order_date": "2025-06-05",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "I10.",
+        "ESSENTIAL",
+        "E11.9",
+        "E78.2"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320479",
+    "patient_data": {
+      "first_name": "Physician",
+      "last_name": "Order",
+      "date_of_birth": "2025-05-06",
+      "sex": "M",
+      "mrn": "1289315887"
+    },
+    "order_data": {
+      "order_date": "2025-06-05",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "I10.",
+        "ESSENTIAL",
+        "E11.9",
+        "E78.2"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320476",
+    "patient_data": {
+      "first_name": "To",
+      "last_name": "Take Medications At Correct Times Sn To Fill Med Planner Weekly Sn To Call In Refills Sn Will Assess Med Compliance Sn To Admin Ozempic Scweekly Pt Will Comply With Med Regime Sn To Assess If The Pt Can Verbalize An Understanding Of The Indication For Each Medication Clinician Signature",
+      "date_of_birth": "2025-05-21",
+      "sex": "M",
+      "mrn": "1288093214"
+    },
+    "order_data": {
+      "order_date": "2025-05-21",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "I10.",
+        "ESSENTIAL",
+        "R10.84",
+        "K21.9"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320472",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1938-08-13",
+      "sex": "M",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-13",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "OSTEOARTHRITIS",
+        "DIFFICULTY",
+        "WITH",
+        "WALKING",
+        "MULTIPLE",
+        "FALL"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320469",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1953-11-20",
+      "sex": "M",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-22",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "MEDICAL",
+        "WEAKNESS",
+        "RELEVANT",
+        "MUSCLE",
+        "HISTORY",
+        "NEOPLASM",
+        "OVARY",
+        "MALIGNANT"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320465",
+    "patient_data": {
+      "first_name": "Frequency",
+      "last_name": "Order",
+      "date_of_birth": "2025-05-27",
+      "sex": "M",
+      "mrn": "1289723556"
+    },
+    "order_data": {
+      "order_date": "2025-05-27",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "PHYSICIAN",
+        "M79.7",
+        "FOLLOWING",
+        "C56.1",
+        "FIBROMYALGIA",
+        "AFTERCARE",
+        "FOR",
+        "SURGERY",
+        "RIGHT",
+        "NEOPLASM",
+        "OVARY",
+        "Z48.3",
+        "MALIGNANT"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320420",
+    "patient_data": {
+      "first_name": "Facility",
+      "last_name": "Admit Date Discharge Date Reason For Admission Dawn Hill Home For Rehab",
+      "date_of_birth": "1935-07-31",
+      "sex": "M",
+      "mrn": "1412025"
+    },
+    "order_data": {
+      "order_date": "2025-04-14",
+      "certification_date": "2025-04-10",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9500000000000001
+  },
+  {
+    "doc_id": "9320403",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1952-09-11",
+      "sex": "",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-07",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "DIAGNOSIS",
+        "R26.2",
+        "E11.43"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320399",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1952-09-11",
+      "sex": "F",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-15",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "DEMENTIA",
+        "DIAGNOSIS"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320344",
+    "patient_data": {
+      "first_name": "And",
+      "last_name": "Acdress",
+      "date_of_birth": "2025-04-10",
+      "sex": "F",
+      "mrn": "41072025"
+    },
+    "order_data": {
+      "order_date": "",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "SIGNS",
+        "MOVITAL",
+        "WITH",
+        "E66.01",
+        "CONFIRMED",
+        "G40.908"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.7500000000000001
+  },
+  {
+    "doc_id": "9320363",
+    "patient_data": {
+      "first_name": "Mr",
+      "last_name": "Number",
+      "date_of_birth": "1960-10-23",
+      "sex": "",
+      "mrn": "000000008"
+    },
+    "order_data": {
+      "order_date": "2025-05-09",
+      "certification_date": "",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.7500000000000001
+  },
+  {
+    "doc_id": "9320360",
+    "patient_data": {
+      "first_name": "Information",
+      "last_name": "Patient",
+      "date_of_birth": "2025-03-19",
+      "sex": "",
+      "mrn": "1282307437"
+    },
+    "order_data": {
+      "order_date": "2025-06-05",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "G89.29",
+        "AND",
+        "ANTICOAGULANT",
+        "HYPERTENSIVE",
+        "I48.91",
+        "Z79.01",
+        "E03.9",
+        "R29.6",
+        "I35.0",
+        "N28.1",
+        "ATRIAL",
+        "J45.909",
+        "FAILURE",
+        "E78.5",
+        "M17.11",
+        "R73.03",
+        "Z98.49",
+        "K21.9",
+        "Q23.0",
+        "FIBRILLATION",
+        "AFIB",
+        "DISEASE",
+        "CODE",
+        "I50.32",
+        "F02.80",
+        "WITH",
+        "I11.0",
+        "M25.461",
+        "DESCRIPTION",
+        "HEART",
+        "DATE",
+        "M85.80",
+        "M81.0",
+        "UNSPECIFIED"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320346",
+    "patient_data": {
+      "first_name": "Mr",
+      "last_name": "Number",
+      "date_of_birth": "1956-06-02",
+      "sex": "M",
+      "mrn": "000002403"
+    },
+    "order_data": {
+      "order_date": "2025-05-08",
+      "certification_date": "",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8500000000000001
+  },
+  {
+    "doc_id": "9320302",
+    "patient_data": {
+      "first_name": "Physician",
+      "last_name": "Order",
+      "date_of_birth": "2025-05-02",
+      "sex": "",
+      "mrn": "1289297764"
+    },
+    "order_data": {
+      "order_date": "2025-06-02",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "PHYSICIAN",
+        "WASTING",
+        "FIBRILLATION",
+        "ATRIAL",
+        "VALVE",
+        "AND",
+        "MULTIPLE",
+        "MUSCLE",
+        "Z95.2",
+        "HEART",
+        "M62.59",
+        "NEC",
+        "SITES",
+        "I48.91",
+        "PRESENCE",
+        "PROSTHETIC",
+        "ATROPHY",
+        "UNSPECIFIED"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320300",
+    "patient_data": {
+      "first_name": "Physician",
+      "last_name": "Order",
+      "date_of_birth": "2025-04-29",
+      "sex": "",
+      "mrn": "1289280264"
+    },
+    "order_data": {
+      "order_date": "2025-06-02",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "PHYSICIAN",
+        "WASTING",
+        "FIBRILLATION",
+        "ATRIAL",
+        "VALVE",
+        "AND",
+        "MULTIPLE",
+        "MUSCLE",
+        "Z95.2",
+        "HEART",
+        "M62.59",
+        "NEC",
+        "SITES",
+        "I48.91",
+        "PRESENCE",
+        "PROSTHETIC",
+        "ATROPHY",
+        "UNSPECIFIED"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320264",
+    "patient_data": {
+      "first_name": "Mr",
+      "last_name": "Number",
+      "date_of_birth": "1947-10-05",
+      "sex": "",
+      "mrn": "000004196"
+    },
+    "order_data": {
+      "order_date": "2025-05-07",
+      "certification_date": "",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.7500000000000001
+  },
+  {
+    "doc_id": "9320258",
+    "patient_data": {
+      "first_name": "Mr",
+      "last_name": "Number",
+      "date_of_birth": "1964-03-04",
+      "sex": "",
+      "mrn": "000004533"
+    },
+    "order_data": {
+      "order_date": "2025-05-07",
+      "certification_date": "",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.7500000000000001
+  },
+  {
+    "doc_id": "9320223",
+    "patient_data": {
+      "first_name": "And",
+      "last_name": "Address Provider",
+      "date_of_birth": "1958-12-22",
+      "sex": "M",
+      "mrn": "000003969"
+    },
+    "order_data": {
+      "order_date": "2025-05-04",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "F33.2",
+        "M16.0",
+        "MELLITUS",
+        "DISORDER",
+        "HYPERGLYCEMIA",
+        "SEVERE",
+        "Z91.199",
+        "E11.65",
+        "M17.0",
+        "DIABETES",
+        "J44.9",
+        "E78.2",
+        "EFFECTIVE",
+        "START",
+        "WITH",
+        "DEPRESSV",
+        "TYPE",
+        "DATE",
+        "PRIMARY",
+        "MAJOR",
+        "RECURRENT"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320210",
+    "patient_data": {
+      "first_name": "Order",
+      "last_name": "Number",
+      "date_of_birth": "1929-06-09",
+      "sex": "",
+      "mrn": "612972025"
+    },
+    "order_data": {
+      "order_date": "2025-06-29",
+      "certification_date": "2025-04-10",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8500000000000001
+  },
+  {
+    "doc_id": "9320200",
+    "patient_data": {
+      "first_name": "And",
+      "last_name": "Address Provider",
+      "date_of_birth": "1961-02-10",
+      "sex": "M",
+      "mrn": "000001234"
+    },
+    "order_data": {
+      "order_date": "2025-05-02",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "OXYGEN",
+        "F41.9",
+        "F33.9",
+        "DISORDER",
+        "E78.5",
+        "E11.65",
+        "Z99.81",
+        "DEPENDENCE",
+        "Z79.4",
+        "I50.32",
+        "J44.9",
+        "Z72.0",
+        "EFFECTIVE",
+        "START",
+        "G89.4",
+        "SUPPLEMENTAL",
+        "DEPRESSIVE",
+        "DATE",
+        "PRIMARY",
+        "MAJOR",
+        "RECURRENT",
+        "UNSPECIFIED"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320169",
+    "patient_data": {
+      "first_name": "Mr",
+      "last_name": "Number",
+      "date_of_birth": "1964-03-04",
+      "sex": "",
+      "mrn": "000004533"
+    },
+    "order_data": {
+      "order_date": "2025-05-01",
+      "certification_date": "",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.7500000000000001
+  },
+  {
+    "doc_id": "9320163",
+    "patient_data": {
+      "first_name": "With",
+      "last_name": "Strenuous Exercise",
+      "date_of_birth": "1964-11-29",
+      "sex": "F",
+      "mrn": "000004130"
+    },
+    "order_data": {
+      "order_date": "2025-05-22",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "OTHER"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320158",
+    "patient_data": {
+      "first_name": "With",
+      "last_name": "Strenuous Exercise",
+      "date_of_birth": "1947-10-05",
+      "sex": "",
+      "mrn": "000004196"
+    },
+    "order_data": {
+      "order_date": "2025-05-21",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "OTHER"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320154",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1927-03-04",
+      "sex": "M",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-22",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "DIAGNOSIS"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320153",
+    "patient_data": {
+      "first_name": "Initial",
+      "last_name": "Eval Visit Time In",
+      "date_of_birth": "1956-06-02",
+      "sex": "M",
+      "mrn": "000002403"
+    },
+    "order_data": {
+      "order_date": "2025-05-19",
+      "certification_date": "",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8500000000000001
+  },
+  {
+    "doc_id": "9320141",
+    "patient_data": {
+      "first_name": "Information",
+      "last_name": "Patient",
+      "date_of_birth": "2025-03-21",
+      "sex": "",
+      "mrn": "ENTIFIED"
+    },
+    "order_data": {
+      "order_date": "2025-06-12",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "Z68.31",
+        "J96.21",
+        "PULMONARY",
+        "F41.9",
+        "Z79.82",
+        "E03.9",
+        "J12.9",
+        "BRONCHIECTASIS",
+        "Z99.81",
+        "INTERSTITIAL",
+        "DISEASE",
+        "E66.811",
+        "CODE",
+        "J84.9",
+        "J47.9",
+        "Z79.890",
+        "UNCOMPLICATED",
+        "CERTIFICATION.",
+        "END",
+        "THE",
+        "DESCRIPTION",
+        "DATE",
+        "UNSPECIFIED"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320130",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1953-03-22",
+      "sex": "M",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-17",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "DIAGNOSIS"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9320127",
+    "patient_data": {
+      "first_name": "Mr",
+      "last_name": "Number",
+      "date_of_birth": "1951-07-04",
+      "sex": "",
+      "mrn": "000000200"
+    },
+    "order_data": {
+      "order_date": "2025-05-07",
+      "certification_date": "",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.7500000000000001
+  },
+  {
+    "doc_id": "9320119",
+    "patient_data": {
+      "first_name": "Mr",
+      "last_name": "Number",
+      "date_of_birth": "1951-07-04",
+      "sex": "",
+      "mrn": "000000200"
+    },
+    "order_data": {
+      "order_date": "2025-05-05",
+      "certification_date": "",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.7500000000000001
+  },
+  {
+    "doc_id": "9320104",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1947-03-17",
+      "sex": "",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-04-30",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "K50.90",
+        "DIAGNOSIS",
+        "R26.81"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320064",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1932-11-15",
+      "sex": "",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-23",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "G20.C",
+        "DIAGNOSIS",
+        "R26.2"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320062",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1932-11-15",
+      "sex": "",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-15",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "DIAGNOSIS"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320053",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1941-06-06",
+      "sex": "",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-19",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "DIAGNOSIS"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320052",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1941-06-06",
+      "sex": "",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-19",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "E11.22",
+        "DIAGNOSIS",
+        "R26.2"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320050",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1946-09-19",
+      "sex": "",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-24",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "DIAGNOSIS",
+        "R26.2",
+        "S82.64XD"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320049",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1946-09-19",
+      "sex": "",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-04-29",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "DIAGNOSIS",
+        "R26.2",
+        "S82.64XD"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9320028",
+    "patient_data": {
+      "first_name": "Appears",
+      "last_name": "To Be Able To Be Cared For Safely In Current Environment",
+      "date_of_birth": "1950-01-15",
+      "sex": "",
+      "mrn": "12275092"
+    },
+    "order_data": {
+      "order_date": "2025-05-29",
+      "certification_date": "2025-05-12",
+      "diagnosis_codes": [
+        "F03.04"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9319713",
+    "patient_data": {
+      "first_name": "Boutros",
+      "last_name": "Chamoun",
+      "date_of_birth": "2025-05-30",
+      "sex": "M",
+      "mrn": ""
+    },
+    "order_data": {
+      "order_date": "",
+      "certification_date": "2021-07-07",
+      "diagnosis_codes": [],
+      "physician_name": "Tamim Hinedi",
+      "order_type": ""
+    },
+    "source": "llm",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.75
+  },
+  {
+    "doc_id": "9319684",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1957-01-04",
+      "sex": "F",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-05-13",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "DIAGNOSIS"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9319675",
+    "patient_data": {
+      "first_name": "Identity",
+      "last_name": "Confirmed Fax",
+      "date_of_birth": "1971-07-31",
+      "sex": "",
+      "mrn": "ENTITY"
+    },
+    "order_data": {
+      "order_date": "2025-04-30",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "R26.2",
+        "DIAGNOSIS",
+        "E11.9"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8000000000000002
+  },
+  {
+    "doc_id": "9319588",
+    "patient_data": {
+      "first_name": "Reported",
+      "last_name": "Medications",
+      "date_of_birth": "1938-03-18",
+      "sex": "",
+      "mrn": "3001079"
+    },
+    "order_data": {
+      "order_date": "2025-06-04",
+      "certification_date": "",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.7500000000000001
+  },
+  {
+    "doc_id": "9319580",
+    "patient_data": {
+      "first_name": "Facility",
+      "last_name": "Admit Date Discharge Date Reason For Admission Brigham And Women",
+      "date_of_birth": "1952-03-11",
+      "sex": "",
+      "mrn": "12271614"
+    },
+    "order_data": {
+      "order_date": "2025-05-29",
+      "certification_date": "2025-05-11",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8500000000000001
+  },
+  {
+    "doc_id": "9319532",
+    "patient_data": {
+      "first_name": "Facility",
+      "last_name": "Admit Date Discharge Date Reason For Admission Saint Annes Hospital",
+      "date_of_birth": "1952-06-02",
+      "sex": "",
+      "mrn": "O"
+    },
+    "order_data": {
+      "order_date": "2025-05-30",
+      "certification_date": "2025-04-08",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8500000000000001
+  },
+  {
+    "doc_id": "9319523",
+    "patient_data": {
+      "first_name": "Reported",
+      "last_name": "Medications",
+      "date_of_birth": "1994-06-07",
+      "sex": "M",
+      "mrn": "2008039"
+    },
+    "order_data": {
+      "order_date": "2025-06-02",
+      "certification_date": "",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8500000000000001
+  },
+  {
+    "doc_id": "9319467",
+    "patient_data": {
+      "first_name": "Dob",
+      "last_name": "Sex Lowe",
+      "date_of_birth": "2018-02-21",
+      "sex": "F",
+      "mrn": "1639130651"
+    },
+    "order_data": {
+      "order_date": "2025-05-27",
+      "certification_date": "",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8500000000000001
+  },
+  {
+    "doc_id": "9319439",
+    "patient_data": {
+      "first_name": "Dob",
+      "last_name": "Sex Valley",
+      "date_of_birth": "2023-05-29",
+      "sex": "M",
+      "mrn": "1161001"
+    },
+    "order_data": {
+      "order_date": "2025-05-27",
+      "certification_date": "",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8500000000000001
+  },
+  {
+    "doc_id": "9319431",
+    "patient_data": {
+      "first_name": "Dob",
+      "last_name": "Sex Duvarney",
+      "date_of_birth": "2025-05-05",
+      "sex": "M",
+      "mrn": "6472015"
+    },
+    "order_data": {
+      "order_date": "2025-05-22",
+      "certification_date": "",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8500000000000001
+  },
+  {
+    "doc_id": "9319430",
+    "patient_data": {
+      "first_name": "Dob",
+      "last_name": "Sex Veeder",
+      "date_of_birth": "2025-04-07",
+      "sex": "F",
+      "mrn": "4972015"
+    },
+    "order_data": {
+      "order_date": "2025-05-27",
+      "certification_date": "",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8500000000000001
+  },
+  {
+    "doc_id": "9319426",
+    "patient_data": {
+      "first_name": "Dob",
+      "last_name": "Sex Domonte",
+      "date_of_birth": "2025-05-08",
+      "sex": "M",
+      "mrn": "3104015"
+    },
+    "order_data": {
+      "order_date": "2025-05-25",
+      "certification_date": "",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8500000000000001
+  },
+  {
+    "doc_id": "9319205",
+    "patient_data": {
+      "first_name": "",
+      "last_name": "",
+      "date_of_birth": "1940-04-19",
+      "sex": "",
+      "mrn": "12274800"
+    },
+    "order_data": {
+      "order_date": "2025-05-28",
+      "certification_date": "2025-05-07",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "Incomplete data extraction",
+    "confidence_score": 0.5499999999999999
+  },
+  {
+    "doc_id": "9319198",
+    "patient_data": {
+      "first_name": "Facility",
+      "last_name": "Admit Date Discharge Date Reason For Admission",
+      "date_of_birth": "1931-12-15",
+      "sex": "",
+      "mrn": "O"
+    },
+    "order_data": {
+      "order_date": "2025-05-29",
+      "certification_date": "2025-04-24",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8500000000000001
+  },
+  {
+    "doc_id": "9319132",
+    "patient_data": {
+      "first_name": "Will",
+      "last_name": "Achieve Highest Functional Level",
+      "date_of_birth": "1931-08-25",
+      "sex": "",
+      "mrn": "38084684"
+    },
+    "order_data": {
+      "order_date": "2025-05-27",
+      "certification_date": "2025-05-24",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8500000000000001
+  },
+  {
+    "doc_id": "9319129",
+    "patient_data": {
+      "first_name": "And",
+      "last_name": "Address",
+      "date_of_birth": "1930-08-06",
+      "sex": "F",
+      "mrn": "38047866"
+    },
+    "order_data": {
+      "order_date": "2025-05-23",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "F33.0",
+        "M48.061",
+        "I11.0",
+        "Z86.73",
+        "M19.90",
+        "I50.22",
+        "I48.91",
+        "Z79.01",
+        "Z79.891"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9319128",
+    "patient_data": {
+      "first_name": "And",
+      "last_name": "Address",
+      "date_of_birth": "1939-11-19",
+      "sex": "F",
+      "mrn": "38031747"
+    },
+    "order_data": {
+      "order_date": "2025-05-21",
+      "certification_date": "",
+      "diagnosis_codes": [
+        "M48.061",
+        "E87.1",
+        "Z79.1",
+        "E53.8",
+        "Z79.891"
+      ],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.9000000000000001
+  },
+  {
+    "doc_id": "9319123",
+    "patient_data": {
+      "first_name": "Moved",
+      "last_name": "To Moved To Healthcare Center In Skb On",
+      "date_of_birth": "1930-09-03",
+      "sex": "",
+      "mrn": "38103578"
+    },
+    "order_data": {
+      "order_date": "2025-05-30",
+      "certification_date": "2025-04-03",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8500000000000001
+  },
+  {
+    "doc_id": "9319121",
+    "patient_data": {
+      "first_name": "From",
+      "last_name": "Nursing Week Of",
+      "date_of_birth": "1938-06-20",
+      "sex": "",
+      "mrn": "38102302"
+    },
+    "order_data": {
+      "order_date": "2025-05-30",
+      "certification_date": "2025-04-27",
+      "diagnosis_codes": [],
+      "physician_name": "",
+      "order_type": ""
+    },
+    "source": "structured",
+    "status": "parsed",
+    "error": "",
+    "confidence_score": 0.8500000000000001
+  }
+]

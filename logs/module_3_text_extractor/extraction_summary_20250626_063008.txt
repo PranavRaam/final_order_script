@@ -1,0 +1,19 @@
+Module 3 - Text Extractor Summary Report
+==================================================
+Processing Date: 2025-06-26 06:36:41
+Total Documents: 97
+Successfully Extracted: 97
+Failed Extractions: 0
+Success Rate: 100.0%
+
+Extraction Methods:
+------------------------------
+Digital PDFs: 85
+OCR (Scanned): 12
+
+Quality Statistics:
+------------------------------
+Average Quality Score: 0.977
+Average Text Length: 8236 characters
+Total Extracted Text: 798,917 characters
+

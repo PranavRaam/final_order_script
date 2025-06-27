@@ -1,0 +1,8 @@
+Input Reader - Validation Report
+========================================
+
+Total rows: 99
+Valid rows: 99
+Invalid rows: 0
+Success rate: 100.0%
+

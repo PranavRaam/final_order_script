@@ -1,0 +1,515 @@
+Healthcare Document Processing Bot - Individual Document Processing Report
+================================================================================
+Processing Date: 2025-06-26 08:10:49
+Input File: data/input.csv
+Processing Method: Individual document workflow
+
+Overall Results:
+------------------------------
+Total Input Records: 99
+Successfully Fetched: 97
+Successfully Extracted: 97
+Successfully Parsed: 97
+Overall Success Rate: 98.0%
+
+Parsing Method Breakdown:
+------------------------------
+Structured Parser: 93
+LLM Fallback: 4
+Average Confidence: 0.834
+
+Detailed Results by Document:
+----------------------------------------
+1. Doc ID: 9321157
+   Status: completed
+   Parsed with: llm
+   Confidence: 0.80
+
+2. Doc ID: 9321145
+   Status: completed
+   Parsed with: llm
+   Confidence: 0.40
+
+3. Doc ID: 9320798
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+4. Doc ID: 9320796
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+5. Doc ID: 9320794
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+6. Doc ID: 9320792
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+7. Doc ID: 9320789
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+8. Doc ID: 9320785
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+9. Doc ID: 9320784
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+10. Doc ID: 9320782
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+11. Doc ID: 9320779
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+12. Doc ID: 9320776
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+13. Doc ID: 9320770
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+14. Doc ID: 9320768
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+15. Doc ID: 9320762
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+16. Doc ID: 9320761
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+17. Doc ID: 9320727
+   Status: completed
+   Parsed with: llm
+   Confidence: 0.80
+
+18. Doc ID: 9320662
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+19. Doc ID: 9320660
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+20. Doc ID: 9320619
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+21. Doc ID: 9320618
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.85
+
+22. Doc ID: 9320606
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+23. Doc ID: 9320605
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+24. Doc ID: 9320603
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+25. Doc ID: 9320600
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+26. Doc ID: 9320588
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+27. Doc ID: 9320585
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+28. Doc ID: 9320582
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+29. Doc ID: 9320580
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+30. Doc ID: 9320574
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+31. Doc ID: 9320571
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+32. Doc ID: 9320568
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+33. Doc ID: 9320547
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.75
+
+34. Doc ID: 9320565
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+35. Doc ID: 9320561
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+36. Doc ID: 9320558
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+37. Doc ID: 9320553
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+38. Doc ID: 9320527
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.95
+
+39. Doc ID: 9320509
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.95
+
+40. Doc ID: 9320502
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+41. Doc ID: 9320457
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.95
+
+42. Doc ID: 9320485
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+43. Doc ID: 9320479
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+44. Doc ID: 9320476
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+45. Doc ID: 9320472
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+46. Doc ID: 9320469
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+47. Doc ID: 9320465
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+48. Doc ID: 9320420
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.95
+
+49. Doc ID: 9320403
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+50. Doc ID: 9320399
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+51. Doc ID: 9320344
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.75
+
+52. Doc ID: 9320363
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.75
+
+53. Doc ID: 9320360
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+54. Doc ID: 9320346
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.85
+
+55. Doc ID: 9320302
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+56. Doc ID: 9320300
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+57. Doc ID: 9320264
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.75
+
+58. Doc ID: 9320258
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.75
+
+59. Doc ID: 9320223
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+60. Doc ID: 9320210
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.85
+
+61. Doc ID: 9320200
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+62. Doc ID: 9320169
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.75
+
+63. Doc ID: 9320163
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+64. Doc ID: 9320158
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+65. Doc ID: 9320154
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+66. Doc ID: 9320153
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.85
+
+67. Doc ID: 9320141
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+68. Doc ID: 9320130
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+69. Doc ID: 9320127
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.75
+
+70. Doc ID: 9320119
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.75
+
+71. Doc ID: 9320104
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+72. Doc ID: 9320064
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+73. Doc ID: 9320062
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+74. Doc ID: 9320053
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+75. Doc ID: 9320052
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+76. Doc ID: 9320050
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+77. Doc ID: 9320049
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+78. Doc ID: 9320028
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+79. Doc ID: 9319875
+   Status: failed_fetch
+   Errors: Module 2: API error (ERR-4): Unknown error has occurred. Error Message: Object reference not set to an instance of an object.
+
+80. Doc ID: 9319865
+   Status: failed_fetch
+   Errors: Module 2: API error (ERR-4): Unknown error has occurred. Error Message: Object reference not set to an instance of an object.
+
+81. Doc ID: 9319713
+   Status: completed
+   Parsed with: llm
+   Confidence: 0.75
+
+82. Doc ID: 9319684
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+83. Doc ID: 9319675
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.80
+
+84. Doc ID: 9319588
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.75
+
+85. Doc ID: 9319580
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.85
+
+86. Doc ID: 9319532
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.85
+
+87. Doc ID: 9319523
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.85
+
+88. Doc ID: 9319467
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.85
+
+89. Doc ID: 9319439
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.85
+
+90. Doc ID: 9319431
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.85
+
+91. Doc ID: 9319430
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.85
+
+92. Doc ID: 9319426
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.85
+
+93. Doc ID: 9319205
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.55
+
+94. Doc ID: 9319198
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.85
+
+95. Doc ID: 9319132
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.85
+
+96. Doc ID: 9319129
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+97. Doc ID: 9319128
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.90
+
+98. Doc ID: 9319123
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.85
+
+99. Doc ID: 9319121
+   Status: completed
+   Parsed with: structured
+   Confidence: 0.85
+

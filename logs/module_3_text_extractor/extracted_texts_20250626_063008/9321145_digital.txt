@@ -1,0 +1,7 @@
+Document ID: 9321145
+Extraction Method: Digital
+Extraction Date: 2025-06-26T06:35:31.656903
+Text Length: 590 characters
+--------------------------------------------------
+
+PATIENT DOCUMENT REPORT Patient: Smith, John A ID: 1 Date of Birth: May 15, 1980 Generated Date: 4/3/2025 DOCUMENT SUMMARY Total Documents: 5 New Documents: 2 Prepared Documents: 1 Signed Documents: 2 DOCUMENT LIST New & Prepared Documents: 1. Evaluation - initial_evaluation.pdf - New 2. Unspecified - lab_results.pdf - New 3. Position Order - position_order.docx - Prepared Signed Documents: 1. Re-evaluation - re_evaluation_signed.pdf - Signed on Apr 28, 2023 2. Position Order - position_order_signed.pdf - Signed on Apr 30, 2023 Electronically signed by Dr. Thorpe, Bianca on 6/10/2025

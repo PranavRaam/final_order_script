@@ -1,0 +1,17 @@
+Healthcare Document Processing Summary
+Processing Date: 2025-06-26 05:57:36
+Input File: data/input.csv
+
+MODULE 1 - INPUT READER:
+Total Rows: 99
+Valid Rows: 99
+Invalid Rows: 0
+Success Rate: 100.0%
+
+MODULE 2 - DOCUMENT FETCHER:
+Total Documents: 99
+Successfully Fetched: 97
+Failed to Fetch: 2
+Success Rate: 97.98%
+
+Total PDF Size: 15.34 MB
