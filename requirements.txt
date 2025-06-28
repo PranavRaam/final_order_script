@@ -37,4 +37,9 @@ PyMuPDF>=1.23.0
 pytesseract>=0.3.10
 
 # Additional dependencies
-xlrd>=2.0.1 
+xlrd>=2.0.1
+pypdfium2==4.*
+easyocr==1.*
+
+# Added from the code block
+langchain==0.2.* 

@@ -78,6 +78,8 @@ class EnhancedFieldExtractor:
             r'(?:From|Starting)\s*:?\s*(\d{1,2}[/\-\.]\d{1,2}[/\-\.]\d{2,4})',
             r'Care\s*Period\s*:?\s*(\d{1,2}[/\-\.]\d{1,2}[/\-\.]\d{2,4})\s*(?:to|through|-)',
             r'Service\s*Start\s*:?\s*(\d{1,2}[/\-\.]\d{1,2}[/\-\.]\d{2,4})',
+            # "Certification Period 05/02/2025 -- 06/30/2025" first date capture
+            r"Certification\s+Period:?\s*(\d{1,2}[/\-\.]{1}\d{1,2}[/\-\.]{1}\d{2,4})",
         ]
         
         self.episode_end_patterns = [
@@ -216,7 +218,7 @@ class EnhancedFieldExtractor:
                     break
         
         # Look for date ranges
-        range_pattern = r'(\d{1,2}[/\-\.]\d{1,2}[/\-\.]\d{2,4})\s*(?:to|through|-|until)\s*(\d{1,2}[/\-\.]\d{1,2}[/\-\.]\d{2,4})'
+        range_pattern = r'(\d{1,2}[/\-\.]\d{1,2}[/\-\.]\d{2,4})\s*(?:to|through|[-–—]{1,2}|until)\s*(\d{1,2}[/\-\.]\d{1,2}[/\-\.]\d{2,4})'
         range_match = re.search(range_pattern, text, re.IGNORECASE)
         if range_match:
             start_date = range_match.group(1).strip()

@@ -24,6 +24,7 @@ from .llm_parser import LLMParser
 from .data_standardization import DataStandardizer
 from .enhanced_field_extraction import EnhancedFieldExtractor
 from .duplicate_detection import DuplicateDetector
+from .text_preprocessor import preprocess_text, split_sections
 
 # Parsing Configuration - Adjust these for better performance
 PARSING_CONFIG = {
@@ -47,6 +48,11 @@ PARSING_CONFIG = {
     
     # Duplicate handling
     'MERGE_DUPLICATES': True,
+    
+    # If True, always attempt an LLM pass after structured parsing and merge
+    'ALWAYS_RUN_LLM': False,
+    # Minimum completeness required to skip the extra LLM pass (only relevant when ALWAYS_RUN_LLM=False)
+    'TARGET_COMPLETENESS': 0.95,
 }
 
 # Configure logging
@@ -161,6 +167,12 @@ class DataParser:
         self.config = config or {}
         self.logger = logging.getLogger(__name__)
         
+        # Allow external config to override PARSING_CONFIG defaults
+        if self.config:
+            for k, v in self.config.items():
+                if k in PARSING_CONFIG:
+                    PARSING_CONFIG[k] = v
+        
         # Initialize new components
         self.data_standardizer = DataStandardizer()
         self.enhanced_extractor = EnhancedFieldExtractor()
@@ -179,10 +191,16 @@ class DataParser:
         # Initialize parsers
         self.structured_parser = StructuredParser()
         
-        if llm_parser:
-            self.llm_parser = llm_parser
-        else:
-            self.llm_parser = None
+        # Primary (fast) LLM parser
+        self.llm_parser_fast = llm_parser
+        # Slow LLM parser for fallback (if Ollama available)
+        try:
+            if llm_parser:
+                self.llm_parser_slow = LLMParser(ollama_url=llm_parser.ollama_url, model_name=llm_parser.model_name, fast_mode=False)
+            else:
+                self.llm_parser_slow = None
+        except Exception:
+            self.llm_parser_slow = None
             
         self.logger.info(f"🚀 DataParser initialized (LLM fallback: {bool(llm_parser)})")
     
@@ -218,6 +236,20 @@ class DataParser:
         text = extraction_result.get('text', '')
         status = extraction_result.get('status', 'failed')
         
+        # Preprocess raw OCR text to improve downstream parsing
+        if text and text.strip():
+            text = preprocess_text(text)
+        
+        # Split into logical sections for focused parsing
+        sections = split_sections(text)
+        header_chunk = sections.get('HEADER', '')
+        orders_chunk = sections.get('ORDERS', '')
+        diagnoses_chunk = sections.get('DIAGNOSES', '')
+        
+        # Fallback: if a chunk is missing, use full text
+        patient_text_for_structured = header_chunk if header_chunk else text
+        order_text_for_structured = orders_chunk if orders_chunk else text
+
         start_time = time.time()
         self.logger.info(f"🔍 Starting parsing for document {doc_id}")
         
@@ -239,8 +271,8 @@ class DataParser:
             # Step 1: Try structured parsing first
             self.logger.debug(f"🏗️ Attempting structured parsing", doc_id)
             
-            patient_data = self.structured_parser.extract_patient_data(text)
-            order_data = self.structured_parser.extract_order_data(text)
+            patient_data = self.structured_parser.extract_patient_data(patient_text_for_structured)
+            order_data = self.structured_parser.extract_order_data(order_text_for_structured)
             
             # Calculate initial scores
             confidence = self._calculate_confidence_score(patient_data, order_data, "structured")
@@ -281,9 +313,9 @@ class DataParser:
                 self.logger.info(f"   Basic success: {basic_success}, High confidence success: {high_confidence_success}")
                 self.logger.info(f"   Overall success: {structured_success}")
             
-            if structured_success:
+            if structured_success and not PARSING_CONFIG.get('ALWAYS_RUN_LLM', False) and completeness >= PARSING_CONFIG.get('TARGET_COMPLETENESS', 0.95):
                 processing_time = time.time() - start_time
-                self.logger.info(f"✅ Structured parsing successful for {doc_id} (confidence: {confidence:.2f}, completeness: {completeness:.2f})")
+                self.logger.info(f"✅ Structured parsing successful for {doc_id} (confidence: {confidence:.2f}, completeness: {completeness:.2f}) – no LLM needed")
                 return ParsedResult(
                     doc_id=doc_id,
                     patient_data=patient_data,
@@ -297,34 +329,61 @@ class DataParser:
                 )
             
             # Step 2: Try LLM fallback if structured parsing failed
-            if self.llm_parser and self.llm_parser.available:
+            if self.llm_parser_fast and self.llm_parser_fast.available and (not structured_success or PARSING_CONFIG.get('ALWAYS_RUN_LLM', False) or completeness < PARSING_CONFIG.get('TARGET_COMPLETENESS', 0.95)):
                 self.logger.info(f"🤖 Structured parsing insufficient for {doc_id}, trying FAST LLM fallback")
                 
                 try:
-                    # Use the new fast combined parsing instead of separate calls
-                    llm_patient_data, llm_order_data = self.llm_parser.parse_combined_with_llm(text, doc_id)
+                    # Feed only relevant chunks to LLM (header + orders) to improve accuracy and reduce cost
+                    llm_input_text = f"{header_chunk}\n{orders_chunk}" if (header_chunk or orders_chunk) else text
+                    llm_patient_data, llm_order_data = self.llm_parser_fast.parse_combined_with_llm(llm_input_text, doc_id)
                     
-                    # Calculate LLM scores
-                    llm_confidence = self._calculate_confidence_score(llm_patient_data, llm_order_data, "llm")
-                    llm_completeness = self._calculate_completeness_score(llm_patient_data, llm_order_data)
-                    
-                    # Use LLM results if they're better OR if structured parsing completely failed
-                    if llm_confidence > confidence or llm_completeness > completeness or not structured_success:
+                    # Merge strategy: use structured as baseline, then fill any EMPTY structured field with LLM value
+                    def _merge_data(target, source):
+                        for attr, val in source.__dict__.items():
+                            if isinstance(val, list):
+                                if not getattr(target, attr):
+                                    setattr(target, attr, val)
+                            else:
+                                if not getattr(target, attr):
+                                    if val:
+                                        setattr(target, attr, val)
+
+                    merged_patient = PatientData(**patient_data.__dict__)
+                    merged_order = OrderData(**order_data.__dict__)
+                    _merge_data(merged_patient, llm_patient_data)
+                    _merge_data(merged_order, llm_order_data)
+
+                    merged_confidence = self._calculate_confidence_score(merged_patient, merged_order, "llm")
+                    merged_completeness = self._calculate_completeness_score(merged_patient, merged_order)
+
+                    # Extra pass: if episode dates still blank try targeted LLM extraction
+                    if (not merged_order.episode_start_date or not merged_order.episode_end_date):
+                        start_ep, end_ep = self.llm_parser_fast.parse_episode_dates(orders_chunk if orders_chunk else text, doc_id)
+                        if not merged_order.episode_start_date and start_ep:
+                            merged_order.episode_start_date = start_ep
+                        if not merged_order.episode_end_date and end_ep:
+                            merged_order.episode_end_date = end_ep
+                        # Re-compute completeness after filling
+                        merged_completeness = self._calculate_completeness_score(merged_patient, merged_order)
+
+                    has_llm_data = merged_completeness > completeness or merged_confidence > confidence
+
+                    if has_llm_data and (merged_confidence > confidence or merged_completeness > completeness):
                         processing_time = time.time() - start_time
-                        self.logger.info(f"✅ LLM parsing successful for {doc_id} (confidence: {llm_confidence:.2f}, completeness: {llm_completeness:.2f})")
+                        self.logger.info(f"✅ LLM parsing successful for {doc_id} (confidence: {merged_confidence:.2f}, completeness: {merged_completeness:.2f})")
                         return ParsedResult(
                             doc_id=doc_id,
-                            patient_data=llm_patient_data,
-                            order_data=llm_order_data,
+                            patient_data=merged_patient,
+                            order_data=merged_order,
                             source="llm",
                             status="parsed",
-                            confidence_score=llm_confidence,
-                            completeness_score=llm_completeness,
+                            confidence_score=merged_confidence,
+                            completeness_score=merged_completeness,
                             extraction_method="enhanced_llm",
                             processing_time=processing_time
                         )
                     else:
-                        self.logger.info(f"📊 LLM results not better than structured for {doc_id} (LLM: {llm_confidence:.2f}/{llm_completeness:.2f} vs Structured: {confidence:.2f}/{completeness:.2f})")
+                        self.logger.info(f"📊 LLM results not better than structured for {doc_id} (LLM: {merged_confidence:.2f}/{merged_completeness:.2f} vs Structured: {confidence:.2f}/{completeness:.2f})")
                         
                 except Exception as e:
                     self.logger.error(f"🚨 LLM fallback failed for {doc_id}: {e}")
@@ -739,7 +798,15 @@ def save_extraction_csv(results: List[ParsedResult], output_path: str):
         writer = csv.DictWriter(csvfile, fieldnames=required_columns)
         writer.writeheader()
         
+        seen_doc_ids = set()
+
         for result in successful_results:
+            # Skip duplicates (keep first occurrence)
+            if result.doc_id in seen_doc_ids:
+                continue
+
+            seen_doc_ids.add(result.doc_id)
+
             patient = result.patient_data
             order = result.order_data
             
@@ -788,7 +855,7 @@ def save_extraction_csv(results: List[ParsedResult], output_path: str):
             row = {
                 'Document_ID': result.doc_id,
                 'Timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                'Patient_ID': _preserve_leading_zeros(patient.medical_record_no) or patient.account_number,
+                'Patient_ID': _preserve_leading_zeros(patient.account_number) if patient.account_number else '',
                 'Patient_Created': '',  # Not available in current data
                 'Order_Pushed': '',  # Not available in current data
                 'Patient_First_Name': patient.patient_fname,

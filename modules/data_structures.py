@@ -320,8 +320,10 @@ def get_critical_patient_fields() -> List[str]:
 def get_critical_order_fields() -> List[str]:
     """Get list of critical order fields for validation"""
     return [
+        'order_no',
         'order_date',
         'episode_start_date',
+        'start_of_care',
         'physician_name',
         'primary_diagnosis'
     ]

@@ -330,4 +330,17 @@ class DataStandardizer:
             return mrn_str
         if re.match(r'^\d{8,12}$', mrn_str):
             return mrn_str
+        return ""
+    
+    def _infer_gender_from_name(self, first_name: str) -> str:
+        """Infer probable gender from first name using simple heuristics."""
+        if not first_name:
+            return ""
+        name_upper = first_name.strip().upper()
+        male_names = {"JOHN", "ROBERT", "MICHAEL", "WILLIAM", "DAVID", "JAMES", "RICHARD", "CHARLES", "JOSEPH", "THOMAS", "DANIEL"}
+        female_names = {"MARY", "PATRICIA", "LINDA", "BARBARA", "ELIZABETH", "JENNIFER", "MARIA", "SUSAN", "MARGARET", "DOROTHY", "LISA", "KAREN"}
+        if name_upper in male_names:
+            return "MALE"
+        if name_upper in female_names:
+            return "FEMALE"
         return "" 

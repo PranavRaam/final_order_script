@@ -1,100 +1,500 @@
 ,Physician,Doc Type,Facility,Facility Type,Patient,Status,Received On,ID
-9321157,"Dr. Spirito, Joseph A.",Order,Brigham Home Care Services.Inc,Homecare,"LEE, GERALD B.",New,05/30/2025,9321157
-9321145,"Dr. Thorpe, Bianca",Order,Brockton Home Health Care,Homecare,"Thompson, Christine M.",New,05/30/2025,9321145
-9320798,"Dr. Sorial, Ehab N.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Souza, Joann",New,05/30/2025,9320798
-9320796,"Dr. Sorial, Ehab N.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Souza, Joann",New,05/30/2025,9320796
-9320794,"Dr. Sorial, Ehab N.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Rodrigues, Doris",New,05/30/2025,9320794
-9320792,"Dr. Sorial, Ehab N.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Barreira, Ilda",New,05/30/2025,9320792
-9320789,"Dr. Sorial, Ehab N.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Aguiar, Jose",New,05/30/2025,9320789
-9320785,"Dr. Singla, Raju",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Santos, Eduardo  P.",New,05/30/2025,9320785
-9320784,"Dr. Singla, Raju",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Santos, Eduardo  P.",New,05/30/2025,9320784
-9320782,"Dr. Singla, Raju",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Rego, William",New,05/30/2025,9320782
-9320779,"Dr. Singla, Raju",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Oliveira, Kathleen",New,05/30/2025,9320779
-9320776,"Dr. Singla, Raju",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Lazaro, Marcelino",New,05/30/2025,9320776
-9320770,"Dr. Singla, Raju",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Duff, Lawrence",New,05/30/2025,9320770
-9320768,"Dr. Singla, Raju",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Duff, Lawrence",New,05/30/2025,9320768
-9320762,"Dr. Singla, Raju",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Barlow, Maria",New,05/30/2025,9320762
-9320761,"Dr. Singla, Raju",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Barlow, Maria",New,05/30/2025,9320761
-9320727,"Dr. Joncas, Christopher S.",Other,Brookdale Home Health Rhode Island(Nurse on call),Homecare,"SILVA, EVELYN",New,05/30/2025,9320727
-9320662,"Dr. Hinedi, Tamim B.",485 Recert,Alphacare Home Health Agency,Homecare,"Cromwell, Hector",New,05/30/2025,9320662
-9320660,"Dr. Sherlock, Mary E.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Ferreira, Connie",New,05/30/2025,9320660
-9320619,"Dr. Mistikawy, Hany A.",Order,Kindred At Home-Fall River,Homecare,"OLIVEIRA, BEATRICE P.",New,05/30/2025,9320619
-9320618,"Dr. Mistikawy, Hany A.",Order,Kindred At Home-Fall River,Homecare,"OLIVEIRA, BEATRICE P.",New,05/30/2025,9320618
-9320606,"Dr. Nakda, Joseph",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Finch, Darwin",New,05/30/2025,9320606
-9320605,"Dr. Nakda, Joseph",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Finch, Darwin",New,05/30/2025,9320605
-9320603,"Dr. Nakda, Joseph",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Finch, Darwin",New,05/30/2025,9320603
-9320600,"Dr. Nakda, Joseph",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Finch, Darwin",New,05/30/2025,9320600
-9320588,"Dr. Mistikawy, Hany A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"freitas, jacinto",New,05/30/2025,9320588
-9320585,"Dr. Mistikawy, Hany A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Desimas, Guilhermina",New,05/30/2025,9320585
-9320582,"Dr. Mistikawy, Hany A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Desimas, Guilhermina",New,05/30/2025,9320582
-9320580,"Dr. Mistikawy, Hany A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Blair, Edward",New,05/30/2025,9320580
-9320574,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"VIEIRA , MARIA",New,05/30/2025,9320574
-9320571,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Travassos, Virginia",New,05/30/2025,9320571
-9320568,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Travassos, Virginia",New,05/30/2025,9320568
-9320547,"Dr. Singla, Raju",485 Cert,Visiting Nurse Home -Portsmouth,Homecare,"PELLECHIO, CARL",Prepared,05/30/2025,9320547
-9320565,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Sousa, Joao",New,05/30/2025,9320565
-9320561,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Sousa, Joao",New,05/30/2025,9320561
-9320558,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Paiva, Maria N",New,05/30/2025,9320558
-9320553,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Medeiros, Olivia",New,05/30/2025,9320553
-9320527,"Dr. Mendes, Manuela M.",Other,Amedisys Home Health Care (4410) Fall River,Homecare,"SIMOES, BALBINA A.",New,05/30/2025,9320527
-9320509,"Dr. Cummings, Charles H.",Order,Visiting Nurse Home -Portsmouth,Homecare,"MUZACA, LOUISE",Prepared,05/30/2025,9320509
-9320502,"Dr. Cummings, Charles H.",Order,Visiting Nurse Home -Portsmouth,Homecare,"MUZACA, LOUISE",Prepared,05/30/2025,9320502
-9320457,"Dr. Cummings, Charles H.",Other,Visiting Nurse Home -Portsmouth,Homecare,"MUZACA, LOUISE",Prepared,05/30/2025,9320457
-9320485,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Medeiros, Olivia",New,05/30/2025,9320485
-9320479,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Medeiros, Olivia",New,05/30/2025,9320479
-9320476,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Desousa, Maria",New,05/30/2025,9320476
-9320472,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Barros, Candida",New,05/30/2025,9320472
-9320469,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Arruda, Lucia",New,05/30/2025,9320469
-9320465,"Dr. Mendes, Manuela M.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Arruda, Lucia",New,05/30/2025,9320465
-9320420,"Dr. Cummings, Charles H.",Other,Visiting Nurse Home -Portsmouth,Homecare,"MUZACA, LOUISE",Prepared,05/30/2025,9320420
-9320403,"Dr. MAINALI, PRAJEENA",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Raposa, William",New,05/30/2025,9320403
-9320399,"Dr. MAINALI, PRAJEENA",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Raposa, William",New,05/30/2025,9320399
-9320344,"Dr. Cummings, Charles H.",485 Cert,Visiting Nurse Home -Portsmouth,Homecare,"MUZACA, LOUISE",Prepared,05/30/2025,9320344
-9320363,"Dr. Bassaly, Neveen N.",Order,Alphacare Home Health Agency,Homecare,"Kalif, David",New,05/30/2025,9320363
-9320360,"Dr. Labib, Ossama W.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Fernandes,  Maria  G.",New,05/30/2025,9320360
-9320346,"Dr. Mistikawy, Hany A.",Order,Alphacare Home Health Agency,Homecare,"Johnson, Carolyn",New,05/30/2025,9320346
-9320302,"Dr. Butler, Stephen R.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Botelho, Noemia",New,05/30/2025,9320302
-9320300,"Dr. Butler, Stephen R.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Botelho, Noemia",New,05/30/2025,9320300
-9320264,"Dr. Mistikawy, Hany A.",Order,Alphacare Home Health Agency,Homecare,"Grasso, Thomas A.",New,05/30/2025,9320264
-9320258,"Dr. Campbell, Michael A.",Order,Alphacare Home Health Agency,Homecare,"Raposo, Paulo",New,05/30/2025,9320258
-9320223,"Dr. Mendes, Manuela M.",485 Recert,Alphacare Home Health Agency,Homecare,"Vieira, Maria N.",New,05/30/2025,9320223
-9320210,"Dr. Joncas, Christopher S.",Order,Visiting Nurse Hospice-Portsmouth,Hospice,"MASCIARELLI, ALFRED",Prepared,05/30/2025,9320210
-9320200,"Dr. Sherlock, Mary E.",485 Recert,Alphacare Home Health Agency,Homecare,"Alves, Wendy",New,05/30/2025,9320200
-9320169,"Dr. Campbell, Michael A.",Order,Alphacare Home Health Agency,Homecare,"Raposo, Paulo",New,05/30/2025,9320169
-9320163,"Dr. Mistikawy, Hany A.",PT,Alphacare Home Health Agency,Homecare,"Souza, William",New,05/30/2025,9320163
-9320158,"Dr. Mistikawy, Hany A.",PT,Alphacare Home Health Agency,Homecare,"Grasso, Thomas A.",New,05/30/2025,9320158
-9320154,"Dr. Kabak, Jennifer A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Moore, Helen",New,05/30/2025,9320154
-9320153,"Dr. Mistikawy, Hany A.",PT,Alphacare Home Health Agency,Homecare,"Johnson, Carolyn",New,05/30/2025,9320153
-9320141,"Dr. Joncas, Christopher S.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Medeiros, Rita",New,05/30/2025,9320141
-9320130,"Dr. Joncas, Christopher S.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Medeiros, Maria L.",New,05/30/2025,9320130
-9320127,"Dr. Tweedie, Patricia A.",Order,Alphacare Home Health Agency,Homecare,"Hamilton, Doris",New,05/30/2025,9320127
-9320119,"Dr. Tweedie, Patricia A.",Order,Alphacare Home Health Agency,Homecare,"Hamilton, Doris",New,05/30/2025,9320119
-9320104,"Dr. Joncas, Christopher S.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Diniz, Patricia",New,05/30/2025,9320104
-9320064,"Dr. Joncas, Christopher S.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Almas, Maria",New,05/30/2025,9320064
-9320062,"Dr. Joncas, Christopher S.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Almas, Maria",New,05/30/2025,9320062
-9320053,"Dr. Joncas, Christopher S.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Valerio, Ana",New,05/30/2025,9320053
-9320052,"Dr. Joncas, Christopher S.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Valerio, Ana",New,05/30/2025,9320052
-9320050,"Dr. Joncas, Christopher S.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Ossick, Dale",New,05/30/2025,9320050
-9320049,"Dr. Joncas, Christopher S.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Ossick, Dale",New,05/30/2025,9320049
-9320028,"Dr. Campbell, Michael A.",Other,AccentCare Fall River,Homecare,"OLIVEIRA, EDUARDA",New,05/30/2025,9320028
-9319875,"Dr. Campbell, Michael A.",CTI Cert,"Beacon Hospice Care, an Amedisys Company (4420) Fall River",Hospice,"WARREN, CAROL",New,05/30/2025,9319875
-9319865,"Dr. Campbell, Michael A.",POT Cert,"Beacon Hospice Care, an Amedisys Company (4420) Fall River",Hospice,"WARREN, CAROL",New,05/30/2025,9319865
-9319713,"Dr. Hinedi, Tamim B.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Boutros, Chamoun",New,05/30/2025,9319713
-9319684,"Dr. Hinedi, Tamim B.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Ferris, Debra",New,05/30/2025,9319684
-9319675,"Dr. Mistikawy, Hany A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Carvalho, Anthony",New,05/30/2025,9319675
-9319588,"Dr. Tweedie, Patricia A.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"SPEVOCK, JAMES",New,05/30/2025,9319588
-9319580,"Dr. Joncas, Christopher S.",Other,AccentCare Fall River,Homecare,"GANCARSKI, PETER",New,05/30/2025,9319580
-9319532,"Dr. Singla, Raju",Other,AccentCare Fall River,Homecare,"PIMENTEL, JOAO",New,05/30/2025,9319532
-9319523,"Dr. Butler, Stephen R.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"BISHOP, DAVID J.",New,05/30/2025,9319523
-9319467,"Dr. Tweedie, Patricia A.",Order,Guardian Home Health Care LLC - West Bridgewater,Homecare,"Lowe, Dorothy",New,05/30/2025,9319467
-9319439,"Dr. Harrison, Joan T.",Order,Dartmouth HH,Homecare,"Valley, Linda M.",New,05/30/2025,9319439
-9319431,"Dr. FARHAT, ZEIN A.",Order,Dartmouth HH,Homecare,"Duvarney, Theodore",New,05/30/2025,9319431
-9319430,"Dr. Butler, Stephen R.",Order,Dartmouth HH,Homecare,"Veeder, Frances E.",Reviewing,05/30/2025,9319430
-9319426,"Dr. Bassaly, Neveen N.",Order,Dartmouth HH,Homecare,"Domonte, Tony",Reviewing,05/30/2025,9319426
-9319205,"Dr. Singla, Raju",Other,AccentCare Fall River,Homecare,"LEVASSEUR, MARGARET",New,05/30/2025,9319205
-9319198,"Dr. Singla, Raju",Other,AccentCare Fall River,Homecare,"Burhoe, Alden R.",New,05/30/2025,9319198
-9319132,"Dr. Joncas, Christopher S.",Other,Brookdale Home Health Rhode Island(Nurse on call),Homecare,"BENEDICT, RUTH",New,05/30/2025,9319132
-9319129,"Dr. Joncas, Christopher S.",Other,Brookdale Home Health Rhode Island(Nurse on call),Homecare,"DUFOUR, PAULINE",New,05/30/2025,9319129
-9319128,"Dr. Joncas, Christopher S.",Other,Brookdale Home Health Rhode Island(Nurse on call),Homecare,"andersen, lydia",New,05/30/2025,9319128
-9319123,"Dr. Joncas, Christopher S.",Other,Brookdale Home Health Rhode Island(Nurse on call),Homecare,"AUGUSTO, ELIZABETH",New,05/30/2025,9319123
-9319121,"Dr. Joncas, Christopher S.",Other,Brookdale Home Health Rhode Island(Nurse on call),Homecare,"GRIFFITHS, THOMAS",New,05/30/2025,9319121
+9371126,"Dr. Maalouf-Kaleshian, Karine",485 Recert,Brockton Home Health Care,Homecare,"THOMPSON, EARL",New,06/28/2025,9371126
+9371124,"Dr. Maalouf-Kaleshian, Karine",Order,Brockton Home Health Care,Homecare,"THOMPSON, EARL",New,06/28/2025,9371124
+9370921,"Dr. Addo, Theophilus V.",485 Recert,Brigham Home Care Services.Inc,Homecare,"PICHE, STEVEN",New,06/27/2025,9370921
+9370730,"Dr. Bautista, Karmina",Other,Fox Rehabilitation Cherry Hill,DME,"Dacosta, Maria",New,06/27/2025,9370730
+9370500,"Dr. Afonso-Fede, Gloriane",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Camara, Maria D.",New,06/27/2025,9370500
+9370494,"Dr. Afonso-Fede, Gloriane",Other,Nightingale Visiting Nurses-Taunton,Homecare,"FURTADO, MARIA H.",New,06/27/2025,9370494
+9370484,"Dr. Afonso-Fede, Gloriane",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Cardoso, Fernanda",New,06/27/2025,9370484
+9370462,"Dr. Afonso-Fede, Gloriane",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Lenhart, Claire",New,06/27/2025,9370462
+9370449,"Dr. QIN, SHAN",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Rocheleau, Richard",New,06/27/2025,9370449
+9370275,"Dr. Dhungana Parajuli, Sirjana",485 Recert,Alphacare Home Health Agency,Homecare,"Stone, Cynthia",New,06/27/2025,9370275
+9370214,"Dr. Dhungana Parajuli, Sirjana",Order,Alphacare Home Health Agency,Homecare,"Lowman, James",New,06/27/2025,9370214
+9369981,"Dr. Gularek, Jordan C.",Order,Bayada Home Health Care-Dartmouth,Homecare,"CABRAL JR, FRANCIS",New,06/27/2025,9369981
+9369976,"Dr. Gularek, Jordan C.",Order,Bayada Home Health Care-Dartmouth,Homecare,"CABRAL JR, FRANCIS",New,06/27/2025,9369976
+9369970,"Dr. Gularek, Jordan C.",Order,Bayada Home Health Care-Dartmouth,Homecare,"CABRAL JR, FRANCIS",New,06/27/2025,9369970
+9369852,"Dr. MCCARTHY, COLM",Other,All At Home Health Care-Allston,Homecare,"Richardson, David",New,06/27/2025,9369852
+9369669,"Dr. Gularek, Jordan C.",Order,Compassionate Care Hospice-Taunton,Hospice,"Carlson, Linda",Prepared,06/27/2025,9369669
+9369633,"Dr. Pothier, Jahn A.",Order,Alphacare Home Health Agency,Homecare,"Medeiros, Gloria",Prepared,06/27/2025,9369633
+9369607,"Dr. Will, Christine A.",Order,Fairhaven HH&H,Hospice,"Fuller, Norman",Prepared,06/27/2025,9369607
+9369590,"Dr. Potts, Earl",Order,Fairhaven HH&H,Hospice,"Magee, Mary E.",Prepared,06/27/2025,9369590
+9369587,"Dr. Bautista, Karmina",Order,Fairhaven HH&H,Hospice,"Costa, Rita A.",Prepared,06/27/2025,9369587
+9369533,"Dr. Will, Christine A.",485 Cert,Dartmouth HH,Homecare,"Whewell, Yvonne A.",Prepared,06/27/2025,9369533
+9369528,"Dr. Will, Christine A.",Order,Dartmouth HH,Homecare,"Lonsdale, Jane H.",Prepared,06/27/2025,9369528
+9369525,"Dr. Will, Christine A.",Order,Dartmouth HH,Homecare,"Clark, Ella S.",Prepared,06/27/2025,9369525
+9369523,"Dr. Will, Christine A.",Order,Dartmouth HH,Homecare,"McCarthy, Maureen",Prepared,06/27/2025,9369523
+9369520,"Dr. Will, Christine A.",Order,Dartmouth HH,Homecare,"Gibson, Mary S.",Prepared,06/27/2025,9369520
+9369514,"Dr. Will, Christine A.",Order,Dartmouth HH,Homecare,"DeCosta, Helen",Prepared,06/27/2025,9369514
+9369482,"Dr. Alcaraz, Achilles Romualdo E.",485 Recert,Nizhoni Health-Fall River,Homecare,"Tate, Cullen",Prepared,06/27/2025,9369482
+9369492,"Dr. QIN, SHAN",Order,Dartmouth HH,Homecare,"Fawcett, Suzanne B.",Prepared,06/27/2025,9369492
+9369486,"Dr. QIN, SHAN",Order,Dartmouth HH,Homecare,"Roig, Paquita",Prepared,06/27/2025,9369486
+9369479,"Dr. Potts, Earl",Order,Dartmouth HH,Homecare,"Nelson, Carol A.",Prepared,06/27/2025,9369479
+9369474,"Dr. Pothier, Jahn A.",485 Recert,Dartmouth HH,Homecare,"Medeiros, Almerinda S.",Prepared,06/27/2025,9369474
+9369471,"Dr. MCCARTHY, COLM",Order,Dartmouth HH,Homecare,"Mak, Nancy",Prepared,06/27/2025,9369471
+9369459,"Dr. DeFusco, Nicholas J.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"WUNSCHEL, STEVEN P.",Prepared,06/27/2025,9369459
+9369457,"Dr. Jauregui, Hugo G.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"WALCOTT JR, LEROY L.",Prepared,06/27/2025,9369457
+9369443,"Dr. Gularek, Jordan C.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"SOUZA, LEONA",Prepared,06/27/2025,9369443
+9369441,"Dr. Maskey, Sachin",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"SOARES, RICHARD J.",Prepared,06/27/2025,9369441
+9369440,"Dr. Hait, Michael A.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"SILVA, CARMEN",Prepared,06/27/2025,9369440
+9369423,"Dr. Jauregui, Hugo G.",485 Cert,Southcoast VNA – Community Office (Fairhaven),Homecare,"PELLETIER, PATRICIA C.",Prepared,06/27/2025,9369423
+9369419,"Dr. Will, Christine A.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"NASCIMENTO, DOMINGOS M.",Prepared,06/27/2025,9369419
+9369413,"Dr. Pothier, Jahn A.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"MEUNIER, ALDEA I.",Prepared,06/27/2025,9369413
+9369410,"Dr. Pothier, Jahn A.",485 Cert,Southcoast VNA – Community Office (Fairhaven),Homecare,"MEUNIER, ALDEA I.",Prepared,06/27/2025,9369410
+9369399,"Dr. DeFusco, Nicholas J.",485 Recert,Southcoast VNA – Community Office (Fairhaven),Homecare,"JACOB, AMADEU A.",Prepared,06/27/2025,9369399
+9369377,"Dr. Martin, Daniel J.",Order,Dartmouth HH,Homecare,"Demers, Anne M.",Prepared,06/27/2025,9369377
+9369374,"Dr. Martin, Daniel J.",Order,Dartmouth HH,Homecare,"Hanson, Dolores M.",Prepared,06/27/2025,9369374
+9369373,"Dr. Gularek, Jordan C.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"FAZENDEIRO, ANNE F.",Prepared,06/27/2025,9369373
+9369366,"Dr. Maalouf-Kaleshian, Karine",Order,Dartmouth HH,Homecare,"Waters, Stanley",Prepared,06/27/2025,9369366
+9369364,"Dr. Pothier, Jahn A.",485 Cert,Southcoast VNA – Community Office (Fairhaven),Homecare,"CUNHA, MARIA D.",Prepared,06/27/2025,9369364
+9369363,"Dr. Maalouf-Kaleshian, Karine",Order,Dartmouth HH,Homecare,"Viera, Leopoldina",Prepared,06/27/2025,9369363
+9369359,"Dr. Will, Christine A.",485 Cert,Southcoast VNA – Community Office (Fairhaven),Homecare,"COOMBS, FRANCENE J.",Prepared,06/27/2025,9369359
+9369347,"Dr. Mackler, Stephen",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"CARDOZA, CAROLINE",New,06/27/2025,9369347
+9369348,"Dr. Liu, Bing",Order,Dartmouth HH,Homecare,"Costa, Raymond T.",New,06/27/2025,9369348
+9369339,"Dr. DeFusco, Nicholas J.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"AMARAL, JESSICA C.",New,06/27/2025,9369339
+9369326,"Dr. Jauregui, Hugo G.",Order,Dartmouth HH,Homecare,"Cook, Robert",New,06/27/2025,9369326
+9369323,"Dr. Hait, Michael A.",Order,Dartmouth HH,Homecare,"Reed, Paul E.",New,06/27/2025,9369323
+9369318,"Dr. Gularek, Jordan C.",Order,Dartmouth HH,Homecare,"Manna, Agatina",New,06/27/2025,9369318
+9369313,"Dr. Gularek, Jordan C.",Order,Dartmouth HH,Homecare,"Coggins, Anne M.",New,06/27/2025,9369313
+9369311,"Dr. Gularek, Jordan C.",Order,Dartmouth HH,Homecare,"Knickerbocker, Sandra M.",New,06/27/2025,9369311
+9369308,"Dr. Gularek, Jordan C.",Order,Dartmouth HH,Homecare,"Leister, Arthur",New,06/27/2025,9369308
+9369306,"Dr. Gularek, Jordan C.",Order,Dartmouth HH,Homecare,"Steiblin, Joseph",New,06/27/2025,9369306
+9369295,"Dr. Liu, Bing",Order,Guardian Home Health Care LLC - West Bridgewater,Homecare,"Gomes, Dorothy",New,06/27/2025,9369295
+9369283,"Dr. Dhungana Parajuli, Sirjana",Order,Dartmouth HH,Homecare,"Duggan, Sharon A.",New,06/27/2025,9369283
+9369280,"Dr. Dhungana Parajuli, Sirjana",485 Recert,Dartmouth HH,Homecare,"Morad, Rachel M.",New,06/27/2025,9369280
+9369271,"Dr. Dhungana Parajuli, Sirjana",Order,Dartmouth HH,Homecare,"Morad, Rachel M.",New,06/27/2025,9369271
+9369268,"Dr. Coury, Pamela",Order,Dartmouth HH,Homecare,"Cabral, Analia M.",New,06/27/2025,9369268
+9369265,"Dr. Caldas, Robert J.",Order,Dartmouth HH,Homecare,"Sinagra, Susan C.",New,06/27/2025,9369265
+9369264,"Dr. Caldas, Robert J.",Order,Dartmouth HH,Homecare,"Dacosta, Maria",New,06/27/2025,9369264
+9369250,"Dr. Alcaraz, Achilles Romualdo E.",Order,Dartmouth HH,Homecare,"Pena, Maribel",New,06/27/2025,9369250
+9369237,"Dr. DeFusco, Nicholas J.",485 Recert,Guardian Home Health Care LLC - West Bridgewater,Homecare,"RAPOSO, DEBORAH",New,06/27/2025,9369237
+9369053,"Dr. Martin, Daniel J.",Other,AccentCare Fall River,Homecare,"SMIGEL, KONSTANTI R.",New,06/27/2025,9369053
+9369584,"Dr. Wu, Elaine",Order,Dartmouth HH,Homecare,"Lake, Wesley E.",Signed,06/27/2025,9369584
+9369581,"Dr. Wu, Elaine",Order,Dartmouth HH,Homecare,"Lazar, Christine",Signed,06/27/2025,9369581
+9369577,"Dr. Liu, Bing",485 Cert,Dartmouth HH,Homecare,"Connolly Garcia, Maureen",Signed,06/27/2025,9369577
+9369566,"Dr. Wu, Elaine",Order,Dartmouth HH,Homecare,"Cruz, Maria",Signed,06/27/2025,9369566
+9369563,"Dr. Wu, Elaine",Order,Dartmouth HH,Homecare,"Jadlowe, A Shirley",Signed,06/27/2025,9369563
+9369496,"Dr. Shih, David J.",Order,Dartmouth HH,Homecare,"Silva, Nancy J.",Signed,06/27/2025,9369496
+9369494,"Dr. Shih, David J.",Order,Dartmouth HH,Homecare,"Roddy, Eileen",Signed,06/27/2025,9369494
+9369437,"Dr. Wu, Elaine",485 Cert,Southcoast VNA – Community Office (Fairhaven),Homecare,"SCHUCK, FLORENCE N.",Signed,06/27/2025,9369437
+9369433,"Dr. Liu, Bing",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"SAULNIERS, SUZANNE S.",Signed,06/27/2025,9369433
+9369406,"Dr. Liu, Bing",485 Recert,Southcoast VNA – Community Office (Fairhaven),Homecare,"MEDEIROS, CATHY A.",Signed,06/27/2025,9369406
+9369368,"Dr. Shih, David J.",485 Cert,Southcoast VNA – Community Office (Fairhaven),Homecare,"Deterra, Sharon P.",Signed,06/27/2025,9369368
+9369370,"Dr. Mackler, Stephen",Order,Dartmouth HH,Homecare,"Rezendes, Isabel",Signed,06/27/2025,9369370
+9369361,"Dr. Liu, Bing",Order,Dartmouth HH,Homecare,"Laurianno, Joanne",Signed,06/27/2025,9369361
+9369358,"Dr. Liu, Bing",Order,Dartmouth HH,Homecare,"Lake, Raymond A.",Signed,06/27/2025,9369358
+9369354,"Dr. Liu, Bing",Order,Dartmouth HH,Homecare,"Davis McGregor, Debra E.",Signed,06/27/2025,9369354
+9369275,"Dr. Etter, Justin",Order,Guardian Home Health Care LLC - West Bridgewater,Homecare,"Gomes, Laura",Signed,06/27/2025,9369275
+9369233,"Dr. Etter, Justin",485 Recert,Guardian Home Health Care LLC - West Bridgewater,Homecare,"BROWN, DONALD R.",Signed,06/27/2025,9369233
+9368345,"Dr. Coury, Pamela",Order,Guardian Home Health Care LLC - West Bridgewater,Homecare,"Damico, Barbara A.",Prepared,06/26/2025,9368345
+9367719,"Dr. MCCARTHY, COLM",Order,All At Home Health Care-Allston,Homecare,"Torres River, Luz",Prepared,06/26/2025,9367719
+9367659,"Dr. DeFusco, Nicholas J.",485 Cert,Southcoast VNA – Community Office (Fairhaven),Homecare,"WUNSCHEL, STEVEN P.",Prepared,06/26/2025,9367659
+9367648,"Dr. Liu, Bing",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"SAULNIERS, SUZANNE S.",Reviewing,06/26/2025,9367648
+9367629,"Dr. Will, Christine A.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"MIRANDA, CAROLYN J.",New,06/26/2025,9367629
+9367617,"Dr. Caldas, Robert J.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"MEDEIROS, FRANK R.",New,06/26/2025,9367617
+9367612,"Dr. Maalouf-Kaleshian, Karine",485 Cert,Southcoast VNA – Community Office (Fairhaven),Homecare,"GARRETT, MARY L.",New,06/26/2025,9367612
+9367608,"Dr. Liu, Bing",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"FRIEDLAND, BARBARA S.",New,06/26/2025,9367608
+9367597,"Dr. Pothier, Jahn A.",485 Cert,Southcoast VNA – Community Office (Fairhaven),Homecare,"DESNOYERS, JULIET",New,06/26/2025,9367597
+9367591,"Dr. Gularek, Jordan C.",485 Cert,Southcoast VNA – Community Office (Fairhaven),Homecare,"AMARAL, HECTOR J.",New,06/26/2025,9367591
+9367576,"Dr. Afonso-Fede, Gloriane",485 Recert,Southcoast VNA – Community Office (Fairhaven),Homecare,"AGUIAR, JOAO M",New,06/26/2025,9367576
+9367341,"Dr. Maskey, Sachin",485 Recert,COMFORT HOME CARE LLC-METHUEN,Homecare,"MACORD, DAMIAN",New,06/26/2025,9367341
+9366833,"Dr. Gularek, Jordan C.",Order,Dartmouth HH,Homecare,"Perry, Anile M.",New,06/26/2025,9366833
+9366822,"Dr. Martin, Daniel J.",485 Cert,Dartmouth HH,Homecare,"Baxter-Paparella, Carla",New,06/26/2025,9366822
+9366820,"Dr. Martin, Daniel J.",Order,Dartmouth HH,Homecare,"Moura, Pearl I.",New,06/26/2025,9366820
+9366818,"Dr. Martin, Daniel J.",485 Recert,Dartmouth HH,Homecare,"Moura, Pearl I.",New,06/26/2025,9366818
+9366817,"Dr. Mackler, Stephen",485 Cert,Dartmouth HH,Homecare,"Paulino, Natalia",New,06/26/2025,9366817
+9366815,"Dr. Maalouf-Kaleshian, Karine",Order,Dartmouth HH,Homecare,"Fernandes, Lois",New,06/26/2025,9366815
+9366814,"Dr. Maalouf-Kaleshian, Karine",485 Recert,Dartmouth HH,Homecare,"Fernandes, Lois",New,06/26/2025,9366814
+9366812,"Dr. Jauregui, Hugo G.",Order,Dartmouth HH,Homecare,"Pereira, Julieta",New,06/26/2025,9366812
+9366810,"Dr. Jauregui, Hugo G.",485 Cert,Dartmouth HH,Homecare,"Pereira, Julieta",New,06/26/2025,9366810
+9366809,"Dr. Gularek, Jordan C.",485 Cert,Dartmouth HH,Homecare,"Farizo, Ana T.",New,06/26/2025,9366809
+9366807,"Dr. Gularek, Jordan C.",485 Cert,Dartmouth HH,Homecare,"Dias, Eugenia",New,06/26/2025,9366807
+9366804,"Dr. Gularek, Jordan C.",485 Cert,Dartmouth HH,Homecare,"Perry, Anile M.",New,06/26/2025,9366804
+9366803,"Dr. Gularek, Jordan C.",485 Cert,Dartmouth HH,Homecare,"Chapdelaine, Wendy",New,06/26/2025,9366803
+9366801,"Dr. Coury, Pamela",Order,Dartmouth HH,Homecare,"Raposo, Maria N.",New,06/26/2025,9366801
+9366799,"Dr. Coury, Pamela",485 Recert,Dartmouth HH,Homecare,"Raposo, Maria N.",New,06/26/2025,9366799
+9366768,"RODRIGUES, JUNE A. NP",Other,Visiting Rehab & Nursing Services,Homecare,"ST. JACQUES, ELIZABETH",New,06/26/2025,9366768
+9368275,"Dr. Etter, Justin",Order,Guardian Home Health Care LLC - West Bridgewater,Homecare,"BROWN, DONALD R.",Signed,06/26/2025,9368275
+9367195,"Dr. Etter, Justin",485 Cert,Guardian Home Health Care LLC - West Bridgewater,Homecare,"Walker, Coralee",Signed,06/26/2025,9367195
+9367053,"Dr. Bautista, Karmina",485 Cert,Relief Home Health Services,Homecare,"Dasilva, Jose",Signed,06/26/2025,9367053
+9366828,"Dr. Wu, Elaine",485 Cert,Dartmouth HH,Homecare,"Niemiec, Paula",Signed,06/26/2025,9366828
+9366826,"Dr. Wu, Elaine",485 Cert,Dartmouth HH,Homecare,"Cruz, Maria",Signed,06/26/2025,9366826
+9366823,"Dr. Potts, Earl",485 Cert,Dartmouth HH,Homecare,"Nelson, Carol A.",Signed,06/26/2025,9366823
+9366718,"Dr. Caldas, Robert J.",485 Cert,Bayada Home Health Care-Dartmouth,Homecare,"PRIEST, JOHN E.",New,06/25/2025,9366718
+9366393,"Dr. Dhungana Parajuli, Sirjana",485 Recert,All At Home Health Care-Allston,Homecare,"Vincent, Patricia",Prepared,06/25/2025,9366393
+9366200,"Dr. Dhungana Parajuli, Sirjana",485 Recert,Brigham Home Care Services.Inc,Homecare,"VELASQUEZ, NANCY",Reviewing,06/25/2025,9366200
+9366136,"Dr. Addo, Theophilus V.",Order,Brigham Home Care Services.Inc,Homecare,"PICHE, STEVEN",Prepared,06/25/2025,9366136
+9366117,"Dr. Dhungana Parajuli, Sirjana",Order,Brigham Home Care Services.Inc,Homecare,"VELASQUEZ, NANCY",Prepared,06/25/2025,9366117
+9365955,"Dr. Coury, Pamela",Order,Brigham Home Care Services.Inc,Homecare,"Michael, Frois",Prepared,06/25/2025,9365955
+9365942,"Dr. Coury, Pamela",485 Recert,Brigham Home Care Services.Inc,Homecare,"Michael, Frois",Prepared,06/25/2025,9365942
+9365903,"Dr. Alcaraz, Achilles Romualdo E.",Order,All At Home Health Care-Allston,Homecare,"Desousa, Jose",Reviewing,06/25/2025,9365903
+2195502,"Dr. Gularek, Jordan C.",Conversation,Visiting Rehab & Nursing Services,Homecare,"Tomko Jr, Thomas J.",Unread,06/25/2025,2195502
+2195501,"Dr. Gularek, Jordan C.",Conversation,Visiting Rehab & Nursing Services,Homecare,"Tomko Jr, Thomas J.",Unread,06/25/2025,2195501
+2195500,"Dr. QIN, SHAN",Conversation,Visiting Rehab & Nursing Services,Homecare,"Hill, Terry",Unread,06/25/2025,2195500
+2195499,"Dr. Jauregui, Hugo G.",Conversation,Visiting Rehab & Nursing Services,Homecare,"Gingras, John",Unread,06/25/2025,2195499
+9365641,"Dr. Martin, Daniel J.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"AMADO, ANTONIO C.",Prepared,06/25/2025,9365641
+9365176,"Dr. Maalouf-Kaleshian, Karine",Order,Guardian Home Health Care LLC - West Bridgewater,Homecare,"Livramento, Kevin W",Reviewing,06/25/2025,9365176
+9365130,"Dr. QIN, SHAN",Order,Guardian Home Health Care LLC - West Bridgewater,Homecare,"Varela, Manuel",Prepared,06/25/2025,9365130
+9364777,"Dr. Bautista, Karmina",POT Cert,Fairhaven HH&H,Hospice,"Costa, Rita A.",Reviewing,06/25/2025,9364777
+9364682,"Dr. QIN, SHAN",485 Cert,Dartmouth HH,Homecare,"Fawcett, Suzanne B.",Prepared,06/25/2025,9364682
+9364669,"Dr. Martin, Daniel J.",485 Recert,Dartmouth HH,Homecare,"Arruda, Selina",Reviewing,06/25/2025,9364669
+9364662,"Dr. Martin, Daniel J.",Order,Dartmouth HH,Homecare,"Arruda, Selina",Prepared,06/25/2025,9364662
+9364509,"Dr. Caldas, Robert J.",485 Recert,Dartmouth HH,Homecare,"Dos Santos, Elaine",Prepared,06/25/2025,9364509
+9364502,"Dr. Caldas, Robert J.",485 Cert,Dartmouth HH,Homecare,"Oliveira, Paulo M.",Prepared,06/25/2025,9364502
+9364491,"Dr. Martin, Daniel J.",485 Cert,AccentCare Fall River,Homecare,"SASSEVILLE, EUGENE H.",Prepared,06/25/2025,9364491
+9366399,"Dr. Wu, Elaine",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Monteiro, Phyllis",Signed,06/25/2025,9366399
+9366398,"Dr. Wu, Elaine",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Monteiro, Phyllis",Signed,06/25/2025,9366398
+9366396,"Dr. Wu, Elaine",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Monteiro, Phyllis",Signed,06/25/2025,9366396
+9366395,"Dr. Wu, Elaine",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Monteiro, Phyllis",Signed,06/25/2025,9366395
+9366391,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Woodbury, Brenda",Signed,06/25/2025,9366391
+9366388,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Woodbury, Brenda",Signed,06/25/2025,9366388
+9366247,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Woodbury, Brenda",Signed,06/25/2025,9366247
+9366233,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Perkins, Cheryl",Signed,06/25/2025,9366233
+9366229,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Mickelson, Judith",Signed,06/25/2025,9366229
+9366224,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Mickelson, Judith",Signed,06/25/2025,9366224
+9366220,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Mickelson, Judith",Signed,06/25/2025,9366220
+9366218,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Mickelson, Judith",Signed,06/25/2025,9366218
+9366213,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Medeiros, Kelly J.",Signed,06/25/2025,9366213
+9366210,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Medeiros, Kelly J.",Signed,06/25/2025,9366210
+9366203,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"McHale, Robert",Signed,06/25/2025,9366203
+9366199,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Lake, Geraldine",Signed,06/25/2025,9366199
+9366196,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Franco, Raquel",Signed,06/25/2025,9366196
+9366175,"Dr. Etter, Justin",485 Cert,Brigham Home Care Services.Inc,Homecare,"SILVA, SUZANNA M.",Signed,06/25/2025,9366175
+9366137,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Figueiredo, Jose",Signed,06/25/2025,9366137
+9366134,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Figueiredo, Jose",Signed,06/25/2025,9366134
+9366132,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Figueiredo, Jose",Signed,06/25/2025,9366132
+9366128,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Figueiredo, Jose",Signed,06/25/2025,9366128
+9366097,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Ellis, Frederick",Signed,06/25/2025,9366097
+9366093,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Ellis, Frederick",Signed,06/25/2025,9366093
+9366092,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Ellis, Frederick",Signed,06/25/2025,9366092
+9366073,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Cardoso Brito, Val",Signed,06/25/2025,9366073
+9366070,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Cardoso Brito, Val",Signed,06/25/2025,9366070
+9366067,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Cardoso Brito, Val",Signed,06/25/2025,9366067
+9366064,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Cardoso Brito, Val",Signed,06/25/2025,9366064
+9366060,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Cardoso Brito, Val",Signed,06/25/2025,9366060
+9366054,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Cardoso Brito, Val",Signed,06/25/2025,9366054
+9366051,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Cardoso Brito, Val",Signed,06/25/2025,9366051
+9366046,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Cardoso Brito, Val",Signed,06/25/2025,9366046
+9366042,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Cardoso Brito, Val",Signed,06/25/2025,9366042
+9366018,"Dr. Etter, Justin",Order,Brigham Home Care Services.Inc,Homecare,"SILVA, SUZANNA M.",Signed,06/25/2025,9366018
+9366006,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Amaral, Elizabeth",Signed,06/25/2025,9366006
+9365999,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Amaral, Elizabeth",Signed,06/25/2025,9365999
+9365997,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Amaral, Elizabeth",Signed,06/25/2025,9365997
+9365995,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Amaral, Elizabeth",Signed,06/25/2025,9365995
+9365991,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Amaral, Elizabeth",Signed,06/25/2025,9365991
+9365987,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Amaral, Elizabeth",Signed,06/25/2025,9365987
+9365982,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Amaral, Elizabeth",Signed,06/25/2025,9365982
+9365782,"Dr. Gularek, Jordan C.",485 Recert,Relief Home Health Services,Homecare,"RESENDES, MARIO",Signed,06/25/2025,9365782
+9365763,"Dr. Gularek, Jordan C.",Order,Relief Home Health Services,Homecare,"RESENDES, MARIO",Signed,06/25/2025,9365763
+9365664,"Dr. Shih, David J.",485 Cert,Southcoast VNA – Community Office (Fairhaven),Homecare,"WHEELER, BEVERLY A.",Signed,06/25/2025,9365664
+9365653,"Dr. Pothier, Jahn A.",Other,Southcoast VNA – Community Office (Fairhaven),Homecare,"MEUNIER, ALDEA I.",Signed,06/25/2025,9365653
+9365650,"Dr. Shih, David J.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"MARTIN, KENNETH",Signed,06/25/2025,9365650
+9365112,"Dr. Liu, Bing",Order,Guardian Home Health Care LLC - West Bridgewater,Homecare,"Gomes, Dorothy",Signed,06/25/2025,9365112
+9365062,"Dr. Etter, Justin",Order,Guardian Home Health Care LLC - West Bridgewater,Homecare,"Gomes, Laura",Signed,06/25/2025,9365062
+9365036,"Dr. Etter, Justin",Order,Guardian Home Health Care LLC - West Bridgewater,Homecare,"BROWN, DONALD R.",Signed,06/25/2025,9365036
+9364817,"Dr. Gularek, Jordan C.",Order,Compassionate Care Hospice-Taunton,Hospice,"Simmons, Richard",Signed,06/25/2025,9364817
+9364786,"Dr. Pothier, Jahn A.",Order,Fairhaven HH&H,Hospice,"Haznar, Louise M.",Signed,06/25/2025,9364786
+9364782,"Dr. Gularek, Jordan C.",Order,Fairhaven HH&H,Hospice,"Arroyo, Carol",Signed,06/25/2025,9364782
+9364748,"Dr. Wu, Elaine",485 Recert,Dartmouth HH,Homecare,"McCollester, Kathryn N.",Signed,06/25/2025,9364748
+9364738,"Dr. Wu, Elaine",Order,Dartmouth HH,Homecare,"DeMello, Geraldine",Signed,06/25/2025,9364738
+9364726,"Dr. Will, Christine A.",485 Cert,Dartmouth HH,Homecare,"Clark, Ella S.",Signed,06/25/2025,9364726
+9364715,"Dr. Wu, Elaine",485 Recert,Dartmouth HH,Homecare,"DeMello, Geraldine",Signed,06/25/2025,9364715
+9364700,"Dr. Shih, David J.",Order,Dartmouth HH,Homecare,"Tonnessen, Terje",Signed,06/25/2025,9364700
+9364696,"Dr. Shih, David J.",485 Cert,Dartmouth HH,Homecare,"Tonnessen, Terje",Signed,06/25/2025,9364696
+9364645,"Dr. Mackler, Stephen",485 Recert,Dartmouth HH,Homecare,"Brisson, Daniel W.",Signed,06/25/2025,9364645
+9364639,"Dr. Liu, Bing",485 Cert,Dartmouth HH,Homecare,"Law, Frederick M.",Signed,06/25/2025,9364639
+9364636,"Dr. Liu, Bing",485 Cert,Dartmouth HH,Homecare,"Lake, Raymond A.",Signed,06/25/2025,9364636
+9364615,"Dr. Gularek, Jordan C.",485 Cert,Dartmouth HH,Homecare,"Steiblin, Joseph",Signed,06/25/2025,9364615
+9364569,"Dr. Gularek, Jordan C.",485 Cert,Dartmouth HH,Homecare,"Cieplik, Stanley P.",Signed,06/25/2025,9364569
+9364531,"Dr. Dhungana Parajuli, Sirjana",485 Cert,Dartmouth HH,Homecare,"LaFreniere, Veronica",Signed,06/25/2025,9364531
+9364517,"Dr. Dhungana Parajuli, Sirjana",485 Recert,Dartmouth HH,Homecare,"Rapoza, Margaret",Signed,06/25/2025,9364517
+9364428,"Dr. Etter, Justin",Order,Visiting Rehab & Nursing Services,Homecare,"Wiley, Brian",Signed,06/25/2025,9364428
+9364426,"Dr. Bautista, Karmina",Order,Visiting Rehab & Nursing Services,Homecare,"Korab, Kevin",Signed,06/25/2025,9364426
+9189243,"Dr. Addo, Theophilus V.",Order,Brigham Home Care Services.Inc,Homecare,"PICHE, STEVEN",Prepared,06/24/2025,9189243
+9189249,"Dr. Addo, Theophilus V.",485 Recert,Brigham Home Care Services.Inc,Homecare,"PICHE, STEVEN",Prepared,06/24/2025,9189249
+9363887,"Dr. QIN, SHAN",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Brunton, Virginia",Prepared,06/24/2025,9363887
+9363827,"Dr. Maskey, Sachin",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Racine, Theresa",Prepared,06/24/2025,9363827
+9363824,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Santos, Alfredo",Prepared,06/24/2025,9363824
+9363823,"Dr. Martin, Daniel J.",485 Recert,Nightingale Visiting Nurses-Taunton,Homecare,"Santos, Alfredo",Prepared,06/24/2025,9363823
+9363820,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Lima, Mary",Prepared,06/24/2025,9363820
+9363818,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"AUSTIN, DANIELLE",Prepared,06/24/2025,9363818
+9363817,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"AUSTIN, DANIELLE",Prepared,06/24/2025,9363817
+9363805,"Dr. Maalouf-Kaleshian, Karine",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Burns, Ada M.",Prepared,06/24/2025,9363805
+9363630,"Dr. Coury, Pamela",Other,Nightingale Visiting Nurses-Taunton,Homecare,"KEARNEY, WILLIAM",Prepared,06/24/2025,9363630
+9363627,"Dr. Coury, Pamela",Other,Nightingale Visiting Nurses-Taunton,Homecare,"KEARNEY, WILLIAM",Prepared,06/24/2025,9363627
+9363625,"Dr. Coury, Pamela",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Desousa, Reinaldo",Prepared,06/24/2025,9363625
+9363621,"Dr. Caldas, Robert J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Weisman, Carl",Prepared,06/24/2025,9363621
+9363620,"Dr. Caldas, Robert J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Weisman, Carl",Prepared,06/24/2025,9363620
+9363576,"Dr. Afonso-Fede, Gloriane",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Rivard, Louise",Prepared,06/24/2025,9363576
+9363574,"Dr. Afonso-Fede, Gloriane",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Rivard, Louise",Prepared,06/24/2025,9363574
+9363571,"Dr. Afonso-Fede, Gloriane",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Rivard, Louise",Prepared,06/24/2025,9363571
+9363568,"Dr. Afonso-Fede, Gloriane",Other,Nightingale Visiting Nurses-Taunton,Homecare,"PIMENTEL, MARIA",Prepared,06/24/2025,9363568
+9363565,"Dr. Afonso-Fede, Gloriane",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Gomes, Leonor",Prepared,06/24/2025,9363565
+9363561,"Dr. Afonso-Fede, Gloriane",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Copley, Irene",Prepared,06/24/2025,9363561
+9362140,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Smigel, Kathleen A.",Prepared,06/24/2025,9362140
+9362135,"Dr. QIN, SHAN",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Reis, Joseph",Prepared,06/24/2025,9362135
+9362056,"Dr. Martin, Daniel J.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"MONIZ, THERESA R.",Prepared,06/24/2025,9362056
+9362052,"Dr. Martin, Daniel J.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"MAYO, ELSIE B.",Prepared,06/24/2025,9362052
+9362048,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Mimoso, Serafim",Prepared,06/24/2025,9362048
+9362046,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Mimoso, Serafim",Prepared,06/24/2025,9362046
+9362025,"Dr. Caldas, Robert J.",485 Cert,Southcoast VNA – Community Office (Fairhaven),Homecare,"DEBRITO, MANUEL Q.",Prepared,06/24/2025,9362025
+9362013,"Dr. Caldas, Robert J.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"CARVALHO, ANTONIO S.",Prepared,06/24/2025,9362013
+9362009,"Dr. Coury, Pamela",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"BROWN TAPPER, ELIZABETH A.",Prepared,06/24/2025,9362009
+9362004,"Dr. DeFusco, Nicholas J.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"BRANCO, JOSEPH F.",Prepared,06/24/2025,9362004
+9361835,"Dr. Maalouf-Kaleshian, Karine",Order,Relief Home Health Services,Homecare,"Couto, Charlene",Prepared,06/24/2025,9361835
+9361834,"Dr. Maalouf-Kaleshian, Karine",485 Cert,Relief Home Health Services,Homecare,"Couto, Charlene",Prepared,06/24/2025,9361834
+9363966,"Dr. Shih, David J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Medeiros, Maria",Signed,06/24/2025,9363966
+9363960,"Dr. Shih, David J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Medeiros, Maria",Signed,06/24/2025,9363960
+9363958,"Dr. Shih, David J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Walker, Gordonna",Signed,06/24/2025,9363958
+9363955,"Dr. Shih, David J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Walker, Gordonna",Signed,06/24/2025,9363955
+9363813,"Dr. Mackler, Stephen",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Oliver, Raymond",Signed,06/24/2025,9363813
+9363810,"Dr. Mackler, Stephen",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Bergeron, Pauline",Signed,06/24/2025,9363810
+9363728,"Dr. Jauregui, Hugo G.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Rosa, Eunice",Signed,06/24/2025,9363728
+9363726,"Dr. Jauregui, Hugo G.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Rodgers,  Joseph",Signed,06/24/2025,9363726
+9363706,"Dr. Gularek, Jordan C.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Teixeira, Maria",Signed,06/24/2025,9363706
+9363700,"Dr. Etter, Justin",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Estevez, Stephen",Signed,06/24/2025,9363700
+9363640,"Dr. Dhungana Parajuli, Sirjana",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Grace, Barbara",Signed,06/24/2025,9363640
+9363639,"Dr. Dhungana Parajuli, Sirjana",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Grace, Barbara",Signed,06/24/2025,9363639
+9363638,"Dr. Dhungana Parajuli, Sirjana",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Grace, Barbara",Signed,06/24/2025,9363638
+9363616,"Dr. Bautista, Karmina",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Spencer, Maria J.",Signed,06/24/2025,9363616
+9363615,"Dr. Bautista, Karmina",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Souza, Ida",Signed,06/24/2025,9363615
+9363612,"Dr. Bautista, Karmina",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Souza, Ida",Signed,06/24/2025,9363612
+9363609,"Dr. Bautista, Karmina",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Mendez, Altagracia",Signed,06/24/2025,9363609
+9363580,"Dr. Alcaraz, Achilles Romualdo E.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Camara, Carlos",Signed,06/24/2025,9363580
+9363579,"Dr. Alcaraz, Achilles Romualdo E.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Camara, Carlos",Signed,06/24/2025,9363579
+9363505,"Dr. Jauregui, Hugo G.",Other,Pathways Healthcare-Westwood,Homecare,"CRUZ, JOSE F.",Signed,06/24/2025,9363505
+9362090,"Dr. Jauregui, Hugo G.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"VINAGRE, MARIA H.",Signed,06/24/2025,9362090
+9362086,"Dr. Gularek, Jordan C.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"TAVARES, LIGIA M.",Signed,06/24/2025,9362086
+9362081,"Dr. Gularek, Jordan C.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"SKAZA, PATRICIA",Signed,06/24/2025,9362081
+9362079,"Dr. Dhungana Parajuli, Sirjana",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"SICKLES, JOCELYN",Signed,06/24/2025,9362079
+9362077,"Dr. Liu, Bing",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"SAULNIERS, SUZANNE S.",Signed,06/24/2025,9362077
+9362061,"Dr. Will, Christine A.",485 Cert,Southcoast VNA – Community Office (Fairhaven),Homecare,"QUINTIN, JUNE A.",Signed,06/24/2025,9362061
+9362058,"Dr. Gularek, Jordan C.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"PERRY, LAURA S.",Signed,06/24/2025,9362058
+9362055,"Dr. Pothier, Jahn A.",Other,Southcoast VNA – Community Office (Fairhaven),Homecare,"MEUNIER, ALDEA I.",Signed,06/24/2025,9362055
+9362051,"Dr. Wu, Elaine",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Miranda, Stacy A.",Signed,06/24/2025,9362051
+9362038,"Dr. Will, Christine A.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"LAWRENCE, ANTHONY M.",Signed,06/24/2025,9362038
+9361833,"Dr. Gularek, Jordan C.",485 Cert,Relief Home Health Services,Homecare,"MOURAO, JOSE",Signed,06/24/2025,9361833
+9361809,"Dr. Bautista, Karmina",Order,Visiting Rehab & Nursing Services,Homecare,"VERISSIMO, DALIA",Signed,06/24/2025,9361809
+9361325,"Dr. Martin, Daniel J.",485 Recert,AccentCare Fall River,Homecare,"SASSEVILLE, JEANINE Y.",Prepared,06/23/2025,9361325
+9360803,"Dr. Martin, Daniel J.",485 Cert,Southcoast VNA – Community Office (Fairhaven),Homecare,"TREMBLAY, DARLENE C.",Prepared,06/23/2025,9360803
+9360769,"Dr. Afonso-Fede, Gloriane",485 Cert,Southcoast VNA – Community Office (Fairhaven),Homecare,"MCGEHEE, JOANNE M.",Prepared,06/23/2025,9360769
+9360766,"Dr. Afonso-Fede, Gloriane",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"MAIATO, MARIA A.",Prepared,06/23/2025,9360766
+9360733,"Dr. DeFusco, Nicholas J.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"BRANCO, JOSEPH F.",Prepared,06/23/2025,9360733
+9360202,"Dr. QIN, SHAN",Order,Dartmouth HH,Homecare,"Roig, Paquita",Prepared,06/23/2025,9360202
+9360183,"Dr. Martin, Daniel J.",Order,Dartmouth HH,Homecare,"Reddy, Cynthia",Prepared,06/23/2025,9360183
+9360013,"Dr. Afonso-Fede, Gloriane",Order,Dartmouth HH,Homecare,"Fairbanks, Paul",Prepared,06/23/2025,9360013
+9359980,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Smigel, Kathleen A.",Prepared,06/23/2025,9359980
+9359977,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Smigel, Kathleen A.",Prepared,06/23/2025,9359977
+9359976,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Smigel, Kathleen A.",Prepared,06/23/2025,9359976
+9359681,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Mimoso, Serafim",Prepared,06/23/2025,9359681
+9359680,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Mimoso, Serafim",Prepared,06/23/2025,9359680
+9359648,"Dr. Afonso-Fede, Gloriane",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Medeiros, Filomena",Prepared,06/23/2025,9359648
+9359644,"Dr. Afonso-Fede, Gloriane",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Medeiros, Filomena",Prepared,06/23/2025,9359644
+9359634,"Dr. Afonso-Fede, Gloriane",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Medeiros, Filomena",Prepared,06/23/2025,9359634
+9359069,"Dr. Afonso-Fede, Gloriane",485 Recert,Dartmouth HH,Homecare,"Fairbanks, Paul",Prepared,06/23/2025,9359069
+9360804,"Dr. Etter, Justin",Order,Brigham Home Care Services.Inc,Homecare,"SILVA, SUZANNA M.",Signed,06/23/2025,9360804
+9360809,"Dr. Etter, Justin",Order,Brigham Home Care Services.Inc,Homecare,"SILVA, SUZANNA M.",Signed,06/23/2025,9360809
+9360811,"Dr. Etter, Justin",Other,Brigham Home Care Services.Inc,Homecare,"SILVA, SUZANNA M.",Signed,06/23/2025,9360811
+9360815,"Dr. Etter, Justin",485 Cert,Brigham Home Care Services.Inc,Homecare,"SILVA, SUZANNA M.",Signed,06/23/2025,9360815
+9360822,"Dr. Etter, Justin",Face To Face,Brigham Home Care Services.Inc,Homecare,"SILVA, SUZANNA M.",Signed,06/23/2025,9360822
+9360799,"Dr. Gularek, Jordan C.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"TAVARES, LIGIA M.",Signed,06/23/2025,9360799
+9360795,"Dr. Liu, Bing",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"SAULNIERS, SUZANNE S.",Signed,06/23/2025,9360795
+9360789,"Dr. Gularek, Jordan C.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"PERRY, LAURA S.",Signed,06/23/2025,9360789
+9360776,"Dr. Pothier, Jahn A.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"MEUNIER, ALDEA I.",Signed,06/23/2025,9360776
+9360747,"Dr. Etter, Justin",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"DAYS, ANGELA M.",Signed,06/23/2025,9360747
+9360249,"Dr. Potts, Earl",Order,Fairhaven HH&H,Hospice,"Magee, Mary E.",Signed,06/23/2025,9360249
+9360245,"Dr. Potts, Earl",Order,Fairhaven HH&H,Hospice,"Gouveia, Rose",Signed,06/23/2025,9360245
+9360241,"Dr. Pothier, Jahn A.",Order,Fairhaven HH&H,Hospice,"Andrade, Robert A.",Signed,06/23/2025,9360241
+9360225,"Dr. Wu, Elaine",Order,Dartmouth HH,Homecare,"Jadlowe, A Shirley",Signed,06/23/2025,9360225
+9360221,"Dr. Wu, Elaine",Order,Dartmouth HH,Homecare,"Lazar, Christine",Signed,06/23/2025,9360221
+9360218,"Dr. Will, Christine A.",Order,Dartmouth HH,Homecare,"Hanna, JR, Stephen S.",Signed,06/23/2025,9360218
+9360212,"Dr. Will, Christine A.",Order,Dartmouth HH,Homecare,"Gibson, Mary S.",Signed,06/23/2025,9360212
+9360199,"Dr. Potts, Earl",Order,Dartmouth HH,Homecare,"Kurtz, Nancy W.",Signed,06/23/2025,9360199
+9360195,"Dr. Pothier, Jahn A.",Order,Dartmouth HH,Homecare,"Felix, Daniel",Signed,06/23/2025,9360195
+9360190,"Dr. Pothier, Jahn A.",Order,Dartmouth HH,Homecare,"Medeiros, Jose J.",Signed,06/23/2025,9360190
+9360174,"Dr. Liu, Bing",Order,Dartmouth HH,Homecare,"Medeiros, Lucy",Signed,06/23/2025,9360174
+9360169,"Dr. Jauregui, Hugo G.",Order,Dartmouth HH,Homecare,"Cook, Robert",Signed,06/23/2025,9360169
+9360166,"Dr. Jauregui, Hugo G.",Order,Dartmouth HH,Homecare,"Small, Theodore M.",Signed,06/23/2025,9360166
+9360163,"Dr. Jauregui, Hugo G.",Order,Dartmouth HH,Homecare,"Lewis, Harvey",Signed,06/23/2025,9360163
+9360155,"Dr. Hait, Michael A.",Order,Dartmouth HH,Homecare,"Reed, Paul E.",Signed,06/23/2025,9360155
+9360153,"Dr. Hait, Michael A.",485 Cert,Dartmouth HH,Homecare,"Reed, Paul E.",Signed,06/23/2025,9360153
+9360130,"Dr. Gularek, Jordan C.",Order,Dartmouth HH,Homecare,"Morgado, Marilyn F.",Signed,06/23/2025,9360130
+9360116,"Dr. Gularek, Jordan C.",Order,Dartmouth HH,Homecare,"Gage, Carol",Signed,06/23/2025,9360116
+9360112,"Dr. Gularek, Jordan C.",Order,Dartmouth HH,Homecare,"Carney, Anne E.",Signed,06/23/2025,9360112
+9360106,"Dr. Gularek, Jordan C.",Order,Dartmouth HH,Homecare,"Manna, Agatina",Signed,06/23/2025,9360106
+9360090,"DIAS-REGUS, MARY R. NP",Order,Dartmouth HH,Homecare,"Pacheco, Doreen",Signed,06/23/2025,9360090
+9360079,"Dr. Dhungana Parajuli, Sirjana",Order,Dartmouth HH,Homecare,"Gafitanu, Cecilia",Signed,06/23/2025,9360079
+9360068,"Dr. Dhungana Parajuli, Sirjana",Order,Dartmouth HH,Homecare,"Brown, Rosie",Signed,06/23/2025,9360068
+9360057,"Dr. Dhungana Parajuli, Sirjana",Order,Dartmouth HH,Homecare,"Duggan, Sharon A.",Signed,06/23/2025,9360057
+9360051,"Dr. Caldas, Robert J.",Order,Dartmouth HH,Homecare,"Dacosta, Maria",Signed,06/23/2025,9360051
+9360046,"Dr. Caldas, Robert J.",Order,Dartmouth HH,Homecare,"Buckles, Patricia A.",Signed,06/23/2025,9360046
+9360045,"Dr. Bautista, Karmina",Order,Dartmouth HH,Homecare,"Costa, Rita",Signed,06/23/2025,9360045
+9360038,"Dr. Bautista, Karmina",Order,Dartmouth HH,Homecare,"Murphy, Debra A.",Signed,06/23/2025,9360038
+9360028,"Dr. Alcaraz, Achilles Romualdo E.",Order,Dartmouth HH,Homecare,"Sykes, Linda",Signed,06/23/2025,9360028
+9359927,"Dr. Potts, Earl",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Lucas, William E.",Signed,06/23/2025,9359927
+9359874,"Dr. Gularek, Jordan C.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Tonetto, John",Signed,06/23/2025,9359874
+9359584,"Dr. Caldas, Robert J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Figueiredo, Maria I.",Signed,06/23/2025,9359584
+9359581,"Dr. Caldas, Robert J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Figueiredo, Maria I.",Signed,06/23/2025,9359581
+9359473,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Camara, Laurinda",Signed,06/23/2025,9359473
+9359268,"Dr. Potts, Earl",Other,AccentCare Fall River,Homecare,"POIRIER, BARBARA A.",Signed,06/23/2025,9359268
+9359081,"Dr. Will, Christine A.",485 Cert,Dartmouth HH,Homecare,"Adams, Christine",Signed,06/23/2025,9359081
+9359079,"Dr. Mackler, Stephen",485 Recert,Dartmouth HH,Homecare,"Garrant, Beverly A.",Signed,06/23/2025,9359079
+9359077,"Dr. Jauregui, Hugo G.",485 Cert,Dartmouth HH,Homecare,"Lewis, Harvey",Signed,06/23/2025,9359077
+9358743,"Dr. Coury, Pamela",485 Cert,Bayada Home Health Care-Dartmouth,Homecare,"PERRIERA, BARBARA",Prepared,06/21/2025,9358743
+9358742,"Dr. Coury, Pamela",Order,Bayada Home Health Care-Dartmouth,Homecare,"PERRIERA, BARBARA",Prepared,06/21/2025,9358742
+9358744,"Dr. Maskey, Sachin",485 Cert,Bayada Home Health Care-Dartmouth,Homecare,"SULLIVAN, MICHAEL",Signed,06/21/2025,9358744
+9358738,"Dr. Etter, Justin",485 Cert,Bayada Home Health Care-Dartmouth,Homecare,"ARRUDA, SUSAN",Signed,06/21/2025,9358738
+9358737,"Dr. Etter, Justin",Order,Bayada Home Health Care-Dartmouth,Homecare,"ARRUDA, SUSAN",Signed,06/21/2025,9358737
+9358137,"Dr. QIN, SHAN",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Brunton, Virginia",Prepared,06/20/2025,9358137
+9358078,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Lima, Mary",Prepared,06/20/2025,9358078
+9358077,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Brilhante, John",Prepared,06/20/2025,9358077
+9358074,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"AUSTIN, DANIELLE",Prepared,06/20/2025,9358074
+9358010,"Dr. DeFusco, Nicholas J.",Other,Southcoast VNA – Community Office (Fairhaven),Homecare,"BRANCO, JOSEPH F.",Prepared,06/20/2025,9358010
+9358002,"Dr. Coury, Pamela",485 Cert,Southcoast VNA – Community Office (Fairhaven),Homecare,"ST.JOHN, JUDY A.",Prepared,06/20/2025,9358002
+9357808,"Dr. Afonso-Fede, Gloriane",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Fidalgo, Rosa",Prepared,06/20/2025,9357808
+9357807,"Dr. Afonso-Fede, Gloriane",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Copley, Irene",Prepared,06/20/2025,9357807
+9357804,"Dr. Afonso-Fede, Gloriane",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Copley, Irene",Prepared,06/20/2025,9357804
+9357702,"Dr. MCCARTHY, COLM",Order,All At Home Health Care-Allston,Homecare,"Richardson, David",Prepared,06/20/2025,9357702
+9357602,"Dr. DeFusco, Nicholas J.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"BRANCO, JOSEPH F.",Prepared,06/20/2025,9357602
+9357601,"Dr. DeFusco, Nicholas J.",Other,Southcoast VNA – Community Office (Fairhaven),Homecare,"BRANCO, JOSEPH F.",Prepared,06/20/2025,9357601
+9357241,"Dr. Martin, Daniel J.",Order,Dartmouth HH,Homecare,"Moura, Pearl I.",Prepared,06/20/2025,9357241
+9356698,"Dr. Coury, Pamela",Order,Dartmouth HH,Homecare,"Cabral, Analia M.",Prepared,06/20/2025,9356698
+9356695,"Dr. Coury, Pamela",Order,Dartmouth HH,Homecare,"Barboza, Ernest",Prepared,06/20/2025,9356695
+9356637,"Dr. MCCARTHY, COLM",485 Cert,Dartmouth HH,Homecare,"Brown, Kathy A.",Prepared,06/20/2025,9356637
+9356604,"Dr. Martin, Daniel J.",Order,Dartmouth HH,Homecare,"Gregoire, Laura M.",Prepared,06/20/2025,9356604
+9356601,"Dr. Martin, Daniel J.",Order,Dartmouth HH,Homecare,"Demers, Anne M.",Prepared,06/20/2025,9356601
+9356593,"Dr. Maalouf-Kaleshian, Karine",Order,Dartmouth HH,Homecare,"Viera, Leopoldina",Prepared,06/20/2025,9356593
+9356554,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Smigel, Kathleen A.",Prepared,06/20/2025,9356554
+9356552,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Smigel, Kathleen A.",Prepared,06/20/2025,9356552
+9356549,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Smigel, Kathleen A.",Prepared,06/20/2025,9356549
+9356536,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Mimoso, Serafim",Prepared,06/20/2025,9356536
+9356529,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Mimoso, Serafim",Prepared,06/20/2025,9356529
+9356412,"Dr. DeFusco, Nicholas J.",Order,Dartmouth HH,Homecare,"Santos, Cindy",Prepared,06/20/2025,9356412
+9356405,"Dr. Coury, Pamela",485 Cert,Dartmouth HH,Homecare,"Cabral, Analia M.",Prepared,06/20/2025,9356405
+9356402,"Dr. Coury, Pamela",Order,Dartmouth HH,Homecare,"Bibeau, Thomas",Prepared,06/20/2025,9356402
+9356392,"Dr. Afonso-Fede, Gloriane",Order,Dartmouth HH,Homecare,"Lopes, Armindo",Prepared,06/20/2025,9356392
+9356387,"Dr. Afonso-Fede, Gloriane",Order,Dartmouth HH,Homecare,"Pereira, Antonio",Prepared,06/20/2025,9356387
+9356386,"Dr. Afonso-Fede, Gloriane",Order,Dartmouth HH,Homecare,"Luiz, Ernestine",Prepared,06/20/2025,9356386
+9358160,"Dr. SOUZA, AILEEN C.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"MACHADO, MARIA",Signed,06/20/2025,9358160
+9358158,"Dr. SOUZA, AILEEN C.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Diaz, Priscila",Signed,06/20/2025,9358158
+9358155,"Dr. SOUZA, AILEEN C.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Cordero, Hiram",Signed,06/20/2025,9358155
+9358133,"Dr. SOUZA, AILEEN C.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Cordero, Hiram",Signed,06/20/2025,9358133
+9358125,"Dr. SOUZA, AILEEN C.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Diaz, Priscila",Signed,06/20/2025,9358125
+9358118,"Dr. SOUZA, AILEEN C.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"MACHADO, MARIA",Signed,06/20/2025,9358118
+9358103,"Dr. Gularek, Jordan C.",Order,Compassionate Care Hospice-Taunton,Hospice,"Carlson, Linda",Signed,06/20/2025,9358103
+9358084,"Dr. Maskey, Sachin",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Morrell, Rolande",Signed,06/20/2025,9358084
+9358064,"Dr. Liu, Bing",Other,Nightingale Visiting Nurses-Taunton,Homecare,"DIAS, HELENA A.",Signed,06/20/2025,9358064
+9358032,"Dr. Caldas, Robert J.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"CARVALHO, ANTONIO S.",Signed,06/20/2025,9358032
+9358001,"Dr. Jauregui, Hugo G.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Rodgers,  Joseph",Signed,06/20/2025,9358001
+9357998,"Dr. Jauregui, Hugo G.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Rodgers,  Joseph",Signed,06/20/2025,9357998
+9357997,"Dr. Hait, Michael A.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"SILVA, CARMEN",Signed,06/20/2025,9357997
+9357994,"Dr. Will, Christine A.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"SAINT, STELLA",Signed,06/20/2025,9357994
+9357992,"Dr. Etter, Justin",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"ROQUE, FLORA V.",Signed,06/20/2025,9357992
+9357985,"Dr. Gularek, Jordan C.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"PERRY, LAURA S.",Signed,06/20/2025,9357985
+9357982,"Dr. Will, Christine A.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"MIRANDA, CAROLYN J.",Signed,06/20/2025,9357982
+9357973,"Dr. Gularek, Jordan C.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"MACIEL, PATRICIA A.",Signed,06/20/2025,9357973
+9357941,"Dr. Potts, Earl",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"FLETCHER, KATHLEEN",Signed,06/20/2025,9357941
+9357940,"Dr. Etter, Justin",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Estevez, Stephen",Signed,06/20/2025,9357940
+9357938,"Dr. Gularek, Jordan C.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"FAZENDEIRO, ANNE F.",Signed,06/20/2025,9357938
+9357865,"Dr. Bautista, Karmina",Other,Nightingale Visiting Nurses-Taunton,Homecare,"DIAZ, GLORIA",Signed,06/20/2025,9357865
+9357863,"Dr. Bautista, Karmina",Other,Nightingale Visiting Nurses-Taunton,Homecare,"DIAZ, GLORIA",Signed,06/20/2025,9357863
+9357861,"Dr. Bautista, Karmina",Other,Nightingale Visiting Nurses-Taunton,Homecare,"DIAZ, GLORIA",Signed,06/20/2025,9357861
+9357859,"Dr. Bautista, Karmina",Other,Nightingale Visiting Nurses-Taunton,Homecare,"DIAZ, GLORIA",Signed,06/20/2025,9357859
+9357814,"Dr. Alcaraz, Achilles Romualdo E.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Sturgeon, David",Signed,06/20/2025,9357814
+9357606,"Dr. Bautista, Karmina",485 Recert,Southcoast VNA – Community Office (Fairhaven),Homecare,"CALDAS, EURIDICE S.",Signed,06/20/2025,9357606
+9357239,"Dr. Gularek, Jordan C.",Order,Dartmouth HH,Homecare,"Mathieu, Joseph",Signed,06/20/2025,9357239
+9356885,"Dr. Potts, Earl",Order,Fairhaven HH&H,Hospice,"Magee, Mary E.",Signed,06/20/2025,9356885
+9356879,"Dr. Gularek, Jordan C.",Order,Fairhaven HH&H,Hospice,"Crompton, Rosemary",Signed,06/20/2025,9356879
+9356788,"Dr. Wu, Elaine",Order,Dartmouth HH,Homecare,"Lazar, Christine",Signed,06/20/2025,9356788
+9356784,"Dr. Wu, Elaine",Order,Dartmouth HH,Homecare,"Jadlowe, A Shirley",Signed,06/20/2025,9356784
+9356778,"Dr. Will, Christine A.",Order,Dartmouth HH,Homecare,"McCarthy, Maureen",Signed,06/20/2025,9356778
+9356776,"Dr. Will, Christine A.",Order,Dartmouth HH,Homecare,"Alves, Geraldine F.",Signed,06/20/2025,9356776
+9356766,"Dr. Dhungana Parajuli, Sirjana",485 Recert,Alphacare Home Health Agency,Homecare,"Lowman, James",Signed,06/20/2025,9356766
+9356769,"Dr. Will, Christine A.",485 Cert,Dartmouth HH,Homecare,"Burt, Helen L.",Signed,06/20/2025,9356769
+9356763,"Dr. Will, Christine A.",Order,Dartmouth HH,Homecare,"Crawford, Evelyn",Signed,06/20/2025,9356763
+9356759,"Dr. Will, Christine A.",Order,Dartmouth HH,Homecare,"Hanna, JR, Stephen S.",Signed,06/20/2025,9356759
+9356757,"Dr. Will, Christine A.",Order,Dartmouth HH,Homecare,"Mulroy, Rita C.",Signed,06/20/2025,9356757
+9356752,"Dr. Shih, David J.",Order,Dartmouth HH,Homecare,"Silva, Nancy J.",Signed,06/20/2025,9356752
+9356748,"Dr. Shih, David J.",Order,Dartmouth HH,Homecare,"Los, Paul R.",Signed,06/20/2025,9356748
+9356744,"Dr. Shih, David J.",Order,Dartmouth HH,Homecare,"Roddy, Eileen",Signed,06/20/2025,9356744
+9356740,"Dr. Pothier, Jahn A.",485 Recert,Dartmouth HH,Homecare,"Felix, Daniel",Signed,06/20/2025,9356740
+9356734,"Dr. Pothier, Jahn A.",Order,Dartmouth HH,Homecare,"Medeiros, Almerinda S.",Signed,06/20/2025,9356734
+9356727,"Dr. Pothier, Jahn A.",Order,Dartmouth HH,Homecare,"Blais, Lorraine J.",Signed,06/20/2025,9356727
+9356716,"Dr. Pothier, Jahn A.",485 Recert,Dartmouth HH,Homecare,"Medeiros, Jose J.",Signed,06/20/2025,9356716
+9356708,"Dr. Liu, Bing",Order,Dartmouth HH,Homecare,"Davis McGregor, Debra E.",Signed,06/20/2025,9356708
+9356705,"Dr. Jauregui, Hugo G.",Order,Dartmouth HH,Homecare,"Carreiro, Maria A.",Signed,06/20/2025,9356705
+9356598,"Dr. Mackler, Stephen",Order,Dartmouth HH,Homecare,"Lobo, John",Signed,06/20/2025,9356598
+9356591,"Dr. Liu, Bing",Order,Dartmouth HH,Homecare,"Fernandes, Dorothy R.",Signed,06/20/2025,9356591
+9356588,"Dr. Liu, Bing",Order,Dartmouth HH,Homecare,"Laurianno, Joanne",Signed,06/20/2025,9356588
+9356581,"Dr. Jauregui, Hugo G.",Order,Dartmouth HH,Homecare,"Arruda, Robert H.",Signed,06/20/2025,9356581
+9356577,"Dr. Gularek, Jordan C.",Order,Dartmouth HH,Homecare,"Gage, Carol",Signed,06/20/2025,9356577
+9356569,"Dr. Gularek, Jordan C.",Order,Dartmouth HH,Homecare,"Mathieu, Joseph",Signed,06/20/2025,9356569
+9356538,"Dr. Dhungana Parajuli, Sirjana",485 Cert,Dartmouth HH,Homecare,"Heron, Doris",Signed,06/20/2025,9356538
+9356510,"Dr. Caldas, Robert J.",485 Recert,Dartmouth HH,Homecare,"Dacosta, Maria",Signed,06/20/2025,9356510
+9356464,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Camara, Laurinda",Signed,06/20/2025,9356464
+9356461,"Dr. Will, Christine A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Camara, Laurinda",Signed,06/20/2025,9356461
+9356428,"Dr. Dhungana Parajuli, Sirjana",Order,Dartmouth HH,Homecare,"Otis, Maureen",Signed,06/20/2025,9356428
+9356427,"Dr. Dhungana Parajuli, Sirjana",Order,Dartmouth HH,Homecare,"Cabral, Janet",Signed,06/20/2025,9356427
+9356426,"Dr. Dhungana Parajuli, Sirjana",Order,Dartmouth HH,Homecare,"Perez, Emelin",Signed,06/20/2025,9356426
+9356414,"Dr. Dhungana Parajuli, Sirjana",Order,Dartmouth HH,Homecare,"Frias, Natalie",Signed,06/20/2025,9356414
+9356398,"Dr. Caldas, Robert J.",Order,Dartmouth HH,Homecare,"Buckles, Patricia A.",Signed,06/20/2025,9356398
+9356394,"Dr. Bautista, Karmina",Order,Dartmouth HH,Homecare,"Bordeaux Preston, Nancy F.",Signed,06/20/2025,9356394
+9356393,"Dr. Bautista, Karmina",Order,Dartmouth HH,Homecare,"Murphy, Debra A.",Signed,06/20/2025,9356393
+9355167,"Dr. Afonso-Fede, Gloriane",Order,Guardian Home Health Care LLC - West Bridgewater,Homecare,"Correia, Fatima",Prepared,06/19/2025,9355167
+9354703,"Dr. QIN, SHAN",485 Cert,Guardian Home Health Care LLC - West Bridgewater,Homecare,"Moniz, Lorraine",Prepared,06/19/2025,9354703
+9354502,"RODRIGUES, JUNE A. NP",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Tilley, Marsha",Prepared,06/19/2025,9354502
+9354501,"RODRIGUES, JUNE A. NP",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Tilley, Marsha",Prepared,06/19/2025,9354501
+9354499,"RODRIGUES, JUNE A. NP",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Tilley, Marsha",Prepared,06/19/2025,9354499
+9354498,"RODRIGUES, JUNE A. NP",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Tilley, Marsha",Prepared,06/19/2025,9354498
+9354493,"RODRIGUES, JUNE A. NP",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Tilley, Marsha",Prepared,06/19/2025,9354493
+9354338,"Dr. QIN, SHAN",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Reis, Joseph",Prepared,06/19/2025,9354338
+9354330,"Dr. QIN, SHAN",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Fernandes, Maria",Prepared,06/19/2025,9354330
+9354322,"Dr. QIN, SHAN",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Pedra,  Mary",Prepared,06/19/2025,9354322
+9354319,"Dr. QIN, SHAN",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Pedra,  Mary",Prepared,06/19/2025,9354319
+9354307,"Dr. QIN, SHAN",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Lopez, Roderick",Prepared,06/19/2025,9354307
+9354304,"Dr. QIN, SHAN",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Lopez, Roderick",Prepared,06/19/2025,9354304
+9354245,"Dr. QIN, SHAN",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Marden, , Richard",Prepared,06/19/2025,9354245
+9354244,"Dr. QIN, SHAN",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Marden, , Richard",Prepared,06/19/2025,9354244
+9354242,"Dr. QIN, SHAN",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Marden, , Richard",Prepared,06/19/2025,9354242
+9353941,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Smigel, Kathleen A.",Prepared,06/19/2025,9353941
+9353927,"Dr. Martin, Daniel J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Mimoso, Serafim",Prepared,06/19/2025,9353927
+9355946,"Dr. Shih, David J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Medeiros, Maria",Signed,06/19/2025,9355946
+9355945,"Dr. Shih, David J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Medeiros, Maria",Signed,06/19/2025,9355945
+9355943,"Dr. Shih, David J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Medeiros, Maria",Signed,06/19/2025,9355943
+9355933,"Dr. Shih, David J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Walker, Gordonna",Signed,06/19/2025,9355933
+9355930,"Dr. Shih, David J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Walker, Gordonna",Signed,06/19/2025,9355930
+9355927,"Dr. Shih, David J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Walker, Gordonna",Signed,06/19/2025,9355927
+9355925,"Dr. Shih, David J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Walker, Gordonna",Signed,06/19/2025,9355925
+9355923,"Dr. Shih, David J.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Walker, Gordonna",Signed,06/19/2025,9355923
+9355688,"Dr. Hait, Michael A.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"SILVA, CARMEN",Signed,06/19/2025,9355688
+9355677,"Dr. Jauregui, Hugo G.",485 Cert,Southcoast VNA – Community Office (Fairhaven),Homecare,"MICHAUD, ROBERT H.",Signed,06/19/2025,9355677
+9355671,"Dr. Shih, David J.",485 Cert,Southcoast VNA – Community Office (Fairhaven),Homecare,"MEDEIROS, MARIANO C.",Signed,06/19/2025,9355671
+9355668,"Dr. Jauregui, Hugo G.",485 Cert,Southcoast VNA – Community Office (Fairhaven),Homecare,"HARRIS, PATRICIA",Signed,06/19/2025,9355668
+9355659,"Dr. Pothier, Jahn A.",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"CUNHA, MARIA D.",Signed,06/19/2025,9355659
+9355652,"Dr. Will, Christine A.",485 Cert,Southcoast VNA – Community Office (Fairhaven),Homecare,"CRABTREE, BARBARA A.",Signed,06/19/2025,9355652
+9355174,"Dr. Liu, Bing",Order,Guardian Home Health Care LLC - West Bridgewater,Homecare,"Gomes, Dorothy",Signed,06/19/2025,9355174
+9355079,"Dr. Will, Christine A.",Order,Guardian Home Health Care LLC - West Bridgewater,Homecare,"CROMWELL, GLORIA J.",Signed,06/19/2025,9355079
+9355046,"Dr. Wu, Elaine",Order,Guardian Home Health Care LLC - West Bridgewater,Homecare,"BARRY, LESLIE N.",Signed,06/19/2025,9355046
+9355030,"Dr. Dhungana Parajuli, Sirjana",Order,Guardian Home Health Care LLC - West Bridgewater,Homecare,"Blake, Patricia",Signed,06/19/2025,9355030
+9354958,"Dr. Caldas, Robert J.",Order,Guardian Home Health Care LLC - West Bridgewater,Homecare,"Velez-Morales, Yomayra",Signed,06/19/2025,9354958
+9354943,"Dr. Etter, Justin",Order,Guardian Home Health Care LLC - West Bridgewater,Homecare,"BROWN, DONALD R.",Signed,06/19/2025,9354943
+9354763,"Dr. Dhungana Parajuli, Sirjana",485 Recert,Guardian Home Health Care LLC - West Bridgewater,Homecare,"Blake, Patricia",Signed,06/19/2025,9354763
+9354194,"Dr. Potts, Earl",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Ayala, Juan",Signed,06/19/2025,9354194
+9354174,"Dr. Potts, Earl",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Couto, Gloria",Signed,06/19/2025,9354174
+9354173,"Dr. Potts, Earl",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Couto, Gloria",Signed,06/19/2025,9354173
+9354172,"Dr. Potts, Earl",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Couto, Gloria",Signed,06/19/2025,9354172
+9354155,"Dr. Pothier, Jahn A.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Boswell, David",Signed,06/19/2025,9354155
+9354043,"Dr. Gularek, Jordan C.",Order,Compassionate Care Hospice-Taunton,Hospice,"Simmons, Richard",Signed,06/19/2025,9354043
+9353956,"Dr. Gularek, Jordan C.",Other,Nightingale Visiting Nurses-Taunton,Homecare,"Tonetto, John",Signed,06/19/2025,9353956
+9353872,"Dr. Pothier, Jahn A.",POT Recert,Fairhaven HH&H,Hospice,"Andrade, Robert A.",Signed,06/19/2025,9353872
+9353871,"Dr. Mackler, Stephen",Order,Dartmouth HH,Homecare,"Rezendes, Isabel",Signed,06/19/2025,9353871
+9353870,"Dr. Maalouf-Kaleshian, Karine",Order,Dartmouth HH,Homecare,"Graciani, Erconida",Signed,06/19/2025,9353870
+9353869,"Dr. Liu, Bing",485 Cert,Dartmouth HH,Homecare,"Davis McGregor, Debra E.",Signed,06/19/2025,9353869
+9353868,"Dr. DeFusco, Nicholas J.",485 Cert,Dartmouth HH,Homecare,"Santos, Cindy",Signed,06/19/2025,9353868
+9353865,"Dr. Gularek, Jordan C.",Order,Visiting Rehab & Nursing Services,Homecare,"Tomko Jr, Thomas J.",Signed,06/19/2025,9353865
+9353863,"Dr. Bautista, Karmina",Order,Visiting Rehab & Nursing Services,Homecare,"Korab, Kevin",Signed,06/19/2025,9353863
+9353505,"Dr. Coury, Pamela",Order,Brigham Home Care Services.Inc,Homecare,"Michael, Frois",Prepared,06/18/2025,9353505
+9353130,"Dr. Afonso-Fede, Gloriane",Order,Dartmouth HH,Homecare,"Demelo, Julio",Prepared,06/18/2025,9353130
+9352737,"Dr. Afonso-Fede, Gloriane",Order,Southcoast VNA – Community Office (Fairhaven),Homecare,"GOMES, BRENDA J.",Prepared,06/18/2025,9352737
+2193826,"Dr. Jauregui, Hugo G.",Conversation,Visiting Rehab & Nursing Services,Homecare,"Gingras, John",Unread,06/18/2025,2193826
+2193823,"Dr. Gularek, Jordan C.",Conversation,Visiting Rehab & Nursing Services,Homecare,"Tomko Jr, Thomas J.",Unread,06/18/2025,2193823
+9351295,"Dr. Afonso-Fede, Gloriane",485 Cert,Southcoast VNA – Community Office (Fairhaven),Homecare,"FERMINO, RONDA L.",Prepared,06/18/2025,9351295

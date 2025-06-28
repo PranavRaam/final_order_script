@@ -14,7 +14,7 @@ import logging
 # Add the project root to Python path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from modules.text_extractor import TextExtractor
+from modules.light_text_extractor import TextExtractor
 from modules.data_parser import DataParser, FieldExtractor, save_extraction_csv
 from modules.llm_parser import LLMParser
 
@@ -137,7 +137,7 @@ class PipelineRunner:
         field_extractor = FieldExtractor()
         
         try:
-            llm_parser = LLMParser(self.ollama_url, fast_mode=True)
+            llm_parser = LLMParser(ollama_url=self.ollama_url, model_name=self.ollama_model, fast_mode=True)
             logger.info(f"🤖 LLM parser initialized with {self.ollama_model}")
         except Exception as e:
             logger.warning(f"LLM parser not available: {e}")
@@ -150,7 +150,8 @@ class PipelineRunner:
             config={
                 'ollama_url': self.ollama_url,
                 'ollama_model': self.ollama_model,
-                'output_dir': str(self.processing_dir)
+                'output_dir': str(self.processing_dir),
+                'ALWAYS_RUN_LLM': True
             }
         )
         

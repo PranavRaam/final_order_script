@@ -17,6 +17,16 @@ from .data_structures import PatientData, OrderData, EpisodeDiagnosis
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+# LangChain imports
+try:
+    from langchain.output_parsers import OutputFixingParser
+    from langchain_core.output_parsers import JsonOutputParser
+    from langchain_core.messages import HumanMessage, SystemMessage
+    from langchain_ollama import ChatOllama
+    _LANGCHAIN_AVAILABLE = True
+except ModuleNotFoundError:
+    _LANGCHAIN_AVAILABLE = False
+
 class LLMParser:
     """Advanced LLM-based parser using Ollama for complex extractions"""
     
@@ -27,7 +37,13 @@ class LLMParser:
         
         # Speed optimizations - increased timeouts to prevent failures
         self.fast_mode = fast_mode  # Configurable fast extraction mode
-        self.timeout = 30 if fast_mode else 60  # Increased from 15 to 30 seconds
+        # Longer timeouts for slow mode
+        self.timeout = 45 if fast_mode else 90
+        
+        # Prompt length: use more context in slow mode
+        self.prompt_len = 4000 if fast_mode else 12000
+        # Max tokens
+        self.num_predict = 512 if fast_mode else 1024
         
         # Test connection on initialization
         if not self._test_connection():
@@ -37,6 +53,25 @@ class LLMParser:
             mode_text = "FAST MODE" if fast_mode else "STANDARD MODE"
             self.logger.info(f"✅ Connected to Ollama at {ollama_url} using model {model_name} ({mode_text})")
             self.available = True
+        
+        # LangChain Chat wrapper
+        if self.available and _LANGCHAIN_AVAILABLE:
+            try:
+                self.llm = ChatOllama(
+                    model_name=self.model_name,
+                    base_url=self.ollama_url,
+                    temperature=0.1,
+                    max_tokens=self.num_predict,
+                    request_timeout=self.timeout,
+                )
+                parser = JsonOutputParser()
+                self._safe_parser = OutputFixingParser.from_llm(parser=parser, llm=self.llm)
+                self.langchain_ready = True
+            except Exception as e:
+                self.logger.warning(f"LangChain ChatOllama init failed: {e}")
+                self.langchain_ready = False
+        else:
+            self.langchain_ready = False
     
     def _test_connection(self) -> bool:
         """Test connection to Ollama API"""
@@ -47,81 +82,48 @@ class LLMParser:
             self.logger.error(f"Failed to connect to Ollama: {e}")
             return False
     
-    def _create_fast_extraction_prompt(self, text: str) -> str:
-        """Create fast, focused prompt for critical fields only"""
-        
-        prompt = f"""Extract patient info from this medical document. Return ONLY JSON:
+    def _create_extraction_prompt(self, text: str) -> str:
+        """Generate extraction prompt using configurable context length."""
 
-{text[:1500]}
+        snippet = text[: self.prompt_len]
+        prompt = f"""You are a medical data-extraction expert. Extract the following fields from the document text below.
 
-Return JSON with ONLY these critical fields:
-{{
-    "patient_fname": "first name",
-    "patient_lname": "last name", 
-    "dob": "date of birth as MM/DD/YYYY",
-    "patient_sex": "M or F",
-    "medical_record_no": "MRN",
-    "order_date": "order date as MM/DD/YYYY",
-    "physician_name": "doctor name",
-    "primary_diagnosis": "main diagnosis"
-}}
+IMPORTANT:
+• Respond with a single JSON object – no code fences, no extra commentary.
+• If a field is missing, use an empty string."""
 
-Use "" for missing fields. Return ONLY the JSON:"""
+        prompt += f"\n\n--- DOCUMENT START (truncated) ---\n{snippet}\n--- DOCUMENT END ---\n"
+
+        prompt += "\nReturn JSON with ONLY these keys:\n{\n    \"patient_fname\": \"\",\n    \"patient_lname\": \"\",\n    \"dob\": \"\",\n    \"patient_sex\": \"\",\n    \"medical_record_no\": \"\",\n    \"order_date\": \"\",\n    \"order_no\": \"\",\n    \"episode_start_date\": \"\",\n    \"episode_end_date\": \"\",\n    \"start_of_care\": \"\",\n    \"physician_name\": \"\",\n    \"primary_diagnosis\": \"\"\n}"
         return prompt
     
-    def _query_ollama(self, prompt: str, doc_id: str = "unknown") -> Optional[str]:
-        """Send prompt to Ollama with speed optimizations and retry logic"""
-        if not self.available:
+    def _query_llm(self, prompt: str, doc_id: str = "unknown") -> Optional[Dict]:
+        """Query Ollama via LangChain; returns parsed dict or None."""
+
+        if not self.available or not self.langchain_ready:
             return None
         
-        # Retry logic for better reliability
-        max_retries = 2
+        max_retries = 2 if self.fast_mode else 3
         
         for attempt in range(max_retries):
             try:
-                payload = {
-                    "model": self.model_name,
-                    "prompt": prompt,
-                    "stream": False,
-                    "options": {
-                        "temperature": 0.1,
-                        "top_p": 0.9,
-                        "num_predict": 512 if self.fast_mode else 2048  # Shorter responses
-                    }
-                }
-                
-                if attempt == 0:
-                    self.logger.debug(f"🚀 Fast querying Ollama for document {doc_id}")
-                else:
-                    self.logger.debug(f"🔄 Retry {attempt} for document {doc_id}")
-                
-                response = requests.post(
-                    f"{self.ollama_url}/api/generate",
-                    json=payload,
-                    timeout=self.timeout  # Use configurable timeout
-                )
-                
-                if response.status_code == 200:
-                    result = response.json()
-                    return result.get('response', '')
-                else:
-                    self.logger.error(f"Ollama API error: {response.status_code} - {response.text}")
-                    if attempt < max_retries - 1:
-                        continue  # Try again
-                    return None
-                    
-            except requests.exceptions.Timeout:
-                self.logger.warning(f"⏰ Timeout on attempt {attempt + 1} for {doc_id}")
-                if attempt < max_retries - 1:
-                    continue  # Try again with next attempt
-                self.logger.error(f"❌ All retry attempts failed for {doc_id} due to timeout")
-                return None
-            except Exception as e:
-                self.logger.error(f"Error querying Ollama for {doc_id}: {e}")
-                if attempt < max_retries - 1:
-                    continue  # Try again
-                return None
-        
+                if attempt > 0:
+                    self.logger.debug(f"🔄 LLM retry {attempt} for {doc_id}")
+
+                raw_response = self.llm([
+                    HumanMessage(content=prompt)
+                ]).content
+
+                try:
+                    parsed = self._safe_parser.parse(raw_response)
+                    if isinstance(parsed, dict):
+                        return parsed
+                except Exception as pe:
+                    self.logger.debug(f"Parser failed on attempt {attempt}: {pe}")
+
+            except Exception as err:
+                self.logger.warning(f"LLM call failed on attempt {attempt}: {err}")
+            # loop continues if more retries allowed
         return None
     
     def _extract_json_from_response(self, response: str) -> Optional[Dict]:
@@ -175,14 +177,9 @@ Use "" for missing fields. Return ONLY the JSON:"""
         
         try:
             # Use fast extraction prompt
-            prompt = self._create_fast_extraction_prompt(text)
-            response = self._query_ollama(prompt, doc_id)
-            
-            if not response:
-                return PatientData(), OrderData()
-            
-            # Extract JSON from response
-            extracted_data = self._extract_json_from_response(response)
+            prompt = self._create_extraction_prompt(text)
+
+            extracted_data = self._query_llm(prompt, doc_id)
             
             if not extracted_data:
                 return PatientData(), OrderData()
@@ -198,6 +195,9 @@ Use "" for missing fields. Return ONLY the JSON:"""
             # Create order data
             order_data = OrderData()
             order_data.order_date = extracted_data.get('order_date', '').strip()
+            order_data.order_no = extracted_data.get('order_no', '').strip()
+            order_data.episode_start_date = extracted_data.get('episode_start_date', '').strip()
+            order_data.episode_end_date = extracted_data.get('episode_end_date', '').strip()
             order_data.physician_name = extracted_data.get('physician_name', '').strip()
             order_data.primary_diagnosis = extracted_data.get('primary_diagnosis', '').strip()
             
@@ -242,4 +242,25 @@ Use "" for missing fields. Return ONLY the JSON:"""
     def parse_order_with_llm(self, text: str, doc_id: str = "unknown") -> OrderData:
         """Parse order data using LLM (backward compatibility)"""
         _, order_data = self.parse_combined_with_llm(text, doc_id)
-        return order_data 
+        return order_data
+    
+    def parse_episode_dates(self, text: str, doc_id: str = "unknown") -> Tuple[str, str]:
+        """Light-weight LLM call that extracts only episode start/end dates."""
+        if not self.available:
+            return "", ""
+        try:
+            prompt = (
+                "You are given OCR extracted text from a home-health order. "
+                "Return ONLY valid JSON containing the two keys shown below. "
+                "If a date is missing or uncertain return an empty string.\n\n"
+                "JSON schema example:\n"
+                "{\n  \"episode_start_date\": \"MM/DD/YYYY\",\n  \"episode_end_date\": \"MM/DD/YYYY\"\n}\n\n"
+                "Text:\n---\n" + text[:4000] + "\n---")  # cap to 4k chars
+            response = self._query_llm(prompt, doc_id)
+            extracted = self._extract_json_from_response(response) if response else None
+            if extracted:
+                return extracted.get('episode_start_date', '').strip(), extracted.get('episode_end_date', '').strip()
+            return "", ""
+        except Exception as e:
+            self.logger.error(f"Episode date LLM extraction error for {doc_id}: {e}")
+            return "", "" 

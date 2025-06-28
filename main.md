@@ -15,7 +15,19 @@ Build a robust, production-grade script (or bot) that:
 
 ---
 
-## 📁 Modular Breakdown
+## 🔧 API Configuration
+
+```python
+TOKEN = os.getenv("AUTH_TOKEN")
+DOC_API_URL = "https://api.doctoralliance.com/document/getfile?docId.id="
+DOC_STATUS_URL = "https://api.doctoralliance.com/document/get?docId.id="
+PATIENT_CREATE_URL = "https://dawavorderpatient-hqe2apddbje9gte0.eastus-01.azurewebsites.net/api/Patient/create"
+ORDER_PUSH_URL = "https://dawavorderpatient-hqe2apddbje9gte0.eastus-01.azurewebsites.net/api/Order"
+```
+
+---
+
+## �� Modular Breakdown
 
 ### **Module 1: `input_reader.py`**
 
@@ -94,11 +106,11 @@ Build a robust, production-grade script (or bot) that:
 
 **Purpose**: Create new patient if not exists
 
-* ✅ Adds:
+* ⬜ Adds:
 
   * `pgCompanyId`, `companyId`, `physicianGroup`, `physicianGroupNPI`
-* ✅ POST to: `/api/Patient/create`
-* ✅ Logs success/failure with status code and message
+* ⬜ POST to: `/api/Patient/create`
+* ⬜ Logs success/failure with status code and message
 
 ---
 
@@ -106,9 +118,9 @@ Build a robust, production-grade script (or bot) that:
 
 **Purpose**: Push order details to API
 
-* ✅ Ensures episode dates (SOC, SOE, EOE) are available
-* ✅ POST to: `/api/Order`
-* ✅ Handles `201`, `409`, and logs response
+* ⬜ Ensures episode dates (SOC, SOE, EOE) are available
+* ⬜ POST to: `/api/Order`
+* ⬜ Handles `201`, `409`, and logs response
 
 ---
 
@@ -116,10 +128,10 @@ Build a robust, production-grade script (or bot) that:
 
 **Purpose**: Unified, color-coded, timestamped logging system
 
-* ✅ Logs:
+* ⬜ Logs:
 
   * Info, Success, Warning, Error, Progress
-* ✅ Saves to `logs/processing_log_*.txt`
+* ⬜ Saves to `logs/processing_log_*.txt`
 
 ---
 
@@ -127,9 +139,9 @@ Build a robust, production-grade script (or bot) that:
 
 **Purpose**: Save all output to CSV
 
-* ✅ Output 1: `csv_outputs/extracted_patients_*.csv`
-* ✅ Output 2: `api_outputs/api_push_details_*.csv`
-* ✅ Includes all fields from input + API status, errors, timestamps
+* ⬜ Output 1: `csv_outputs/extracted_patients_*.csv`
+* ⬜ Output 2: `api_outputs/api_push_details_*.csv`
+* ⬜ Includes all fields from input + API status, errors, timestamps
 
 ---
 
@@ -137,8 +149,8 @@ Build a robust, production-grade script (or bot) that:
 
 **Purpose**: Orchestrates the workflow end-to-end
 
-1. Load input CSV
-2. For each row:
+1. ⬜ Load input CSV
+2. ⬜ For each row:
 
    * Fetch document
    * Extract text (OCR or digital)

@@ -5,8 +5,8 @@ Optimized regex patterns based on actual healthcare document formats
 
 import re
 import logging
-from typing import Dict, List, Optional, Any
-from datetime import datetime
+from typing import Dict, List, Optional, Any, Tuple
+from datetime import datetime, timedelta
 from modules.data_structures import EpisodeDiagnosis
 
 class FieldExtractor:
@@ -31,10 +31,13 @@ class FieldExtractor:
             # FULL UPPERCASE after PATIENT: (fallback)
             r"Patient:?\s*([A-Z]+,\s*[A-Z]+(?:\s+[A-Z]\.?)*)(?:\s|$)",
             # "Rodrigues, Doris ( MA250415113301 )" - with spaces - MOST RELIABLE
-            r"([A-Z][a-z]+,\s*[A-Z][a-z]+(?:\s+[A-Z]\.?)?)\s*\(\s*[A-Z0-9]+\s*\)",
+            r"([A-Z][a-z]+,\s*[A-Z][a-z]+(?:\s+[A-Z]\.?)?)\s*\(\s*[A-Z0-9]{3,}\s*\)",
             
             # "Rodrigues, Doris (MA250415113301)" - tight spacing - SECOND MOST RELIABLE  
-            r"([A-Z][a-z]+,\s*[A-Z][a-z]+(?:\s+[A-Z]\.?)?)\s*\([A-Z0-9]+\)",
+            r"([A-Z][a-z]+,\s*[A-Z][a-z]+(?:\s+[A-Z]\.?)?)\s*\([A-Z0-9]{3,}\)",
+            
+            # Patient name in structured data context (e.g., "Name and Address Gender Date of Birth Phone Number Sousa, Joao Male")
+            r"(?:Name|Patient).*?(?:Number|Address|Gender|Birth)\s+([A-Z][a-z]+,\s*[A-Z][a-z]+(?:\s+[A-Z]\.?)?)\s+(?:Male|Female|M|F|\d)",
             
             # "CLIENT: RAJU SINGLA, MD BURHOE, ALDEN R" - extract only the patient part after MD/DO
             r"CLIENT:.*?(?:MD|DO)\s+([A-Z][A-Za-z\s,.-]+?)(?:\s+\d|\s*$|\n)",
@@ -169,6 +172,12 @@ class FieldExtractor:
         # ORDER DATE PATTERNS
         # -----------------------------------------------------------------
         self.order_date_patterns = [
+            # "Visit Date: 04/24/2025"
+            r"Visit\s+Date:?:?\s*(\d{1,2}/\d{1,2}/\d{4})",
+            # "Date order received: 05/07/2025"
+            r"Date\s+order\s+received:?:?\s*(\d{1,2}/\d{1,2}/\d{4})",
+            # with time
+            r"Date\s+order\s+received:?:?\s*(\d{1,2}/\d{1,2}/\d{4}\s+\d{1,2}:\d{2}(?::\d{2})?\s*[AP]M)",
             # "Order Date: 5/21/2025 8:41 AM"
             r"Order\s+Date:?\s*(\d{1,2}/\d{1,2}/\d{4})",
             
@@ -194,17 +203,29 @@ class FieldExtractor:
             r"(?:start|soc)(?:\s+of\s+care|\s+date)?:?\s*(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})",
         ]
         
-        # CERTIFICATION PERIOD PATTERNS
+        # CERTIFICATION/Episode PERIOD PATTERNS
         self.cert_period_patterns = [
-            # "Certification Period 5/21/2025 to 7/19/2025"
+            # Existing patterns retain
             r"Certification\s+Period:?\s*(\d{1,2}/\d{1,2}/\d{4})\s+to\s+(\d{1,2}/\d{1,2}/\d{4})",
-            
-            # "CERT: 4/24/2025 to 6/22/2025"
             r"CERT:?\s*(\d{1,2}/\d{1,2}/\d{4})\s+to\s+(\d{1,2}/\d{1,2}/\d{4})",
-            
-            # "04/07/2025 Through 06/05/2025"
             r"(\d{1,2}/\d{1,2}/\d{4})\s+Through\s+(\d{1,2}/\d{1,2}/\d{4})",
+            # Basic "Episode: 04/14/2025 - 06/12/2025"
+            r"Episode:?\s*(\d{1,2}/\d{1,2}/\d{4})\s*(?:-|–|—|to|To|through)[:]?\s*(\d{1,2}/\d{1,2}/\d{4})",
+            # Allow extra words between Episode label and first date (e.g., "Episode Dates 04/14/2025 - 06/12/2025")
+            r"Episode\s+[A-Za-z\s]*?(\d{1,2}/\d{1,2}/\d{4})\s*(?:-|–|—|to|To|through)[:]?\s*(\d{1,2}/\d{1,2}/\d{4})",
+            r"Certification\s+Period:?:?\s*(\d{1,2}/\d{1,2}/\d{4})\s*[-–—]{1,2}\s*(\d{1,2}/\d{1,2}/\d{4})",
+            # Generic 'From DATE To DATE' pattern (when preceded by Certification Period)
+            r"Certification\s+Period[^\d]{0,20}(\d{1,2}/\d{1,2}/\d{4})\s*(?:-|to|To|through|–|—)\s*(\d{1,2}/\d{1,2}/\d{4})",
+            # Service dates ISO pattern
+            r"Service\s+Dates?:?\s*(\d{4}-\d{2}-\d{2})\s*(?:-|to|through|–|—|→|➡)\s*(\d{4}-\d{2}-\d{2})",
+            # Episode/Certification with Unicode arrows or em dash between dates
+            r"Episode\s+(?:Dates?|Period|Span|Range)?[:\s]*?(\d{1,2}[/-]\d{1,2}[/-]\d{2,4}|\d{4}-\d{2}-\d{2})\s*[\u2190\u2192\u27A1\u2012\u2013\u2014\u2015-]\s*(\d{1,2}[/-]\d{1,2}[/-]\d{2,4}|\d{4}-\d{2}-\d{2})",
+            # Month-name dates with dash/arrow
+            r"([A-Za-z]{3,9}\s+\d{1,2},\s+\d{4})\s*[\u2190\u2192\u27A1\u2012\u2013\u2014\u2015-]\s*([A-Za-z]{3,9}\s+\d{1,2},\s+\d{4})",
         ]
+        
+        # Compile lists for faster search
+        self._compiled_cert_period_patterns = [re.compile(p, re.IGNORECASE) for p in self.cert_period_patterns]
         
         # PHYSICIAN NAME PATTERNS
         self.physician_patterns = [
@@ -250,20 +271,54 @@ class FieldExtractor:
         
         # DIAGNOSIS PATTERNS (ICD-10)
         self.diagnosis_patterns = [
-            # "1 M48.56XD COLLAPSED VERT, NEC, LUMBAR REGION, SUBS FOR FX W ROUTN HEAL"
+            # Standard ICD-10 code format: letter + 2 digits + optional dot + additional characters
+            r"([A-Z][0-9]{2}(?:\.[0-9A-Z]{1,4})?)\s+([A-Z][A-Za-z0-9\s,.\-'():/]+?)(?:\s+Start Effective Date|\s+\([EO]\)|\s*$)",
+            
+            # Numbered diagnosis lines: "1 M48.56XD COLLAPSED VERT, NEC, LUMBAR REGION, SUBS FOR FX W ROUTN HEAL"
             r"\d+\s+([A-Z]\d{2}\.?\d*[A-Z]*)\s+([A-Z][A-Za-z\s,]+)",
             
-            # Generic ICD patterns
+            # Primary/Secondary Diagnosis format: "Primary Diagnosis Code Description"
+            r"(?:Primary|Secondary)\s+Diagnosis\s+Code\s+Description\s+([A-Z][0-9]{2}(?:\.[0-9A-Z]{1,4})?)\s+([A-Za-z0-9\s,.\-'():/]+)",
+            
+            # Diagnosis with colon: "Diagnosis: I10. Essential (primary) hypertension"
             r"(?:diagnosis|dx|icd):?\s*([A-Z]\d{2}\.?\d*[A-Z]*)\s*([A-Za-z\s,]+)",
+            
+            # Medical diagnosis format: "Medical Diagnosis: G20.A1"
+            r"Medical\s+Diagnosis:\s*([A-Z][0-9]{2}(?:\.[0-9A-Z]{1,4})?)",
+            
+            # Diagnosis in parentheses at end: "Essential (primary) hypertension (E)"
+            r"([A-Z][A-Za-z0-9\s,.\-'():/]+?)\s+\(([A-Z][0-9]{2}(?:\.[0-9A-Z]{1,4})?)\)",
         ]
         
-        # PROVIDER INFORMATION PATTERNS
+        # PROVIDER / AGENCY INFORMATION PATTERNS  (broadened)
+        # ------------------------------------------------------------
+        # 1. Explicit label lines (most reliable)
+        #    e.g. "Agency Name: Bristol Home Health Care"
+        #         "Agency: VNA of Boston"
+        #         "Provider/Agency: Kindred at Home"
+        # 2. Generic trailing keywords such as  "Home Health", "Hospice",
+        #    "Healthcare", "Visiting Nurse", "VNA" etc.
+        # 3. Upper-case lines that end with those keywords.
         self.provider_patterns = [
-            # "NURSE ON CALL - LINCOLN"
-            r"Provider'?s?\s+Name[^:]*:\s*([A-Z][A-Za-z\s-]+)",
+            # Labelled versions first so they win (but exclude simple "Provider Name" which is usually physician)
+            r"(?:Agency\s+Name|Agency|Provider/Agency)\s*[:\-]?\s*([A-Z][A-Za-z0-9 &'.,-]{3,50})",
             
-            # Agency/Provider names
-            r"(ACCENTCARE[A-Za-z\s,.-]*|Community\s+Nurse[A-Za-z\s,.-]*|NURSE\s+ON\s+CALL[A-Za-z\s-]*)",
+            # Generic name that ends with common agency words
+            r"([A-Z][A-Za-z0-9 &'.,-]{3,40}\s+(?:Home\s+Health|Home\s*Care|Health\s*Care|Healthcare|Hospice|Visiting\s+Nurse|VNA)(?:\s+of\s+[A-Z][A-Za-z]+)?)",
+            
+            # Names where the keyword is *in the middle* e.g. "Kindred at Home"
+            r"([A-Z][A-Za-z0-9 &'.,-]{3,40}\s+at\s+Home)",
+            
+            # Preserve legacy hard-coded matches
+            r"(ACCENTCARE[A-Za-z\s,.-]{0,30}|Community\s+Nurse[A-Za-z\s,.-]{0,30}|NURSE\s+ON\s+CALL[A-Za-z\s-]{0,30})",
+            
+            # Specific well-known agency patterns
+            r"(AlphaCare\s+Home\s+Health)",
+            r"(Nightingale\s+Visiting\s+Nurse)",
+            r"(VISITING\s+NURSE\s+HOME\s+AND\s+HOSPICE)",
+            r"(FALL\s+RIVER\s+-\s+CENTERWELL\s+HOME\s+HEALTH)",
+            r"(VNHH\s+HOSPICE)",
+            r"(AMEDISYS\s+HOME\s+HEALTH)",
         ]
         
         # Compile all patterns
@@ -411,7 +466,84 @@ class FieldExtractor:
                 start_date = self._normalize_date(match.group(1))
                 end_date = self._normalize_date(match.group(2))
                 return {'start_date': start_date, 'end_date': end_date}
+        
+        candidate_dates = self._extract_all_dates(text)
+        start, end = self._choose_episode_pair(candidate_dates)
+        if start and end:
+            return {'start_date': start, 'end_date': end}
+        
+        # 🔄 SOC inference fallback
+        soc_date_str = self.extract_soc_date(text)
+        if soc_date_str:
+            try:
+                soc_dt = datetime.strptime(soc_date_str, '%m/%d/%Y')
+                end_dt = soc_dt + timedelta(days=59)
+                return {
+                    'start_date': soc_dt.strftime('%m/%d/%Y'),
+                    'end_date': end_dt.strftime('%m/%d/%Y')
+                }
+            except Exception:
+                pass
+        
         return {'start_date': '', 'end_date': ''}
+    
+    def _extract_all_dates(self, text: str) -> List[datetime]:
+        """Return a list of datetime objects for every date we can recognise in the text.
+        Handles:
+            • MM/DD/YYYY or MM-DD-YYYY
+            • Month DD, YYYY  (e.g., May 08, 2025)
+            • YYYY-MM-DD (ISO)
+        """
+        patterns = [
+            re.compile(r'(\d{1,2})[/-](\d{1,2})[/-](\d{4})'),          # 05/08/2025
+            re.compile(r'([A-Za-z]{3,9})\s+(\d{1,2}),?\s+(\d{4})'),   # May 8, 2025
+            re.compile(r'(\d{4})-(\d{2})-(\d{2})')                    # 2025-05-08
+        ]
+
+        month_lookup = {
+            'JANUARY':1,'FEBRUARY':2,'MARCH':3,'APRIL':4,'MAY':5,'JUNE':6,
+            'JULY':7,'AUGUST':8,'SEPTEMBER':9,'OCTOBER':10,'NOVEMBER':11,'DECEMBER':12
+        }
+
+        dates: List[datetime] = []
+        for pat in patterns:
+            for m in pat.finditer(text):
+                try:
+                    if len(m.groups()) == 3:
+                        g1, g2, g3 = m.groups()
+                        if pat.pattern.startswith('('):  # numeric month first
+                            month, day, year = int(g1), int(g2), int(g3)
+                        elif pat.pattern.startswith('([A-Za-z'):  # month name first
+                            month = month_lookup.get(g1.upper(), 0)
+                            day, year = int(g2), int(g3)
+                        else:  # ISO
+                            year, month, day = int(g1), int(g2), int(g3)
+                        dates.append(datetime(year, month, day))
+                except Exception:
+                    continue
+        return dates
+
+    def _choose_episode_pair(self, dates: List[datetime]) -> Tuple[str, str]:
+        """Given a list of dates, choose the pair that most likely represents a 60-day episode."""
+        if len(dates) < 2:
+            return '', ''
+        dates = sorted(set(dates))
+        best_pair = None
+        best_diff = 9999
+        for i in range(len(dates)):
+            for j in range(i+1, len(dates)):
+                diff = abs((dates[j] - dates[i]).days)
+                if 40 <= diff <= 120:  # plausible episode length
+                    # choose diff closest to 60
+                    score = abs(diff - 60)
+                    if score < best_diff:
+                        best_diff = score
+                        best_pair = (dates[i], dates[j])
+                        if best_diff == 0:
+                            break
+        if best_pair:
+            return best_pair[0].strftime('%m/%d/%Y'), best_pair[1].strftime('%m/%d/%Y')
+        return '', ''
     
     def extract_physician_name(self, text: str) -> str:
         """Extract physician name"""
@@ -458,21 +590,101 @@ class FieldExtractor:
         for pattern in self._compiled_provider_patterns:
             match = pattern.search(text)
             if match:
-                return match.group(1).strip()
+                provider_name = match.group(1).strip()
+                if self._is_valid_provider_name(provider_name):
+                    return provider_name
         return ''
     
     def extract_diagnoses(self, text: str) -> List[EpisodeDiagnosis]:
-        """Extract diagnoses list for compatibility with DataParser"""
-        diagnosis = self.extract_primary_diagnosis(text)
-        if diagnosis['icd_code'] or diagnosis['description']:
-            episode_diagnosis = EpisodeDiagnosis(
-                diagnosis_code=diagnosis['icd_code'],
-                diagnosis_description=diagnosis['description'],
-                diagnosis_type="primary",
-                icd_version="ICD-10" if diagnosis['icd_code'].startswith(('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z')) else "ICD-9"
-            )
-            return [episode_diagnosis]
-        return []
+        """Extract all ICD-10 codes from diagnosis tables in the text."""
+        diagnoses = []
+        
+        # Use all diagnosis patterns to find codes
+        for pattern in self._compiled_diagnosis_patterns:
+            for match in pattern.finditer(text):
+                code = ""
+                desc = ""
+                
+                # Handle different pattern group structures
+                if match.lastindex == 2:
+                    # Pattern with code and description groups
+                    if re.match(r"[A-Z][0-9]{2}", match.group(1)):
+            code = match.group(1).strip()
+            desc = match.group(2).strip()
+                    else:
+                        # Swapped order - description then code
+                        desc = match.group(1).strip()
+                        code = match.group(2).strip()
+                elif match.lastindex == 1:
+                    # Pattern with only code group
+                    code = match.group(1).strip()
+                    
+                if code and re.match(r"[A-Z][0-9]{2}(?:\.[0-9A-Z]{1,4})?", code):
+                    # Clean up description
+                    if desc:
+                        desc = re.sub(r'\s+', ' ', desc).strip()
+                        # Remove trailing markers
+                        desc = re.sub(r'\s+\([EO]\)\s*$', '', desc)
+                        desc = re.sub(r'\s+Start Effective Date.*$', '', desc)
+                    
+                diagnoses.append(EpisodeDiagnosis(
+                    diagnosis_code=code,
+                    diagnosis_description=desc,
+                    diagnosis_type="other",
+                        icd_version="ICD-10"
+                    ))
+        
+        # Additional specific searches for common diagnosis patterns in documents
+        additional_patterns = [
+            # Format: "Code Description (E)" at end of line
+            r"([A-Z][0-9]{2}(?:\.[0-9A-Z]{1,4})?)\s+([A-Za-z][A-Za-z0-9\s,.\-'():/]+?)\s+\([EO]\)",
+            # Format: "Description Code" 
+            r"([A-Za-z][A-Za-z0-9\s,.\-'():/]{10,}?)\s+([A-Z][0-9]{2}(?:\.[0-9A-Z]{1,4})?)\s*$",
+        ]
+        
+        for pattern_str in additional_patterns:
+            pattern = re.compile(pattern_str, re.MULTILINE | re.IGNORECASE)
+            for match in pattern.finditer(text):
+                if re.match(r"[A-Z][0-9]{2}", match.group(1)):
+                    code = match.group(1).strip()
+                    desc = match.group(2).strip() if match.lastindex >= 2 else ""
+                else:
+                    desc = match.group(1).strip()
+                    code = match.group(2).strip()
+                    
+                if code and re.match(r"[A-Z][0-9]{2}(?:\.[0-9A-Z]{1,4})?", code):
+                    # Clean up description
+                    if desc:
+                        desc = re.sub(r'\s+', ' ', desc).strip()
+                        desc = re.sub(r'\s+\([EO]\)\s*$', '', desc)
+                        
+                    diagnoses.append(EpisodeDiagnosis(
+                        diagnosis_code=code,
+                        diagnosis_description=desc,
+                        diagnosis_type="other",
+                        icd_version="ICD-10"
+                    ))
+        
+        # Remove duplicates based on diagnosis code
+        seen_codes = set()
+        unique_diagnoses = []
+        for diagnosis in diagnoses:
+            if diagnosis.diagnosis_code not in seen_codes:
+                seen_codes.add(diagnosis.diagnosis_code)
+                unique_diagnoses.append(diagnosis)
+        
+        # Fallback: if nothing found, use the old single extraction
+        if not unique_diagnoses:
+            diagnosis = self.extract_primary_diagnosis(text)
+            if diagnosis['icd_code'] or diagnosis['description']:
+                unique_diagnoses.append(EpisodeDiagnosis(
+                    diagnosis_code=diagnosis['icd_code'],
+                    diagnosis_description=diagnosis['description'],
+                    diagnosis_type="primary",
+                    icd_version="ICD-10" if diagnosis['icd_code'].startswith(('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z')) else "ICD-9"
+                ))
+        
+        return unique_diagnoses
     
     def _normalize_date(self, date_str: str) -> str:
         """Normalize date to MM/DD/YYYY format"""
@@ -554,6 +766,36 @@ class FieldExtractor:
         results['address'] = self.extract_address(text)
         results['provider_name'] = self.extract_provider_name(text)
         
+        # Map provider/agency name to ordering facility for downstream CSV columns
+        results['ordering_facility'] = results['provider_name']
+
+        # -------------------------------------------------------------
+        # 🏠  Address → City / State / ZIP parsing
+        # -------------------------------------------------------------
+        city = state = zip_code = ''
+        if results['address']:
+            city, state, zip_code = self._parse_city_state_zip(results['address'])
+
+        # Store parsed components so StructuredParser can pick them up (after fallback)
+        results['city'] = city
+        results['state'] = state
+        results['zip_code'] = zip_code
+        
+        # Fallback: if city/state still blank, scan whole text for first CITY, ST ZIP pattern
+        if (not city or not state) and text:
+            m = re.search(r"([A-Za-z][A-Za-z\s\.]+?),\s+([A-Z]{2})\s+(\d{4,5}(?:-\d{4})?)", text)
+            if m:
+                city = city or m.group(1).title().strip()
+                state = state or m.group(2).upper()
+                zip_code = zip_code or m.group(3)
+                if re.fullmatch(r'\d{4}', zip_code):
+                    zip_code = '0' + zip_code
+
+            # Update results with fallback values
+            results['city'] = city
+            results['state'] = state
+            results['zip_code'] = zip_code
+
         # Diagnosis
         diagnosis = self.extract_primary_diagnosis(text)
         results['primary_diagnosis'] = diagnosis['description']
@@ -589,18 +831,57 @@ class FieldExtractor:
         invalid_patterns = [
             r'first\s+name', r'last\s+name', r'patient\s+name',
             r'unspecified', r'unsp', r'hyperlipidemia', r'neuropathy',
+            r'hypertension', r'diabetes', r'pneumonia', r'copd', r'chr\s+kidney',
+            r'heart\s+failure', r'coronary\s+artery', r'malignant', r'neoplasm',
+            r'chronic', r'acute', r'primary', r'secondary', r'essential',
             r'episode', r'diagnosis', r'client', r'template',
             r'MM/DD/YYYY', r'M\s+or\s+F', r'MALE\s+or\s+FEMALE',
-            r'RN\s*$', r'MD\s*$', r'DO\s*$', r'^\s*[A-Z]{1,3}\s*$'
+            r'RN\s*$', r'MD\s*$', r'DO\s*$', r'^\s*[A-Z]{1,3}\s*$',
+            # Add medical condition patterns that could match "condition, qualifier" format
+            r'disease', r'disorder', r'syndrome', r'failure', r'block',
+            r'anemia', r'thyroid', r'kidney', r'bone', r'prostate',
+            r'aspirin', r'nicotine', r'dependence', r'history', r'use',
+            r'metabolic', r'congestive', r'obstructive', r'respiratory',
+            # Add more specific patterns that appear in diagnoses
+            r'hyperkalemia', r'hypercalcemia', r'diastolic', r'systolic',
+            r'parkinson', r'dementia', r'malignancy', r'cancer'
         ]
         
-        name_upper = name.upper()
+        name_lower = name.lower()  # Convert to lowercase for case-insensitive matching
         for pattern in invalid_patterns:
-            if re.search(pattern, name_upper):
+            if re.search(pattern, name_lower, re.IGNORECASE):
                 return False
         
-        # Must contain at least one letter
+        # Must contain at least one letter and at least one vowel to avoid
+        # catching stray field labels like "PRN" or "DX" etc.
         if not re.search(r'[A-Za-z]', name):
+            return False
+
+        if not re.search(r'[AEIOUaeiou]', name):
+            return False
+            
+        # Additional check: if it contains ICD codes or medical codes, reject it
+        if re.search(r'[A-Z]\d{2}\.?\d*', name):  # Matches patterns like "E78.5" or "I10"
+            return False
+            
+        # Check if it looks like a medical term by checking for typical medical word endings
+        medical_endings = [r'emia$', r'itis$', r'osis$', r'pathy$', r'trophy$', r'uria$', r'algia$']
+        for ending in medical_endings:
+            if re.search(ending, name_lower):
+                return False
+        
+        # Special check: If it contains comma-separated medical terms, reject it
+        # This handles cases like "Hyperlipidemia, unspecified"
+        if ',' in name:
+            parts = [part.strip().lower() for part in name.split(',')]
+            medical_terms = {
+                'unspecified', 'chronic', 'acute', 'primary', 'secondary', 
+                'hyperlipidemia', 'hypertension', 'diabetes', 'essential',
+                'malignant', 'benign', 'stage', 'grade', 'type', 'mild',
+                'moderate', 'severe', 'with', 'without', 'complicated',
+                'uncomplicated', 'controlled', 'uncontrolled'
+            }
+            if any(part in medical_terms for part in parts):
             return False
             
         return True
@@ -660,23 +941,22 @@ class FieldExtractor:
         return True
     
     def _is_valid_address(self, address: str) -> bool:
-        """Validate if extracted address is valid"""
+        """Validate if extracted address is reasonable"""
         if not address or len(address.strip()) < 5:
             return False
         
-        address_upper = address.upper()
-        
-        # Filter out system artifacts
+        # Filter out template text and invalid addresses
         invalid_patterns = [
-            r'WRAPPER', r'SESSION', r'CACHE', r'APPROVAL',
-            r'^\d{10,}', r'ISAPPROVAL', r'SESSIONCACHEKEY',
-            r'FAX\s+NUMBER', r'TIME\s+ZONE'
+            r'address', r'street', r'city', r'state', r'zip',
+            r'template', r'form', r'field', r'unspecified',
+            r'MM/DD/YYYY', r'^\s*[A-Z]{1,3}\s*$'
         ]
         
+        address_upper = address.upper()
         for pattern in invalid_patterns:
             if re.search(pattern, address_upper):
                 return False
-        
+                
         return True
     
     def _clean_extracted_address(self, address: str) -> str:
@@ -720,3 +1000,85 @@ class FieldExtractor:
             return 'MALE'
         
         return '' 
+
+    # -----------------------------------------------------------------
+    # 🌆  Helper: Parse City / State / ZIP from an address line
+    # -----------------------------------------------------------------
+    def _parse_city_state_zip(self, address: str) -> Tuple[str, str, str]:
+        """Given a postal address string, attempt to extract the City, two-letter
+        State code, and 5-digit ZIP (+optional 4). Returns 3 strings, which may
+        be blank if parsing fails."""
+
+        if not address:
+            return '', '', ''
+
+        # Normalize whitespace
+        addr = re.sub(r"\s+", " ", address).strip()
+
+        # Typical ending pattern: "CITY, ST 01234" or "CITY ST 01234"
+        # Allow multi-word CITY (e.g., "FALL RIVER") and optional comma.
+        m = re.search(r"([A-Za-z][A-Za-z\s\.]+?)\s*,?\s+([A-Z]{2})\s+(\d{4,5}(?:-\d{4})?)$", addr)
+        if m:
+            raw_city = m.group(1).title().strip()
+            # Remove street-type tokens that may have bled into the match
+            street_tokens = {
+                'St', 'Street', 'Rd', 'Road', 'Ave', 'Avenue', 'Dr', 'Drive',
+                'Ln', 'Lane', 'Blvd', 'Boulevard', 'Way', 'Hwy', 'Highway'
+            }
+            # Tokenize and filter
+            words = [w for w in re.split(r'\s+', raw_city) if w]
+            cleaned_words = [w for w in words if w not in street_tokens]
+            # Improved heuristic: take last word unless it's a directional pair
+            directional = {'North', 'South', 'East', 'West', 'New', 'Ft', 'Fort', 'St', 'Saint'}
+            if len(cleaned_words) >= 2 and cleaned_words[-2] in directional:
+                city = ' '.join(cleaned_words[-2:])  # e.g., "North Dartmouth"
+            else:
+                city = cleaned_words[-1] if cleaned_words else ''
+            state = m.group(2).upper()
+            zip_code = m.group(3)
+            # Zero-pad 4-digit ZIPs (OCR sometimes drops leading zero)
+            if re.fullmatch(r'\d{4}', zip_code):
+                zip_code = '0' + zip_code
+            return city, state, zip_code
+
+        return '', '', '' 
+
+    def _is_valid_provider_name(self, provider_name: str) -> bool:
+        """Validate if extracted provider name is reasonable"""
+        if not provider_name or len(provider_name.strip()) < 3:
+            return False
+        
+        # Filter out noise text that commonly appears in documents
+        invalid_patterns = [
+            r'^signature\s*$', r'signature\s+signature', r'^\s*signature\s',
+            r'^https?\s*$', r'^\s*https?://', r'^\s*www\.',
+            r'^\s*[A-Z]\.\s*$', r'^\s*[A-Z]{1,3}\s*$',  # Single letters or short codes
+            r'clinical\s+data', r'clinical\s+manager', r'branch\s+name',
+            r'phone\s+number', r'address', r'time\s+zone',
+            r'eastern\s+time', r'AM\s+Eastern', r'PM\s+Eastern',
+            r'^\s*AM\s*$', r'^\s*PM\s*$',
+            r'decline\s+in\s+mental', r'currently\s+taking',
+            r'currently\s+reports', r'exhaustion',
+            r'medications', r'behavioral\s+status',
+            r'in\s+the\s+past\s+\d+\s+months',
+            r'^\s*[,.\-\s]+$',  # Just punctuation
+            r'^\s*\d+\s*$',  # Just numbers
+            r'template', r'form', r'field', r'unspecified'
+        ]
+        
+        provider_upper = provider_name.upper()
+        for pattern in invalid_patterns:
+            if re.search(pattern, provider_upper):
+                return False
+        
+        # Must contain at least one letter
+        if not re.search(r'[A-Za-z]', provider_name):
+            return False
+        
+        # Should not be mostly punctuation or whitespace
+        letter_count = len(re.findall(r'[A-Za-z]', provider_name))
+        total_count = len(provider_name)
+        if letter_count / total_count < 0.5:  # At least 50% letters
+            return False
+            
+        return True 

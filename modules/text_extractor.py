@@ -24,6 +24,14 @@ import pdfplumber
 import pytesseract
 from PIL import Image, ImageEnhance, ImageFilter
 import pandas as pd
+import concurrent.futures  # NEW
+import multiprocessing  # NEW
+import pypdfium2 as pdfium  # NEW: fast PDF → image renderer
+from easyocr import Reader as EasyOCRReader  # NEW OCR engine
+import numpy as np  # Required by easyocr
+
+# Initialise easyocr reader once (CPU mode)
+_EASY_READER = EasyOCRReader(['en'], gpu=False)
 
 class TextExtractor:
     """
@@ -200,78 +208,114 @@ class TextExtractor:
             self.logger.warning(f"Image enhancement failed: {e}")
             return image
     
-    def _extract_with_ocr(self, pdf_buffer: bytes, doc_id: str) -> Tuple[str, float]:
-        """
-        Extract text using OCR (for scanned PDFs)
-        
-        Args:
-            pdf_buffer: PDF binary data
-            doc_id: Document ID for logging
-            
-        Returns:
-            Tuple of (extracted_text, quality_score)
-        """
-        if not self.tesseract_available:
-            return "", 0.0
-        
+    def _is_scanned_pdf(self, pdf_buffer: bytes) -> bool:
+        """Advanced scanned-PDF detection inspired by final_version.py logic."""
         try:
-            extracted_text = ""
-            
-            # Open PDF with PyMuPDF
-            pdf_document = fitz.open(stream=pdf_buffer, filetype="pdf")
-            total_pages = len(pdf_document)
-            
-            self.logger.debug(f"Processing {total_pages} pages with OCR for doc_id {doc_id}")
-            
-            for page_num in range(total_pages):
-                try:
-                    page = pdf_document[page_num]
-                    
-                    # Render page to image (higher DPI for better OCR)
-                    mat = fitz.Matrix(2.0, 2.0)  # 2x zoom for better quality
-                    pix = page.get_pixmap(matrix=mat)
-                    
-                    # Convert to PIL Image
-                    img_data = pix.tobytes("ppm")
-                    image = Image.open(io.BytesIO(img_data))
-                    
-                    # Enhance image for OCR
-                    enhanced_image = self._enhance_image_for_ocr(image)
-                    
-                    # Perform OCR with improved error handling
+            with pdfplumber.open(io.BytesIO(pdf_buffer)) as pdf:
+                total_text = ""
+                pages_checked = min(3, len(pdf.pages))
+                for page in pdf.pages[:pages_checked]:
                     try:
-                        page_text = pytesseract.image_to_string(enhanced_image, config=self.ocr_config)
-                    except Exception as ocr_error:
-                        # If OCR fails with config, try without config
-                        self.logger.debug(f"OCR with config failed for page {page_num + 1}, trying without config: {ocr_error}")
-                        try:
-                            page_text = pytesseract.image_to_string(enhanced_image)
-                        except Exception as fallback_error:
-                            self.logger.warning(f"OCR completely failed for page {page_num + 1} of doc_id {doc_id}: {fallback_error}")
-                            page_text = ""
-                    
-                    # Skip mostly empty pages
-                    if len(page_text.strip()) > 20:  # At least 20 characters
-                        extracted_text += page_text + "\n\n"
-                        self.logger.debug(f"OCR extracted {len(page_text)} chars from page {page_num + 1}")
-                    else:
-                        self.logger.debug(f"Skipping mostly empty page {page_num + 1}")
-                        
-                except Exception as e:
-                    self.logger.warning(f"OCR failed for page {page_num + 1} of doc_id {doc_id}: {e}")
-                    continue
+                        txt = page.extract_text() or ""
+                    except Exception:
+                        txt = ""
+                    total_text += txt.strip()
+
+                # No text at all → scanned
+                if not total_text:
+                    return True
+                # Very short text → likely scanned
+                if len(total_text) < 100:
+                    return True
+                # Repetition analysis
+                lines = [ln.strip() for ln in total_text.split("\n") if ln.strip()]
+                if lines:
+                    repetition_ratio = len(set(lines)) / len(lines)
+                    if repetition_ratio < 0.3:
+                        return True
+                # Look for meaningful keywords to prove it *is* digital text
+                indicators = [
+                    "patient", "name", "date of birth", "dob", "address", "diagnosis", "medical", "record",
+                ]
+                has_keywords = any(ind in total_text.lower() for ind in indicators)
+                if not has_keywords and len(total_text) < 500:
+                    return True
+            return False
+        except Exception as e:
+            self.logger.debug(f"Scanned-PDF detection failed – assuming scanned: {e}")
+            return True
+    
+    def _extract_with_ocr(self, pdf_buffer: bytes, doc_id: str) -> Tuple[str, float]:
+        """Parallel OCR extraction (faster) using PyMuPDF + Tesseract with easyOCR fallback."""
+        if not self.tesseract_available:
+            # Fallback directly to easyOCR if Tesseract not present
+            return self._ocr_with_easyocr(pdf_buffer, doc_id)
+        try:
+            pdf_document = fitz.open(stream=pdf_buffer, filetype="pdf")
+            page_count = len(pdf_document)
+
+            def page_to_image(idx: int):
+                # Try pdfium render first (faster & sharper)
+                try:
+                    page = pdfium.PdfDocument(pdf_buffer).get_page(idx)
+                    pil_img = page.render(scale=2.5).to_pil()
+                    return pil_img
+                except Exception:
+                    # fallback to PyMuPDF
+                    page = pdf_document[idx]
+                    pix = page.get_pixmap(matrix=fitz.Matrix(200 / 72, 200 / 72))
+                    return Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+
+            def ocr_tesseract(pil_img: Image.Image):
+                try:
+                    return pytesseract.image_to_string(pil_img, config=self.ocr_config)
+                except Exception:
+                    try:
+                        return pytesseract.image_to_string(pil_img)
+                    except Exception:
+                        return ""
+
+            # parallel OCR
+            max_workers = min(4, multiprocessing.cpu_count(), page_count)
+            with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as exec:
+                images = list(exec.map(page_to_image, range(page_count)))
+                texts = list(exec.map(ocr_tesseract, images))
             
             pdf_document.close()
-            
-            # Calculate quality score
-            quality_score = self._calculate_text_quality_score(extracted_text)
-            
-            self.logger.debug(f"OCR extraction for doc_id {doc_id}: {len(extracted_text)} chars, quality: {quality_score:.2f}")
-            
-            return extracted_text.strip(), quality_score
-            
+            full_text = "\n".join(texts)
+            cleaned = re.sub(r"\s+", " ", full_text).strip()
+            quality = self._calculate_text_quality_score(cleaned)
+
+            # Fallback to easyOCR if quality very low
+            if quality < 0.2:
+                self.logger.debug(f"Tesseract OCR low quality ({quality:.2f}) → trying easyOCR", doc_id)
+                cleaned_easy, q_easy = self._ocr_with_easyocr(pdf_buffer, doc_id)
+                if q_easy > quality:
+                    cleaned, quality = cleaned_easy, q_easy
+            return cleaned, quality
         except Exception as e:
-            self.logger.error(f"OCR extraction failed for doc_id {doc_id}: {e}")
+            self.logger.error(f"OCR extraction failed for {doc_id}: {e}")
+            # last chance easyOCR
+            return self._ocr_with_easyocr(pdf_buffer, doc_id)
+
+    def _ocr_with_easyocr(self, pdf_buffer: bytes, doc_id: str) -> Tuple[str, float]:
+        """OCR using easyocr reader on rendered images."""
+        try:
+            pdf = pdfium.PdfDocument(pdf_buffer)
+            texts = []
+            for page_idx in range(len(pdf)):
+                page = pdf.get_page(page_idx)
+                pil_img = page.render(scale=2.5).to_pil()
+                result = _EASY_READER.readtext(np.array(pil_img))
+                page_text = " ".join([r[1] for r in result])
+                texts.append(page_text)
+            pdf.close()
+            joined = " \n".join(texts)
+            cleaned = re.sub(r"\s+", " ", joined).strip()
+            quality = self._calculate_text_quality_score(cleaned)
+            return cleaned, quality
+        except Exception as exc:
+            self.logger.error(f"easyOCR extraction failed for {doc_id}: {exc}")
             return "", 0.0
     
     def _clean_extracted_text(self, text: str) -> str:
@@ -290,8 +334,9 @@ class TextExtractor:
         # Remove form feed characters
         text = text.replace('\x0c', '\n')
         
-        # Remove excessive whitespace
-        text = re.sub(r'\s+', ' ', text)
+        # Normalize spaces and tabs but PRESERVE newlines for readability
+        # Replace sequences of spaces / tabs with a single space, while leaving line breaks intact
+        text = re.sub(r'[ \t]+', ' ', text)
         
         # Remove excessive newlines (keep paragraph structure)
         text = re.sub(r'\n\s*\n\s*\n+', '\n\n', text)
@@ -402,7 +447,11 @@ class TextExtractor:
             doc_id = Path(pdf_path).stem if pdf_path else 'unknown'
         
         try:
-            # 1️⃣ Try pdfplumber first (fast) for digital PDFs
+            # 1️⃣ Try pdfplumber first (fast) for digital PDFs, UNLESS advanced scan detector says otherwise
+            if self._is_scanned_pdf(pdf_buffer):
+                # Skip digital attempts if clearly scanned
+                best_text, best_quality, method = "", 0.0, "none"
+            else:
             text_plumber, q_plumber = self._extract_with_pdfplumber(pdf_buffer, doc_id)
             best_text, best_quality, method = text_plumber, q_plumber, 'pdfplumber'
             
