@@ -609,8 +609,8 @@ class FieldExtractor:
                 if match.lastindex == 2:
                     # Pattern with code and description groups
                     if re.match(r"[A-Z][0-9]{2}", match.group(1)):
-            code = match.group(1).strip()
-            desc = match.group(2).strip()
+                        code = match.group(1).strip()
+                        desc = match.group(2).strip()
                     else:
                         # Swapped order - description then code
                         desc = match.group(1).strip()
@@ -882,7 +882,7 @@ class FieldExtractor:
                 'uncomplicated', 'controlled', 'uncontrolled'
             }
             if any(part in medical_terms for part in parts):
-            return False
+                return False
             
         return True
     

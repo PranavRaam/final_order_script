@@ -1,0 +1,902 @@
+[
+  {
+    "doc_id": "9320779_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 19304,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320605_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 13282,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320028_ocr",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1810,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320580_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1424,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320479_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1300,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320127_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 2478,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320600_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1337,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320200_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 22167,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320585_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 16791,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320561_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 12887,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320565_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 15564,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320485_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1493,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320064_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 17878,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320727_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1101,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320344_ocr",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 16730,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320502_ocr",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1428,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320158_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 7863,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320346_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1649,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320300_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1408,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320264_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1713,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320776_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 13787,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320785_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 12399,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320399_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 13580,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320792_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1519,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320472_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 17589,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320469_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 12574,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320163_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 8349,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320784_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 11825,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320062_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 14756,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320049_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 20047,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320052_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 19086,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320141_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 16885,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320618_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1551,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320210_ocr",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1222,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320130_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 15919,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320258_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1775,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320465_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1417,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320796_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 2069,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320770_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 13726,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320582_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 12152,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320789_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 12635,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320768_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 13306,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320363_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 2075,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320662_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 20639,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320169_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1671,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320660_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 18686,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320571_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1366,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320568_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1414,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320606_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 11316,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320457_ocr",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 8883,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9321157_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 765,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320798_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 2295,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320403_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 18652,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320053_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 14983,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320547_ocr",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 17938,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320558_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 11859,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320153_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 12500,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320420_ocr",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 6470,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320119_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1795,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320104_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 20380,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320603_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 12056,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320619_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 18852,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9321145_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 762,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320360_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 11719,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320476_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1690,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320527_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 2172,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320782_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 15069,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320050_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 19222,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320302_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1264,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320154_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 13594,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320761_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1257,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320762_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1404,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320588_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 15934,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320794_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 12287,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320223_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 18527,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320553_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1493,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320574_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1241,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320509_ocr",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 2617,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320779_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 19304,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320605_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 13282,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320028_ocr",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1810,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320580_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1424,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320479_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1300,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320127_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 2478,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320600_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1337,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320200_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 22167,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320585_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 16791,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320561_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 12887,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320565_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 15564,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320485_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1493,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320064_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 17878,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320727_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1101,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320344_ocr",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 16730,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320502_ocr",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1428,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320158_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 7863,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320346_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1649,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320300_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1408,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320264_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 1713,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320776_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 13787,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  },
+  {
+    "doc_id": "9320785_digital",
+    "status": "success",
+    "file_size": 0,
+    "content_length": 12399,
+    "fetch_time": "",
+    "source_url": "",
+    "error_message": null
+  }
+]

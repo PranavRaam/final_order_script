@@ -1,0 +1,300 @@
+
+Field Extraction Analysis Report
+Generated: 2025-06-28 23:13:47
+
+DETAILED FIELD ANALYSIS
+=======================
+
+This report provides detailed statistics for each field extracted from 98 successfully parsed documents.
+
+PATIENT FIELD ANALYSIS
+======================
+
+ACCOUNT_NUMBER:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+ADDRESS:
+  Extraction Rate: 100.0% (98/98)
+  Sample Values: 125 County ST, 1906 FALL RIVER MA 02721, 1215 PM Eastem Time Zone ACCENTCARE OF MASS, INC
+  Status: ✅ Good
+
+CITY:
+  Extraction Rate: 85.7% (84/98)
+  Sample Values: Taunton, River, Fall River
+  Status: ✅ Good
+
+DOB:
+  Extraction Rate: 94.9% (93/98)
+  Sample Values: 04/06/1945, 01/21/1942, 01/15/1950
+  Status: ✅ Good
+
+EMAIL:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+EMERGENCY_CONTACT_NAME:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+EMERGENCY_CONTACT_PHONE:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+EMERGENCY_CONTACT_RELATIONSHIP:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+GROUP_NUMBER:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+MARITAL_STATUS:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+MEDICAL_RECORD_NO:
+  Extraction Rate: 87.8% (86/98)
+  Sample Values: 100991041, MA210304014206, 100996456
+  Status: ✅ Good
+
+PATIENT_FNAME:
+  Extraction Rate: 91.8% (90/98)
+  Sample Values: Kathleen, Darwin, Oliveira
+  Status: ✅ Good
+
+PATIENT_LNAME:
+  Extraction Rate: 91.8% (90/98)
+  Sample Values: Oliveira, Finch, C
+  Status: ✅ Good
+
+PATIENT_MNAME:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+PATIENT_SEX:
+  Extraction Rate: 89.8% (88/98)
+  Sample Values: FEMALE, MALE, MALE
+  Status: ✅ Good
+
+PHONE_NUMBER:
+  Extraction Rate: 95.9% (94/98)
+  Sample Values: (508) 967-0761, (508) 967-0761, (508) 235-6312
+  Status: ✅ Good
+
+POLICY_NUMBER:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+PREFERRED_LANGUAGE:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+PRIMARY_INSURANCE:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+PROVIDER_NAME:
+  Extraction Rate: 98.0% (96/98)
+  Sample Values: Signature, Signature, ACCENTCARE OF MASS, INC. DBA AC HH OF MA
+  Status: ✅ Good
+
+PROVIDER_NPI:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+REFERRING_PHYSICIAN:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+SECONDARY_INSURANCE:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+SSN:
+  Extraction Rate: 46.9% (46/98)
+  Sample Values: 100-99-1041, 027-23-1519, 100-99-6456
+  Status: ⚠️ Fair
+
+STATE:
+  Extraction Rate: 85.7% (84/98)
+  Sample Values: MA, MA, MA
+  Status: ✅ Good
+
+SUBSCRIBER_ID:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+ZIP_CODE:
+  Extraction Rate: 85.7% (84/98)
+  Sample Values: 02780, 02721, 02723-1519
+  Status: ✅ Good
+
+
+ORDER FIELD ANALYSIS
+====================
+
+AUTHORIZATION_NUMBER:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+BILLING_CODE:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+CAREGIVER_INSTRUCTIONS:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+CLINICAL_NOTES:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+DISCHARGE_NOTES:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+DURATION:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+EPISODE_DIAGNOSES:
+  Extraction Rate: 59.2% (58/98)
+  Sample Values: PT Diagnosis, Acute cystitis without hematuria N, Chronic combined systolic and diastolic hrt fail E11.22 Type 2 diabetes mellitus w diabetic chronic kidney disease Physician: HANY MISTIKAWY MD NPI: 1851399034 289 Pleasant St Phone: (508) 679-2265 FALL RIVER MA 02721 Fax: (508) 646-0586 Orders: Fistula left forearm check bruising and thrill each visit, no blood draws or BP checks on left arm Goals and Interventions: Goals Added (1) (FT) fistula on left arm check bruit and thrill each visit Target Date: 05/25/25 Goal Term: long Clinician Signature: Date Digitally Signed by: ANA FARIA , LVN/LPN 05/20/2025 Clinician Co-Signature: Date Physician Signature: Date Physician: Dr. Mistikawy, Hany A. Clinician: Clinician, Agency Signature: Signature: Date: 6/3/2025 Date: 5/30/2025 Electronically signed by Dr. Mistikawy, Hany A. on 6/3/2025
+  Status: ⚠️ Fair
+
+EPISODE_END_DATE:
+  Extraction Rate: 98.0% (96/98)
+  Sample Values: 06/22/2025, 06/12/2025, 07/10/2025
+  Status: ✅ Good
+
+EPISODE_START_DATE:
+  Extraction Rate: 98.0% (96/98)
+  Sample Values: 04/24/2025, 04/14/2025, 05/12/2025
+  Status: ✅ Good
+
+EQUIPMENT_NEEDED:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+FOLLOW_UP_INSTRUCTIONS:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+FREQUENCY:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+FUNCTIONAL_LIMITATIONS:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+GOALS_OF_CARE:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+INSURANCE_PAYER:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+MEDICATION_RECONCILIATION:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+ORDER_DATE:
+  Extraction Rate: 67.3% (66/98)
+  Sample Values: 04/24/2025, 05/21/2025, 05/29/2025
+  Status: ⚠️ Fair
+
+ORDER_NO:
+  Extraction Rate: 100.0% (98/98)
+  Sample Values: 9320779, 1288833069, 12275092
+  Status: ✅ Good
+
+ORDERING_FACILITY:
+  Extraction Rate: 98.0% (96/98)
+  Sample Values: Signature, Signature, ACCENTCARE OF MASS, INC. DBA AC HH OF MA
+  Status: ✅ Good
+
+PHYSICIAN_NAME:
+  Extraction Rate: 100.0% (98/98)
+  Sample Values: Singla, Raju Clinician, Nakda, Joseph Clinician, CLIENT
+  Status: ✅ Good
+
+PHYSICIAN_NPI:
+  Extraction Rate: 85.7% (84/98)
+  Sample Values: 1275520097, 1891081725, 1851399034
+  Status: ✅ Good
+
+PHYSICIAN_PHONE:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+PLACE_OF_SERVICE:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+PRIMARY_DIAGNOSIS:
+  Extraction Rate: 59.2% (58/98)
+  Sample Values: PT Diagnosis, Acute cystitis without hematuria N, Chronic combined systolic and diastolic hrt fail E11.22 Type 2 diabetes mellitus w diabetic chronic kidney disease Physician: HANY MISTIKAWY MD NPI: 1851399034 289 Pleasant St Phone: (508) 679-2265 FALL RIVER MA 02721 Fax: (508) 646-0586 Orders: Fistula left forearm check bruising and thrill each visit, no blood draws or BP checks on left arm Goals and Interventions: Goals Added (1) (FT) fistula on left arm check bruit and thrill each visit Target Date: 05/25/25 Goal Term: long Clinician Signature: Date Digitally Signed by: ANA FARIA , LVN/LPN 05/20/2025 Clinician Co-Signature: Date Physician Signature: Date Physician: Dr. Mistikawy, Hany A. Clinician: Clinician, Agency Signature: Signature: Date: 6/3/2025 Date: 5/30/2025 Electronically signed by Dr. Mistikawy, Hany A. on 6/3/2025
+  Status: ⚠️ Fair
+
+SAFETY_MEASURES:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+SECONDARY_DIAGNOSIS:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+SERVICE_TYPE:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+SIGNED_BY_PHYSICIAN_DATE:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+SPECIAL_INSTRUCTIONS:
+  Extraction Rate: 0.0% (0/98)
+  Sample Values: None
+  Status: ❌ Poor
+
+START_OF_CARE:
+  Extraction Rate: 98.0% (96/98)
+  Sample Values: 04/24/2025, 04/14/2025, 05/12/2025
+  Status: ✅ Good

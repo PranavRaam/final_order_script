@@ -880,8 +880,8 @@ def save_extraction_csv(results: List[ParsedResult], output_path: str):
                 'Episode_End_Date': order.episode_end_date,
                 'Sent_To_Physician_Date': '',  # Not available in current data
                 'Signed_By_Physician_Date': order.signed_by_physician_date,
-                'Company_ID': '',  # Not available in current data
-                'PG_Company_ID': '',  # Not available in current data
+                'Company_ID': getattr(order, 'company_id', '') or '',
+                'PG_Company_ID': os.getenv('PG_ID', 'd10f46ad-225d-4ba2-882c-149521fcead5'),
                 'SOC_Episode': order.start_of_care,  # Using start_of_care as SOC_Episode
                 'Start_Episode': order.episode_start_date,  # Same as Episode_Start_Date
                 'End_Episode': order.episode_end_date,  # Same as Episode_End_Date

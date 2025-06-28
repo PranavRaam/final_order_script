@@ -17,6 +17,7 @@ import time
 import json
 import re
 import pandas as pd
+import requests
 
 # Module imports
 from modules.input_reader import InputReader, save_validation_report, save_invalid_rows
@@ -326,14 +327,11 @@ def main():
                     if rec_date:
                         od.order_date = rec_date
 
-                # Agency / Facility name (case-insensitive search)
+                # Always use Facility column from input CSV for agency/facility name
                 agency_name = None
                 for key in csv_row.keys():
                     k_lower = str(key).lower().strip()
-                    if k_lower in {
-                        'facility name', 'facility_name', 'facility',
-                        'agency name', 'agency_name'
-                    }:
+                    if k_lower == 'facility':
                         val = csv_row.get(key)
                         if val and str(val).strip():
                             agency_name = str(val).strip()
@@ -425,28 +423,56 @@ def main():
                         'doc_id': res.doc_id,
                         'patient_status': 'SKIPPED',
                         'order_status': 'SKIPPED',
-                        'remarks': 'Dry-run: API push disabled'
+                        'remarks': 'Dry-run: API push disabled (no data sent to API)'
                     })
                     continue
 
                 # ---- Actual push section ----
                 success_pat, pat_resp, pat_status = patient_pusher.push_patient(patient, **extra_patient_fields)
                 if not success_pat:
+                    error_msg = pat_resp.get('error') or pat_resp.get('message') or pat_resp.get('raw') or ''
+                    explanation = f"Patient push failed: {error_msg}" if error_msg else "Patient already exists or API rejected the patient (status 409 or error)"
                     api_tracking_records.append({
                         'doc_id': res.doc_id,
                         'patient_status': pat_status,
                         'order_status': '',
-                        'remarks': 'Patient push failed'
+                        'remarks': explanation
                     })
                     continue
 
+                # --- Update patient/order data from API response ---
+                def update_patient_from_api(patient_obj, api_json):
+                    agency_info = api_json.get('agencyInfo', {}) if api_json else {}
+                    patient_obj.account_number = api_json.get('id') or patient_obj.account_number
+                    patient_obj.patient_wav_id = agency_info.get('patientWAVId') or getattr(patient_obj, 'patient_wav_id', '')
+                    patient_obj.patient_fname = agency_info.get('patientFName') or patient_obj.patient_fname
+                    patient_obj.patient_lname = agency_info.get('patientLName') or patient_obj.patient_lname
+                    patient_obj.dob = agency_info.get('dob') or patient_obj.dob
+                    patient_obj.patient_sex = agency_info.get('patientSex') or patient_obj.patient_sex
+                    patient_obj.primary_insurance = agency_info.get('primaryInsuranceName') or patient_obj.primary_insurance
+                    patient_obj.medical_record_no = agency_info.get('medicalRecordNo') or patient_obj.medical_record_no
+                    patient_obj.address = agency_info.get('patientAddress') or patient_obj.address
+                    patient_obj.city = agency_info.get('patientCity') or patient_obj.city
+                    patient_obj.state = agency_info.get('patientState') or patient_obj.state
+                    patient_obj.zip_code = agency_info.get('zip') or patient_obj.zip_code
+                    patient_obj.phone_number = agency_info.get('phoneNumber') or patient_obj.phone_number
+                    patient_obj.email = agency_info.get('email') or patient_obj.email
+                    patient_obj.provider_npi = agency_info.get('physicianNPI') or patient_obj.provider_npi
+                    patient_obj.pg_company_id = agency_info.get('pgcompanyID') or getattr(patient_obj, 'pg_company_id', '')
+                    patient_obj.company_id = agency_info.get('companyId') or getattr(patient_obj, 'company_id', '')
+                    return patient_obj
+
+                patient = update_patient_from_api(patient, pat_resp)
+
                 patient_id = pat_resp.get('id') or pat_resp.get('patientId') or pat_resp.get('patient_id')
                 if not patient_id:
+                    error_msg = pat_resp.get('error') or pat_resp.get('message') or pat_resp.get('raw') or ''
+                    explanation = f"Patient push succeeded but no patient ID returned: {error_msg}" if error_msg else "Patient push succeeded but no patient ID returned."
                     api_tracking_records.append({
                         'doc_id': res.doc_id,
                         'patient_status': pat_status,
                         'order_status': '',
-                        'remarks': 'No patient id returned'
+                        'remarks': explanation
                     })
                     continue
 
@@ -459,11 +485,39 @@ def main():
 
                 success_ord, ord_resp, ord_status = order_pusher.push_order(order, patient_id, **extra_order_fields)
 
+                # Detailed remarks logic
+                if success_pat and success_ord:
+                    if ord_status == 409:
+                        # Try to extract patient ID from duplicate order response
+                        existing_patient_id = None
+                        if isinstance(ord_resp, dict):
+                            existing_patient_id = ord_resp.get('patientId') or ord_resp.get('existing_patient_id')
+                        fetched_patient_details = None
+                        if existing_patient_id:
+                            # Use the same headers as the push (if available)
+                            headers = {"Authorization": f"Bearer {os.getenv('AUTH_TOKEN', '')}"}
+                            fetched_patient_details = get_patient_details_from_api(existing_patient_id, headers=headers)
+                            # Update patient object from fetched details
+                            patient = update_patient_from_api(patient, fetched_patient_details)
+                        remarks = "Patient created successfully, order already exists (duplicate order)"
+                        if fetched_patient_details:
+                            remarks += f"; Patient details fetched from existing order (patient_id={existing_patient_id})"
+                    elif pat_status == 201 and ord_status == 201:
+                        remarks = "Patient and order both created successfully"
+                    else:
+                        remarks = f"Patient and order push succeeded (patient_status={pat_status}, order_status={ord_status})"
+                elif success_pat and not success_ord:
+                    error_msg = ord_resp.get('error') or ord_resp.get('message') or ord_resp.get('raw') or ''
+                    remarks = f"Order push failed: {error_msg}" if error_msg else "Order push failed (see API for details)"
+                else:
+                    error_msg = pat_resp.get('error') or pat_resp.get('message') or pat_resp.get('raw') or ''
+                    remarks = f"Patient push failed: {error_msg}" if error_msg else "Patient push failed (see API for details)"
+
                 api_tracking_records.append({
                     'doc_id': res.doc_id,
                     'patient_status': pat_status,
                     'order_status': ord_status,
-                    'remarks': 'success' if success_ord else 'order push failed'
+                    'remarks': remarks
                 })
 
         # Save API tracking CSV
@@ -683,6 +737,14 @@ def _split_name(csv_name: str) -> Dict[str, str]:
         fname = split[0]
         lname = split[-1] if len(split) > 1 else ""
     return {"fname": fname.title(), "lname": lname.title()}
+
+def get_patient_details_from_api(patient_id, headers=None):
+    url = f"https://dawavorderpatient-hqe2apddbje9gte0.eastus-01.azurewebsites.net/api/Patient/get-patient/{patient_id}"
+    response = requests.get(url, headers=headers)
+    if response.status_code == 200:
+        return response.json()
+    else:
+        return {}
 
 if __name__ == "__main__":
     main() 

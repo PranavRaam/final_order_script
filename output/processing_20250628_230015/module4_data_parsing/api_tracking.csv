@@ -1,0 +1,31 @@
+doc_id,patient_status,order_status,remarks
+9320779_digital,201,409,success
+9320600_digital,201,409,success
+9320600_digital,409,,Patient push failed
+9320200_digital,201,409,success
+9320585_digital,201,409,success
+9320565_digital,201,409,success
+9320064_digital,201,409,success
+9320403_digital,201,409,success
+9320792_digital,201,409,success
+9320465_digital,201,409,success
+9320049_digital,201,409,success
+9320052_digital,201,409,success
+9320465_digital,409,,Patient push failed
+9320770_digital,201,409,success
+9320662_digital,201,409,success
+9320169_digital,201,409,success
+9320660_digital,201,409,success
+9320403_digital,409,,Patient push failed
+9320104_digital,201,409,success
+9320050_digital,409,,Patient push failed
+9320761_digital,201,409,success
+9320762_digital,409,,Patient push failed
+9320588_digital,201,409,success
+9320223_digital,201,409,success
+9320779_digital,409,,Patient push failed
+9320600_digital,409,,Patient push failed
+9320200_digital,409,,Patient push failed
+9320585_digital,409,,Patient push failed
+9320565_digital,409,,Patient push failed
+9320064_digital,409,,Patient push failed
